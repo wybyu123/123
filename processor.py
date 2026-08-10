@@ -446,19 +446,88 @@ def run_processor():
     enhance_output_ts_from_json()
     enhance_output_hls_from_interface()
 
-    # ================= 🌐 写入分类结构化 JSON 文件 =================
-    print(f"✍️ 正在生成并写入结构化 JSON 文件 -> {OUTPUT_JSON}", flush=True)
+# ================= 🌐 写入符合你标准的结构化 JSON 文件 =================
+    print(f"✍️ 正在生成并写入符合标准的结构化 JSON 文件 -> {OUTPUT_JSON}", flush=True)
     
-    iptvs_data = {
-        "hls_ips": sorted(list(hls_ips)),
-        "ts_ips": sorted(list(ts_ips)),
-        "newlive_ips": sorted(list(newlive_ips)),
-        "all_unique_ips": sorted(list(hls_ips | ts_ips | newlive_ips))
+    # 1. 尝试读取已有的 iptvs_data.json，以保留原有的 storageData 历史记录和 summary 统计
+    existing_storage_data = []
+    total_stored_count = 0
+    version_str = "1.1"
+    
+    if os.path.exists(OUTPUT_JSON):
+        try:
+            with open(OUTPUT_JSON, "r", encoding="utf-8") as f:
+                old_json = json.load(f)
+                version_str = old_json.get("message", {}).get("version", "1.1")
+                existing_storage_data = old_json.get("storageData", [])
+        except Exception:
+            pass
+
+    # 2. 组装当前批次解析出来的 results 详细列表
+    current_results = []
+    
+    # 辅助函数：将各类提取到的 host 转化为标准字典对象
+    def add_to_results(groups_dict, match_type_tag):
+        for host, chs in groups_dict.items():
+            # 解析 IP 和端口
+            if ":" in host:
+                ip_part, port_part = host.rsplit(":", 1)
+                try:
+                    port_val = int(port_part)
+                except ValueError:
+                    port_val = 80
+            else:
+                ip_part = host
+                port_val = 80
+
+            # 组装单条记录
+            result_item = {
+                "host": host,
+                "ip": ip_part,
+                "port": port_val,
+                "link": f"http://{host}",
+                "source": "1",
+                "org": "Unknown",  # 可根据需要适配运营商归属
+                "updateTime": datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S"),
+                "matchType": match_type_tag
+            }
+            if result_item not in current_results:
+                current_results.append(result_item)
+
+    # 分别将 HLS、TS、NewLive 提取的组别压入 results
+    add_to_results(hls_groups, "hls")
+    add_to_results(ts_groups, "txiptv") # 或根据实际 matchType 适配
+    add_to_results(newlive_groups, "newlive")
+
+    current_count = len(current_results)
+
+    # 3. 维护 storageData 历史动态更新队列（把当前最新一次加到最前面）
+    current_time_str = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
+    new_history_entry = {
+        "updateTime": current_time_str,
+        "resultCount": current_count,
+        "savedCount": current_count
+    }
+    
+    # 插入到历史记录首位（可根据喜好保留最近几条）
+    existing_storage_data.insert(0, new_history_entry)
+    
+    # 4. 最终完整 JSON 结构构建
+    final_output_data = {
+        "storageSummary": {
+            "totalStoredCount": current_count
+        },
+        "message": {
+            "version": version_str
+        },
+        "storageData": existing_storage_data[:10], # 仅保留最近10条历史记录，可按需调整
+        "results": current_results
     }
 
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(iptvs_data, f, ensure_ascii=False, indent=4)
+        json.dump(final_output_data, f, ensure_ascii=False, indent=4)
 
+    print(f"✨ 结构化 JSON 写入完成！当前总计保存有效结果: {current_count} 条", flush=True)
     print(f"==================================================", flush=True)
     print(f"🎉 全部任务圆满成功！", flush=True)
     print(f"==================================================", flush=True)
