@@ -21,13 +21,41 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
+def is_tvbox_or_json_file(file_path):
+    """
+    智能检测并识别是否为 TVBox 接口分享文件、JSON 配置文件或非纯直播源文件
+    """
+    file_name = os.path.basename(file_path).lower()
+    
+    # 1. 名称特征拦截
+    tvbox_keywords = ["tvbox", "config", "json", "api", "sub", "setting", "interface"]
+    if any(kw in file_name for kw in tvbox_keywords):
+        return True
+
+    # 2. 内容特征拦截（读取前 500 个字符检查是否为 JSON 结构）
+    try:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+            header_snippet = f.read(500).strip()
+            # 如果文件以 { 或 [ 开头，或者包含典型的 TVBox 结构字段，判定为 TVBox/JSON 配置文件
+            if header_snippet.startswith(("{", "[")) or '"sites"' in header_snippet or '"lives"' in header_snippet:
+                return True
+    except Exception:
+        pass
+
+    return False
+
 def parse_txt_or_m3u(file_path):
     """
-    解析 downloads 文件夹下的 txt 或 m3u 文件，
-    提取出所有的频道名称和对应的完整 URL。
+    安全解析纯 txt 或 m3u 直播源文件
     """
     channels = []
     file_name = os.path.basename(file_path)
+    
+    # 先做安全防崩拦截：如果是 TVBox/JSON 配置文件，直接跳过
+    if is_tvbox_or_json_file(file_path):
+        print(f"🛡️ [安全拦截] 发现 TVBox/JSON 配置文件，已自动跳过: {file_name}", flush=True)
+        return channels
+
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
@@ -45,7 +73,11 @@ def parse_txt_or_m3u(file_path):
             line = line.strip()
             if not line or line.startswith("#") or "http" not in line:
                 continue
-            # 尝试通过逗号分割
+            
+            # 如果单行太长（超过 500 字符），极可能是非法的混淆文本或配置代码，直接跳过防崩
+            if len(line) > 500:
+                continue
+
             if "," in line:
                 parts = line.split(",", 1)
                 name = parts[0].strip()
@@ -53,14 +85,13 @@ def parse_txt_or_m3u(file_path):
                 if url.startswith("http"):
                     channels.append({"name": name, "url": url})
             else:
-                # 试着用空白字符分割
                 parts = line.split()
                 if len(parts) >= 2 and parts[-1].startswith("http"):
                     name = " ".join(parts[:-1]).strip()
                     url = parts[-1].strip()
                     channels.append({"name": name, "url": url})
                     
-        print(f"📄 [文件解析成功] {file_name} -> 有效提取到 {len(channels)} 条频道链接", flush=True)
+        print(f"📄 [文件解析成功] {file_name} -> 提取到 {len(channels)} 条有效直播源", flush=True)
     except Exception as e:
         print(f"❌ [文件解析报错] {file_name} 出错: {e}", flush=True)
     
@@ -76,25 +107,20 @@ def run_processor():
         print(f"❌ 致命错误: 找不到目标目录 {DOWNLOADS_DIR}", flush=True)
         sys.exit(1)
 
-    # 1. 筛选出所有的 txt 和 m3u 文件
     all_files = os.listdir(DOWNLOADS_DIR)
-    target_files = [os.path.join(DOWNLOADS_DIR, f) for f in all_files if f.lower().endswith((".txt", ".m3u"))]
+    target_files = [os.path.join(DOWNLOADS_DIR, f) for f in all_files if f.lower().endswith((".txt", ".m3u", ".json"))]
     
-    print(f"📊 文件夹内总文件数: {len(all_files)} 个 | 符合条件(.txt/.m3u)文件数: {len(target_files)} 个", flush=True)
-    for idx, fpath in enumerate(target_files, 1):
-        print(f"   [{idx}] 待扫描文件: {os.path.basename(fpath)}", flush=True)
+    print(f"📊 文件夹内总文件数: {len(all_files)} 个 | 待检查文件数: {len(target_files)} 个", flush=True)
     print(f"--------------------------------------------------", flush=True)
 
-    # 三大类链接的归类字典：以 host (IP:Port) 为 Key
-    hls_groups = {}     # 对应 /hls/501/index.m3u8
-    ts_groups = {}      # 对应 /tsfile/live/0001_1.m3u8...
-    newlive_groups = {} # 对应 /newlive/live/hls/2/live.m3u8
+    hls_groups = {}     
+    ts_groups = {}      
+    newlive_groups = {} 
     
     all_ip_ports_set = set()
     total_links_found = 0
     stats_matched = {"hls": 0, "ts": 0, "newlive": 0, "ignored": 0}
 
-    # 2. 遍历所有文件提取链接并归类
     for file_path in target_files:
         channels = parse_txt_or_m3u(file_path)
         for ch in channels:
@@ -105,14 +131,13 @@ def run_processor():
 
             total_links_found += 1
             parsed_url = urlparse(url)
-            host = parsed_url.netloc  # 获取 IP:Port
+            host = parsed_url.netloc  
             path = parsed_url.path + (f"?{parsed_url.query}" if parsed_url.query else "")
 
             if not host:
                 stats_matched["ignored"] += 1
                 continue
 
-            # 区分三种目标后缀特征并打印详细捕获日志
             matched = False
             if "/hls/" in path and path.endswith("index.m3u8"):
                 if host not in hls_groups:
@@ -151,7 +176,6 @@ def run_processor():
     print(f"   - 聚合独立 IP+端口 : {len(all_ip_ports_set)} 个", flush=True)
     print(f"--------------------------------------------------", flush=True)
 
-    # 3. 写入前三种分类大文件（按 IP 分组合并）
     def write_grouped_file(filepath, groups_dict, title_tag):
         print(f"✍️ 正在写入 {title_tag} 总表 -> 包含 {len(groups_dict)} 个独立 IP 组", flush=True)
         with open(filepath, "w", encoding="utf-8") as f:
@@ -171,7 +195,6 @@ def run_processor():
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
 
-    # 4. 生成第四个文件：纯 IP+端口 汇总表
     print(f"✍️ 正在写入纯 IP+端口 汇总表 -> 共计 {len(all_ip_ports_set)} 个唯一地址", flush=True)
     with open(OUTPUT_ALL_IP, "w", encoding="utf-8") as f:
         f.write("# ==========================================\n")
@@ -181,11 +204,7 @@ def run_processor():
             f.write(f"{ip_port}\n")
 
     print(f"==================================================", flush=True)
-    print(f"🎉 全部任务圆满成功！生成文件列表：", flush=True)
-    print(f"   1️⃣ HLS总表:     {OUTPUT_HLS}", flush=True)
-    print(f"   2️⃣ TS总表:      {OUTPUT_TS}", flush=True)
-    print(f"   3️⃣ NewLive总表: {OUTPUT_NEWLIVE}", flush=True)
-    print(f"   4️⃣ 纯IP汇总表:  {OUTPUT_ALL_IP}", flush=True)
+    print(f"🎉 全部任务圆满成功！", flush=True)
     print(f"==================================================", flush=True)
 
 if __name__ == "__main__":
