@@ -443,7 +443,7 @@ def run_processor():
     write_grouped_file(OUTPUT_HLS, hls_groups, "HLS类直播源")
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
-
+    
     enhance_output_ts_from_json()
     enhance_output_hls_from_interface()
 
@@ -495,10 +495,11 @@ def run_processor():
             if result_item not in current_results:
                 current_results.append(result_item)
 
-    # 分别将 HLS、TS、NewLive 提取的组别压入 results
-    add_to_results(hls_groups, "hls")
-    add_to_results(ts_groups, "txiptv") # 或根据实际 matchType 适配
-    add_to_results(newlive_groups, "newlive")
+
+    # 分别将 HLS、TS、NewLive 压入 results 并严格对应你的 matchType 标准
+    add_to_results(ts_groups, "txiptv")        # 对应 /tsfile/live/
+    add_to_results(hls_groups, "zhgxtv")       # 对应 /hls/
+    add_to_results(newlive_groups, "hsmdtv")   # 对应 /newlive/live/hls/
 
     current_count = len(current_results)
 
