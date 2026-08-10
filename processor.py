@@ -27,6 +27,7 @@ def parse_txt_or_m3u(file_path):
     提取出所有的频道名称和对应的完整 URL。
     """
     channels = []
+    file_name = os.path.basename(file_path)
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
@@ -44,7 +45,7 @@ def parse_txt_or_m3u(file_path):
             line = line.strip()
             if not line or line.startswith("#") or "http" not in line:
                 continue
-            # 尝试通过逗号或空格分割
+            # 尝试通过逗号分割
             if "," in line:
                 parts = line.split(",", 1)
                 name = parts[0].strip()
@@ -52,44 +53,51 @@ def parse_txt_or_m3u(file_path):
                 if url.startswith("http"):
                     channels.append({"name": name, "url": url})
             else:
-                # 如果没有逗号，试着用空白字符分割
+                # 试着用空白字符分割
                 parts = line.split()
                 if len(parts) >= 2 and parts[-1].startswith("http"):
                     name = " ".join(parts[:-1]).strip()
                     url = parts[-1].strip()
                     channels.append({"name": name, "url": url})
+                    
+        print(f"📄 [文件解析成功] {file_name} -> 有效提取到 {len(channels)} 条频道链接", flush=True)
     except Exception as e:
-        print(f"⚠️ 解析文件出错 {file_path}: {e}", flush=True)
+        print(f"❌ [文件解析报错] {file_name} 出错: {e}", flush=True)
     
     return channels
 
 def run_processor():
-    print(f"📂 正在扫描 downloads 文件夹: {DOWNLOADS_DIR}", flush=True)
+    print(f"==================================================", flush=True)
+    print(f"🚀 开始执行直播源智能分类与IP聚合任务", flush=True)
+    print(f"📂 目标文件夹路径: {DOWNLOADS_DIR}", flush=True)
+    print(f"==================================================", flush=True)
+
     if not os.path.exists(DOWNLOADS_DIR):
         print(f"❌ 致命错误: 找不到目标目录 {DOWNLOADS_DIR}", flush=True)
         sys.exit(1)
 
-    # 1. 区分并筛选出所有的 txt 和 m3u 文件
-    target_files = [os.path.join(DOWNLOADS_DIR, f) for f in os.listdir(DOWNLOADS_DIR) 
-                    if f.lower().endswith((".txt", ".m3u"))]
-    print(f"📊 共发现 {len(target_files)} 个源文件，开始提取与分类...", flush=True)
+    # 1. 筛选出所有的 txt 和 m3u 文件
+    all_files = os.listdir(DOWNLOADS_DIR)
+    target_files = [os.path.join(DOWNLOADS_DIR, f) for f in all_files if f.lower().endswith((".txt", ".m3u"))]
+    
+    print(f"📊 文件夹内总文件数: {len(all_files)} 个 | 符合条件(.txt/.m3u)文件数: {len(target_files)} 个", flush=True)
+    for idx, fpath in enumerate(target_files, 1):
+        print(f"   [{idx}] 待扫描文件: {os.path.basename(fpath)}", flush=True)
+    print(f"--------------------------------------------------", flush=True)
 
-    # 三大类链接的归类字典：以 host (IP:Port) 为 Key，存放其包含的频道列表
+    # 三大类链接的归类字典：以 host (IP:Port) 为 Key
     hls_groups = {}     # 对应 /hls/501/index.m3u8
     ts_groups = {}      # 对应 /tsfile/live/0001_1.m3u8...
     newlive_groups = {} # 对应 /newlive/live/hls/2/live.m3u8
     
-    # 记录所有涉及的 IP+端口 集合（用于生成第四个大文件）
     all_ip_ports_set = set()
-
     total_links_found = 0
+    stats_matched = {"hls": 0, "ts": 0, "newlive": 0, "ignored": 0}
 
     # 2. 遍历所有文件提取链接并归类
     for file_path in target_files:
         channels = parse_txt_or_m3u(file_path)
         for ch in channels:
-            url = ch["name"] and ch["url"] and ch["url"] or (ch["url"] if isinstance(ch, dict) else "")
-            # 兼容处理
             name = ch.get("name", "未知频道")
             url = ch.get("url", "")
             if not url:
@@ -101,39 +109,57 @@ def run_processor():
             path = parsed_url.path + (f"?{parsed_url.query}" if parsed_url.query else "")
 
             if not host:
+                stats_matched["ignored"] += 1
                 continue
 
-            # 区分三种目标后缀特征
+            # 区分三种目标后缀特征并打印详细捕获日志
+            matched = False
             if "/hls/" in path and path.endswith("index.m3u8"):
                 if host not in hls_groups:
                     hls_groups[host] = []
                 hls_groups[host].append({"name": name, "path": path})
                 all_ip_ports_set.add(host)
+                stats_matched["hls"] += 1
+                matched = True
 
             elif "/tsfile/live/" in path:
                 if host not in ts_groups:
                     ts_groups[host] = []
                 ts_groups[host].append({"name": name, "path": path})
                 all_ip_ports_set.add(host)
+                stats_matched["ts"] += 1
+                matched = True
 
             elif "/newlive/live/hls/" in path:
                 if host not in newlive_groups:
                     newlive_groups[host] = []
                 newlive_groups[host].append({"name": name, "path": path})
                 all_ip_ports_set.add(host)
+                stats_matched["newlive"] += 1
+                matched = True
+            
+            if not matched:
+                stats_matched["ignored"] += 1
 
-    print(f"🔍 检索完成！共扫描处理有效链接条目: {total_links_found} 条", flush=True)
-    print(f"📌 分类统计 -> 类型一(HLS): {len(hls_groups)} 个IP | 类型二(TS): {len(ts_groups)} 个IP | 类型三(NewLive): {len(newlive_groups)} 个IP", flush=True)
+    print(f"--------------------------------------------------", flush=True)
+    print(f"📈 【检索统计看板】", flush=True)
+    print(f"   - 总扫描有效链接数 : {total_links_found} 条", flush=True)
+    print(f"   - 命中 HLS 特征源  : {stats_matched['hls']} 条", flush=True)
+    print(f"   - 命中 TS  特征源  : {stats_matched['ts']} 条", flush=True)
+    print(f"   - 命中 NewLive源   : {stats_matched['newlive']} 条", flush=True)
+    print(f"   - 不符合特征忽略源 : {stats_matched['ignored']} 条", flush=True)
+    print(f"   - 聚合独立 IP+端口 : {len(all_ip_ports_set)} 个", flush=True)
+    print(f"--------------------------------------------------", flush=True)
 
     # 3. 写入前三种分类大文件（按 IP 分组合并）
     def write_grouped_file(filepath, groups_dict, title_tag):
+        print(f"✍️ 正在写入 {title_tag} 总表 -> 包含 {len(groups_dict)} 个独立 IP 组", flush=True)
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(f"# ==========================================\n")
             f.write(f"# 📺 {title_tag} 直播源聚合总表\n")
             f.write(f"# ==========================================\n\n")
             for host, chs in groups_dict.items():
                 f.write(f"{host},#genre#\n")
-                # 去重当前 IP 下同名或同路径的频道
                 seen_paths = set()
                 for c in chs:
                     if c['path'] not in seen_paths:
@@ -145,7 +171,8 @@ def run_processor():
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
 
-    # 4. 生成第四个文件：将包含这三大类特征的所有 IP+端口 汇总生成大文件
+    # 4. 生成第四个文件：纯 IP+端口 汇总表
+    print(f"✍️ 正在写入纯 IP+端口 汇总表 -> 共计 {len(all_ip_ports_set)} 个唯一地址", flush=True)
     with open(OUTPUT_ALL_IP, "w", encoding="utf-8") as f:
         f.write("# ==========================================\n")
         f.write("# 🌐 命中目标特征的全部 IP+端口 汇总清单\n")
@@ -153,11 +180,13 @@ def run_processor():
         for ip_port in sorted(list(all_ip_ports_set)):
             f.write(f"{ip_port}\n")
 
-    print(f"\n✅ 所有文件合并处理完毕！", flush=True)
-    print(f"📁 1. HLS总表已生成: {OUTPUT_HLS}", flush=True)
-    print(f"📁 2. TS总表已生成: {OUTPUT_TS}", flush=True)
-    print(f"📁 3. NewLive总表已生成: {OUTPUT_NEWLIVE}", flush=True)
-    print(f"📁 4. 纯IP+端口汇总表已生成: {OUTPUT_ALL_IP}", flush=True)
+    print(f"==================================================", flush=True)
+    print(f"🎉 全部任务圆满成功！生成文件列表：", flush=True)
+    print(f"   1️⃣ HLS总表:     {OUTPUT_HLS}", flush=True)
+    print(f"   2️⃣ TS总表:      {OUTPUT_TS}", flush=True)
+    print(f"   3️⃣ NewLive总表: {OUTPUT_NEWLIVE}", flush=True)
+    print(f"   4️⃣ 纯IP汇总表:  {OUTPUT_ALL_IP}", flush=True)
+    print(f"==================================================", flush=True)
 
 if __name__ == "__main__":
     run_processor()
