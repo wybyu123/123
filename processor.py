@@ -1,6 +1,8 @@
 import os
 import re
 import sys
+import requests
+import concurrent.futures
 from urllib.parse import urlparse
 
 # ================= ⚡ 跨库核心动态路径锁定 =================
@@ -15,18 +17,19 @@ OUTPUT_NEWLIVE = os.path.join(WORKSPACE, "output_newlive.txt")
 OUTPUT_ALL_IP = os.path.join(WORKSPACE, "output_all_ip.txt")
 # ==========================================================
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
 def is_tvbox_or_json_file(file_path):
     """
     智能检测并识别是否为 TVBox 接口分享文件、JSON 配置文件或非纯直播源文件
     """
     file_name = os.path.basename(file_path).lower()
-    
-    # 1. 名称特征拦截
     tvbox_keywords = ["tvbox", "config", "json", "api", "sub", "setting", "interface"]
     if any(kw in file_name for kw in tvbox_keywords):
         return True
 
-    # 2. 内容特征拦截（读取前 500 个字符检查是否为 JSON 结构）
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             header_snippet = f.read(500).strip()
@@ -48,9 +51,6 @@ def clean_url(url):
     return url.strip()
 
 def parse_txt_or_m3u(file_path):
-    """
-    安全解析纯 txt 或 m3u 直播源文件
-    """
     channels = []
     file_name = os.path.basename(file_path)
     
@@ -62,7 +62,6 @@ def parse_txt_or_m3u(file_path):
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
 
-        # 匹配常规 m3u 格式 (EXTINF + URL)
         m3u_pattern = r'#EXTINF:.*?,(.*?)\n(https?://[^\s,\"\']+)'
         m3u_items = re.findall(m3u_pattern, content)
         if m3u_items:
@@ -71,7 +70,6 @@ def parse_txt_or_m3u(file_path):
                 if clean_u:
                     channels.append({"name": name.strip(), "url": clean_u})
 
-        # 匹配普通文本格式
         lines = content.splitlines()
         for line in lines:
             line = line.strip()
@@ -102,13 +100,7 @@ def parse_txt_or_m3u(file_path):
     return channels
 
 def get_channel_sort_key(channel_item):
-    """
-    自定义排序规则：
-    1. 央视频道（CCTV-1 到 CCTV-17）排在最前，按数字大小严格排序。
-    2. 其他卫视及普通频道排在后面。
-    """
     name = channel_item.get("name", "")
-    # 匹配 CCTV 后面跟着的数字
     m = re.search(r'CCTV[- ]?(\d+)', name, re.IGNORECASE)
     if m:
         return (0, int(m.group(1)), name)
@@ -116,6 +108,122 @@ def get_channel_sort_key(channel_item):
         return (1, 0, name)
     else:
         return (2, 0, name)
+
+def fetch_json_channels(host):
+    """
+    尝试访问 http://host/iptv/live/1000.json?key=txipt 获取对应 IP 的频道信息并解析
+    """
+    test_url = f"http://{host}/iptv/live/1000.json?key=txipt"
+    discovered_channels = []
+    try:
+        r = requests.get(test_url, headers=HEADERS, timeout=3)
+        if r.status_code == 200:
+            data = r.json()
+            # 兼容常见的 JSON 结构解析 (如带有 list, channel, data 等字段)
+            items = []
+            if isinstance(data, list):
+                items = data
+            elif isinstance(data, dict):
+                for k in ["channels", "list", "data", "result"]:
+                    if k in data and isinstance(data[k], list):
+                        items = data[k]
+                        break
+                if not items:
+                    # 如果没找到标准嵌套，尝试遍历 dict 的 values
+                    for v in data.values():
+                        if isinstance(v, list):
+                            items = v
+                            break
+
+            for item in items:
+                if isinstance(item, dict):
+                    name = item.get("name") or item.get("title") or item.get("ChannelName")
+                    url = item.get("url") or item.get("link") or item.get("PlayUrl")
+                    if name and url:
+                        discovered_channels.append({"name": name.strip(), "url": clean_url(url)})
+    except Exception:
+        pass
+    return host, discovered_channels
+
+def enhance_output_ts_from_json():
+    """
+    从 output_ts.txt 中提取所有 IP+端口，利用多线程探测 http://host/iptv/live/1000.json?key=txipt，
+    将发现的内容与 output_ts.txt 比对并自动补全缺少的内容。
+    """
+    if not os.path.exists(OUTPUT_TS):
+        return
+
+    print(f"\n🔍 【智能探测与补全】开始对 output_ts.txt 中的 IP 列表进行 API 探测与补全...", flush=True)
+    
+    # 1. 读取现有的 output_ts.txt 并提取所有的 host (IP:Port) 以及现有频道映射
+    current_groups = {}
+    current_host = None
+    
+    with open(OUTPUT_TS, "r", encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            if ",#genre#" in line:
+                current_host = line.split(",")[0].strip()
+                if current_host not in current_groups:
+                    current_groups[current_host] = set()
+            elif current_host and "," in line:
+                # 记录形如 (name, full_url)
+                parts = line.split(",", 1)
+                current_groups[current_host].add((parts[0].strip(), parts[1].strip()))
+
+    hosts_to_check = list(current_groups.keys())
+    print(f"📡 提取到待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
+
+    # 2. 多线程并发请求目标 JSON 接口
+    new_found_count = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+        futures = {executor.submit(fetch_json_channels, host): host for host in hosts_to_check}
+        for future in concurrent.futures.as_completed(futures):
+            host, remote_channels = future.result()
+            if not remote_channels:
+                continue
+            
+            if host not in current_groups:
+                current_groups[host] = set()
+
+            existing_paths = {urlparse(url).path for _, url in current_groups[host]}
+            
+            for ch in remote_channels:
+                c_name = ch["name"]
+                c_url = ch["url"]
+                c_path = urlparse(c_url).path + (f"?{urlparse(c_url).query}" if urlparse(c_url).query else "")
+                
+                # 如果发现路径不在当前该 IP 的记录中，则补全添加
+                if c_path not in existing_paths:
+                    # 确保 url 是基于当前 host 的完整链接
+                    full_url = f"http://{host}{c_path}"
+                    current_groups[host].add((c_name, full_url))
+                    existing_paths.add(c_path)
+                    new_found_count += 1
+
+    print(f"✨ 探测补全完毕！共为 output_ts.txt 补全了 {new_found_count} 条遗漏的高效直播源。", flush=True)
+
+    # 3. 重新格式化并写回 output_ts.txt
+    with open(OUTPUT_TS, "w", encoding="utf-8") as f:
+        f.write("# ==========================================\n")
+        f.write("# 📺 TS类直播源聚合总表 (含API智能补全)\n")
+        f.write("# ==========================================\n\n")
+        
+        for host, ch_set in current_groups.items():
+            f.write(f"{host},#genre#\n")
+            
+            # 转为字典列表以便排序
+            chs_list = [{"name": item[0], "url": item[1], "path": urlparse(item[1]).path} for item in ch_set]
+            sorted_chs = sorted(chs_list, key=get_channel_sort_key)
+            
+            seen_paths = set()
+            for c in sorted_chs:
+                if c['path'] not in seen_paths:
+                    seen_paths.add(c['path'])
+                    f.write(f"{c['name']},{c['url']}\n")
+            f.write("\n")
 
 def run_processor():
     print(f"==================================================", flush=True)
@@ -204,10 +312,7 @@ def run_processor():
             f.write(f"# ==========================================\n\n")
             for host, chs in groups_dict.items():
                 f.write(f"{host},#genre#\n")
-                
-                # 💡 对当前 IP 组内的频道进行智能排序（央视 1-17 优先，其次卫视及其他）
                 sorted_chs = sorted(chs, key=get_channel_sort_key)
-                
                 seen_paths = set()
                 for c in sorted_chs:
                     if c['path'] not in seen_paths:
@@ -218,6 +323,9 @@ def run_processor():
     write_grouped_file(OUTPUT_HLS, hls_groups, "HLS类直播源")
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
+
+    # 💡 核心新增功能：对 output_ts.txt 的 IP 进行存活探测与 API 自动补全
+    enhance_output_ts_from_json()
 
     print(f"✍️ 正在写入纯 IP+端口 汇总表 -> 共计 {len(all_ip_ports_set)} 个唯一地址", flush=True)
     with open(OUTPUT_ALL_IP, "w", encoding="utf-8") as f:
