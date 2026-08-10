@@ -111,7 +111,7 @@ def get_channel_sort_key(channel_item):
 
 def fetch_json_channels(host):
     """
-    尝试访问 http://host/iptv/live/1000.json?key=txipt 获取对应 IP 的频道信息并解析
+    (TS类) 尝试访问 http://host/iptv/live/1000.json?key=txipt 获取对应 IP 的频道信息并解析
     """
     test_url = f"http://{host}/iptv/live/1000.json?key=txipt"
     discovered_channels = []
@@ -119,7 +119,6 @@ def fetch_json_channels(host):
         r = requests.get(test_url, headers=HEADERS, timeout=3)
         if r.status_code == 200:
             data = r.json()
-            # 兼容常见的 JSON 结构解析 (如带有 list, channel, data 等字段)
             items = []
             if isinstance(data, list):
                 items = data
@@ -129,7 +128,6 @@ def fetch_json_channels(host):
                         items = data[k]
                         break
                 if not items:
-                    # 如果没找到标准嵌套，尝试遍历 dict 的 values
                     for v in data.values():
                         if isinstance(v, list):
                             items = v
@@ -145,17 +143,56 @@ def fetch_json_channels(host):
         pass
     return host, discovered_channels
 
+def fetch_zhgxtv_channels(host):
+    """
+    (HLS类) 访问 http://host/ZHGXTV/Public/json/live_interface.txt
+    解析里面的频道列表，并将其中包含的内网 IP 替换为当前外网 host
+    """
+    test_url = f"http://{host}/ZHGXTV/Public/json/live_interface.txt"
+    discovered_channels = []
+    try:
+        r = requests.get(test_url, headers=HEADERS, timeout=3)
+        if r.status_code == 200:
+            content = r.text
+            # 兼容解析该文本接口（通常每行或通过特定格式呈现，如 名称,URL 或 JSON/文本混合）
+            # 这里支持常见的 csv 格式以及类似 m3u/文本格式
+            lines = content.splitlines()
+            for line in lines:
+                line = line.strip()
+                if not line or line.startswith("#") or "http" not in line:
+                    continue
+                
+                if "," in line:
+                    parts = line.split(",", 1)
+                    name = parts[0].strip()
+                    url = clean_url(parts[1])
+                else:
+                    parts = line.split()
+                    if len(parts) >= 2 and parts[-1].startswith("http"):
+                        name = " ".join(parts[:-1]).strip()
+                        url = clean_url(parts[-1])
+                    else:
+                        continue
+
+                if name and url.startswith("http"):
+                    # 💡 核心点：将远程接口中可能存在的内网 IP 替换为当前外网有效 host (IP:Port)
+                    parsed_sub = urlparse(url)
+                    path_query = parsed_sub.path + (f"?{parsed_sub.query}" if parsed_sub.query else "")
+                    new_url = f"http://{host}{path_query}"
+                    discovered_channels.append({"name": name, "url": new_url})
+    except Exception:
+        pass
+    return host, discovered_channels
+
 def enhance_output_ts_from_json():
     """
-    从 output_ts.txt 中提取所有 IP+端口，利用多线程探测 http://host/iptv/live/1000.json?key=txipt，
-    将发现的内容与 output_ts.txt 比对并自动补全缺少的内容。
+    从 output_ts.txt 中提取所有 IP+端口，利用多线程探测 http://host/iptv/live/1000.json?key=txipt 进行补全
     """
     if not os.path.exists(OUTPUT_TS):
         return
 
-    print(f"\n🔍 【智能探测与补全】开始对 output_ts.txt 中的 IP 列表进行 API 探测与补全...", flush=True)
+    print(f"\n🔍 【TS类智能探测与补全】开始对 output_ts.txt 中的 IP 列表进行 API 探测与补全...", flush=True)
     
-    # 1. 读取现有的 output_ts.txt 并提取所有的 host (IP:Port) 以及现有频道映射
     current_groups = {}
     current_host = None
     
@@ -169,14 +206,12 @@ def enhance_output_ts_from_json():
                 if current_host not in current_groups:
                     current_groups[current_host] = set()
             elif current_host and "," in line:
-                # 记录形如 (name, full_url)
                 parts = line.split(",", 1)
                 current_groups[current_host].add((parts[0].strip(), parts[1].strip()))
 
     hosts_to_check = list(current_groups.keys())
-    print(f"📡 提取到待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
+    print(f"📡 TS类待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
 
-    # 2. 多线程并发请求目标 JSON 接口
     new_found_count = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         futures = {executor.submit(fetch_json_channels, host): host for host in hosts_to_check}
@@ -195,17 +230,14 @@ def enhance_output_ts_from_json():
                 c_url = ch["url"]
                 c_path = urlparse(c_url).path + (f"?{urlparse(c_url).query}" if urlparse(c_url).query else "")
                 
-                # 如果发现路径不在当前该 IP 的记录中，则补全添加
                 if c_path not in existing_paths:
-                    # 确保 url 是基于当前 host 的完整链接
                     full_url = f"http://{host}{c_path}"
                     current_groups[host].add((c_name, full_url))
                     existing_paths.add(c_path)
                     new_found_count += 1
 
-    print(f"✨ 探测补全完毕！共为 output_ts.txt 补全了 {new_found_count} 条遗漏的高效直播源。", flush=True)
+    print(f"✨ TS类探测补全完毕！共补全了 {new_found_count} 条高清直播源。", flush=True)
 
-    # 3. 重新格式化并写回 output_ts.txt
     with open(OUTPUT_TS, "w", encoding="utf-8") as f:
         f.write("# ==========================================\n")
         f.write("# 📺 TS类直播源聚合总表 (含API智能补全)\n")
@@ -213,8 +245,78 @@ def enhance_output_ts_from_json():
         
         for host, ch_set in current_groups.items():
             f.write(f"{host},#genre#\n")
+            chs_list = [{"name": item[0], "url": item[1], "path": urlparse(item[1]).path} for item in ch_set]
+            sorted_chs = sorted(chs_list, key=get_channel_sort_key)
             
-            # 转为字典列表以便排序
+            seen_paths = set()
+            for c in sorted_chs:
+                if c['path'] not in seen_paths:
+                    seen_paths.add(c['path'])
+                    f.write(f"{c['name']},{c['url']}\n")
+            f.write("\n")
+
+def enhance_output_hls_from_interface():
+    """
+    (💡 核心新增) 从 output_hls.txt 中提取所有 IP+端口，
+    访问 http://host/ZHGXTV/Public/json/live_interface.txt，
+    动态替换内网IP并与 output_hls.txt 比对补全缺少的内容。
+    """
+    if not os.path.exists(OUTPUT_HLS):
+        return
+
+    print(f"\n🔍 【HLS类智能探测与补全】开始对 output_hls.txt 中的 IP 列表进行 ZHGXTV 接口探测与补全...", flush=True)
+    
+    current_groups = {}
+    current_host = None
+    
+    with open(OUTPUT_HLS, "r", encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            if ",#genre#" in line:
+                current_host = line.split(",")[0].strip()
+                if current_host not in current_groups:
+                    current_groups[current_host] = set()
+            elif current_host and "," in line:
+                parts = line.split(",", 1)
+                current_groups[current_host].add((parts[0].strip(), parts[1].strip()))
+
+    hosts_to_check = list(current_groups.keys())
+    print(f"📡 HLS类待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
+
+    new_found_count = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+        futures = {executor.submit(fetch_zhgxtv_channels, host): host for host in hosts_to_check}
+        for future in concurrent.futures.as_completed(futures):
+            host, remote_channels = future.result()
+            if not remote_channels:
+                continue
+            
+            if host not in current_groups:
+                current_groups[host] = set()
+
+            existing_paths = {urlparse(url).path for _, url in current_groups[host]}
+            
+            for ch in remote_channels:
+                c_name = ch["name"]
+                c_url = ch["url"]
+                c_path = urlparse(c_url).path + (f"?{urlparse(c_url).query}" if urlparse(c_url).query else "")
+                
+                if c_path not in existing_paths:
+                    current_groups[host].add((c_name, c_url))
+                    existing_paths.add(c_path)
+                    new_found_count += 1
+
+    print(f"✨ HLS类探测补全完毕！共通过 ZHGXTV 接口补全了 {new_found_count} 条高质直播源。", flush=True)
+
+    with open(OUTPUT_HLS, "w", encoding="utf-8") as f:
+        f.write("# ==========================================\n")
+        f.write("# 📺 HLS类直播源聚合总表 (含ZHGXTV接口智能补全)\n")
+        f.write("# ==========================================\n\n")
+        
+        for host, ch_set in current_groups.items():
+            f.write(f"{host},#genre#\n")
             chs_list = [{"name": item[0], "url": item[1], "path": urlparse(item[1]).path} for item in ch_set]
             sorted_chs = sorted(chs_list, key=get_channel_sort_key)
             
@@ -324,8 +426,9 @@ def run_processor():
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
 
-    # 💡 核心新增功能：对 output_ts.txt 的 IP 进行存活探测与 API 自动补全
+    # 💡 依次进行 TS 与 HLS 的接口探测、内网IP转换与智能补全
     enhance_output_ts_from_json()
+    enhance_output_hls_from_interface()
 
     print(f"✍️ 正在写入纯 IP+端口 汇总表 -> 共计 {len(all_ip_ports_set)} 个唯一地址", flush=True)
     with open(OUTPUT_ALL_IP, "w", encoding="utf-8") as f:
