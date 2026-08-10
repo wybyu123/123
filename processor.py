@@ -1,7 +1,5 @@
 import os
 import re
-import requests
-import concurrent.futures
 import sys
 from urllib.parse import urlparse
 
@@ -16,10 +14,6 @@ OUTPUT_TS = os.path.join(WORKSPACE, "output_ts.txt")
 OUTPUT_NEWLIVE = os.path.join(WORKSPACE, "output_newlive.txt")
 OUTPUT_ALL_IP = os.path.join(WORKSPACE, "output_all_ip.txt")
 # ==========================================================
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-}
 
 def is_tvbox_or_json_file(file_path):
     """
@@ -36,13 +30,22 @@ def is_tvbox_or_json_file(file_path):
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             header_snippet = f.read(500).strip()
-            # 如果文件以 { 或 [ 开头，或者包含典型的 TVBox 结构字段，判定为 TVBox/JSON 配置文件
             if header_snippet.startswith(("{", "[")) or '"sites"' in header_snippet or '"lives"' in header_snippet:
                 return True
     except Exception:
         pass
 
     return False
+
+def clean_url(url):
+    """
+    清理 URL：如果包含 $ 符号，截断 $ 符号及后面的所有注释内容
+    """
+    if not url:
+        return ""
+    if "$" in url:
+        url = url.split("$", 1)[0]
+    return url.strip()
 
 def parse_txt_or_m3u(file_path):
     """
@@ -51,7 +54,6 @@ def parse_txt_or_m3u(file_path):
     channels = []
     file_name = os.path.basename(file_path)
     
-    # 先做安全防崩拦截：如果是 TVBox/JSON 配置文件，直接跳过
     if is_tvbox_or_json_file(file_path):
         print(f"🛡️ [安全拦截] 发现 TVBox/JSON 配置文件，已自动跳过: {file_name}", flush=True)
         return channels
@@ -65,31 +67,33 @@ def parse_txt_or_m3u(file_path):
         m3u_items = re.findall(m3u_pattern, content)
         if m3u_items:
             for name, url in m3u_items:
-                channels.append({"name": name.strip(), "url": url.strip()})
+                clean_u = clean_url(url)
+                if clean_u:
+                    channels.append({"name": name.strip(), "url": clean_u})
 
-        # 匹配普通文本格式 (名称,URL 或 名称 URL)
+        # 匹配普通文本格式
         lines = content.splitlines()
         for line in lines:
             line = line.strip()
             if not line or line.startswith("#") or "http" not in line:
                 continue
             
-            # 如果单行太长（超过 500 字符），极可能是非法的混淆文本或配置代码，直接跳过防崩
             if len(line) > 500:
                 continue
 
             if "," in line:
                 parts = line.split(",", 1)
                 name = parts[0].strip()
-                url = parts[1].strip()
+                url = clean_url(parts[1])
                 if url.startswith("http"):
                     channels.append({"name": name, "url": url})
             else:
                 parts = line.split()
                 if len(parts) >= 2 and parts[-1].startswith("http"):
                     name = " ".join(parts[:-1]).strip()
-                    url = parts[-1].strip()
-                    channels.append({"name": name, "url": url})
+                    url = clean_url(parts[-1])
+                    if url.startswith("http"):
+                        channels.append({"name": name, "url": url})
                     
         print(f"📄 [文件解析成功] {file_name} -> 提取到 {len(channels)} 条有效直播源", flush=True)
     except Exception as e:
@@ -97,9 +101,25 @@ def parse_txt_or_m3u(file_path):
     
     return channels
 
+def get_channel_sort_key(channel_item):
+    """
+    自定义排序规则：
+    1. 央视频道（CCTV-1 到 CCTV-17）排在最前，按数字大小严格排序。
+    2. 其他卫视及普通频道排在后面。
+    """
+    name = channel_item.get("name", "")
+    # 匹配 CCTV 后面跟着的数字
+    m = re.search(r'CCTV[- ]?(\d+)', name, re.IGNORECASE)
+    if m:
+        return (0, int(m.group(1)), name)
+    elif "卫视" in name:
+        return (1, 0, name)
+    else:
+        return (2, 0, name)
+
 def run_processor():
     print(f"==================================================", flush=True)
-    print(f"🚀 开始执行直播源智能分类与IP聚合任务", flush=True)
+    print(f"🚀 开始执行直播源智能分类、清理与IP聚合任务", flush=True)
     print(f"📂 目标文件夹路径: {DOWNLOADS_DIR}", flush=True)
     print(f"==================================================", flush=True)
 
@@ -184,8 +204,12 @@ def run_processor():
             f.write(f"# ==========================================\n\n")
             for host, chs in groups_dict.items():
                 f.write(f"{host},#genre#\n")
+                
+                # 💡 对当前 IP 组内的频道进行智能排序（央视 1-17 优先，其次卫视及其他）
+                sorted_chs = sorted(chs, key=get_channel_sort_key)
+                
                 seen_paths = set()
-                for c in chs:
+                for c in sorted_chs:
                     if c['path'] not in seen_paths:
                         seen_paths.add(c['path'])
                         f.write(f"{c['name']},http://{host}{c['path']}\n")
