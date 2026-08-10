@@ -1,0 +1,41 @@
+name: Run IPTV Processors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # 每天定时运行一次，可根据需要自行修改
+
+jobs:
+  build:
+  # 如果你的脚本和 downloads 文件夹存放在私库或指定仓库中，请确保 checkout 对应仓库
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Script
+        env:
+          # 动态工作目录绑定（如需指定绝对或相对路径，可在此调整）
+          LIVE_WORKSPACE: ${{ github.workspace }}
+        run: |
+          # 运行你刚才编写的处理脚本（请根据脚本实际存放路径调整文件名，例如 md/processor.py）
+          python md/processor.py
+
+      - name: Commit and Push Results
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Auto-update IPTV merged results [skip ci]" || exit 0
+          git push
