@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import json
 import requests
 import concurrent.futures
 from urllib.parse import urlparse
@@ -10,11 +11,11 @@ WORKSPACE = os.environ.get("LIVE_WORKSPACE", os.path.dirname(os.path.dirname(os.
 
 DOWNLOADS_DIR = os.path.join(WORKSPACE, "downloads")  # 指向下载/解析的 txt 文件夹
 
-# 四种目标大文件的输出路径
+# 四种目标大文件的输出路径 (已将 OUTPUT_ALL_IP 替换为 JSON 格式路径)
 OUTPUT_HLS = os.path.join(WORKSPACE, "output_hls.txt")
 OUTPUT_TS = os.path.join(WORKSPACE, "output_ts.txt")
 OUTPUT_NEWLIVE = os.path.join(WORKSPACE, "output_newlive.txt")
-OUTPUT_ALL_IP = os.path.join(WORKSPACE, "output_all_ip.txt")
+OUTPUT_JSON = os.path.join(WORKSPACE, "iptvs_data.json")
 # ==========================================================
 
 HEADERS = {
@@ -23,13 +24,12 @@ HEADERS = {
 
 def fix_mojibake(text):
     """
-    智能修复由于编码错位产生的中文乱码（如 CCTV-å¨±ä¹ -> CCTV-娱乐）
+    智能修复由于编码错位产生的中文乱码（如 CCTV-å¨±ä¹  -> CCTV-娱乐）
     """
     if not text:
         return ""
     text = text.strip()
     try:
-        # 尝试通过 latin1 编码回字节，再用 utf-8 解码还原中文
         fixed = text.encode('latin1').decode('utf-8')
         return fixed
     except Exception:
@@ -125,9 +125,6 @@ def get_channel_sort_key(channel_item):
         return (2, 0, name)
 
 def fetch_json_channels(host):
-    """
-    (TS类) 尝试访问 http://host/iptv/live/1000.json?key=txipt 获取对应 IP 的频道信息并解析
-    """
     test_url = f"http://{host}/iptv/live/1000.json?key=txipt"
     discovered_channels = []
     try:
@@ -160,10 +157,6 @@ def fetch_json_channels(host):
     return host, discovered_channels
 
 def fetch_zhgxtv_channels(host):
-    """
-    (HLS类) 访问 http://host/ZHGXTV/Public/json/live_interface.txt
-    解析里面的频道列表，并将其中包含的内网 IP 替换为当前外网 host
-    """
     test_url = f"http://{host}/ZHGXTV/Public/json/live_interface.txt"
     discovered_channels = []
     try:
@@ -368,7 +361,11 @@ def run_processor():
     ts_groups = {}      
     newlive_groups = {} 
     
-    all_ip_ports_set = set()
+    # 用于分类记录各类 IP 信息
+    hls_ips = set()
+    ts_ips = set()
+    newlive_ips = set()
+    
     total_links_found = 0
     stats_matched = {"hls": 0, "ts": 0, "newlive": 0, "ignored": 0}
 
@@ -394,7 +391,7 @@ def run_processor():
                 if host not in hls_groups:
                     hls_groups[host] = []
                 hls_groups[host].append({"name": name, "path": path})
-                all_ip_ports_set.add(host)
+                hls_ips.add(host)
                 stats_matched["hls"] += 1
                 matched = True
 
@@ -402,7 +399,7 @@ def run_processor():
                 if host not in ts_groups:
                     ts_groups[host] = []
                 ts_groups[host].append({"name": name, "path": path})
-                all_ip_ports_set.add(host)
+                ts_ips.add(host)
                 stats_matched["ts"] += 1
                 matched = True
 
@@ -410,7 +407,7 @@ def run_processor():
                 if host not in newlive_groups:
                     newlive_groups[host] = []
                 newlive_groups[host].append({"name": name, "path": path})
-                all_ip_ports_set.add(host)
+                newlive_ips.add(host)
                 stats_matched["newlive"] += 1
                 matched = True
             
@@ -424,7 +421,6 @@ def run_processor():
     print(f"   - 命中 TS  特征源  : {stats_matched['ts']} 条", flush=True)
     print(f"   - 命中 NewLive源   : {stats_matched['newlive']} 条", flush=True)
     print(f"   - 不符合特征忽略源 : {stats_matched['ignored']} 条", flush=True)
-    print(f"   - 聚合独立 IP+端口 : {len(all_ip_ports_set)} 个", flush=True)
     print(f"--------------------------------------------------", flush=True)
 
     def write_grouped_file(filepath, groups_dict, title_tag):
@@ -450,13 +446,18 @@ def run_processor():
     enhance_output_ts_from_json()
     enhance_output_hls_from_interface()
 
-    print(f"✍️ 正在写入纯 IP+端口 汇总表 -> 共计 {len(all_ip_ports_set)} 个唯一地址", flush=True)
-    with open(OUTPUT_ALL_IP, "w", encoding="utf-8") as f:
-        f.write("# ==========================================\n")
-        f.write("# 🌐 命中目标特征的全部 IP+端口 汇总清单\n")
-        f.write("# ==========================================\n\n")
-        for ip_port in sorted(list(all_ip_ports_set)):
-            f.write(f"{ip_port}\n")
+    # ================= 🌐 写入分类结构化 JSON 文件 =================
+    print(f"✍️ 正在生成并写入结构化 JSON 文件 -> {OUTPUT_JSON}", flush=True)
+    
+    iptvs_data = {
+        "hls_ips": sorted(list(hls_ips)),
+        "ts_ips": sorted(list(ts_ips)),
+        "newlive_ips": sorted(list(newlive_ips)),
+        "all_unique_ips": sorted(list(hls_ips | ts_ips | newlive_ips))
+    }
+
+    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+        json.dump(iptvs_data, f, ensure_ascii=False, indent=4)
 
     print(f"==================================================", flush=True)
     print(f"🎉 全部任务圆满成功！", flush=True)
