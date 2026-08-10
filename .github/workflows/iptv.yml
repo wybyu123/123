@@ -30,7 +30,7 @@ jobs:
           LIVE_WORKSPACE: ${{ github.workspace }}
         run: |
           # 运行你刚才编写的处理脚本（请根据脚本实际存放路径调整文件名，例如 md/processor.py）
-          python md/processor.py
+          python processor.py
 
       - name: Commit and Push Results
         run: |
