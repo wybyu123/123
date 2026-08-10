@@ -21,6 +21,20 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
+def fix_mojibake(text):
+    """
+    智能修复由于编码错位产生的中文乱码（如 CCTV-å¨±ä¹ -> CCTV-娱乐）
+    """
+    if not text:
+        return ""
+    text = text.strip()
+    try:
+        # 尝试通过 latin1 编码回字节，再用 utf-8 解码还原中文
+        fixed = text.encode('latin1').decode('utf-8')
+        return fixed
+    except Exception:
+        return text
+
 def is_tvbox_or_json_file(file_path):
     """
     智能检测并识别是否为 TVBox 接口分享文件、JSON 配置文件或非纯直播源文件
@@ -67,8 +81,9 @@ def parse_txt_or_m3u(file_path):
         if m3u_items:
             for name, url in m3u_items:
                 clean_u = clean_url(url)
-                if clean_u:
-                    channels.append({"name": name.strip(), "url": clean_u})
+                fixed_name = fix_mojibake(name)
+                if clean_u and fixed_name:
+                    channels.append({"name": fixed_name, "url": clean_u})
 
         lines = content.splitlines()
         for line in lines:
@@ -81,16 +96,16 @@ def parse_txt_or_m3u(file_path):
 
             if "," in line:
                 parts = line.split(",", 1)
-                name = parts[0].strip()
+                name = fix_mojibake(parts[0])
                 url = clean_url(parts[1])
-                if url.startswith("http"):
+                if url.startswith("http") and name:
                     channels.append({"name": name, "url": url})
             else:
                 parts = line.split()
                 if len(parts) >= 2 and parts[-1].startswith("http"):
-                    name = " ".join(parts[:-1]).strip()
+                    name = fix_mojibake(" ".join(parts[:-1]))
                     url = clean_url(parts[-1])
-                    if url.startswith("http"):
+                    if url.startswith("http") and name:
                         channels.append({"name": name, "url": url})
                     
         print(f"📄 [文件解析成功] {file_name} -> 提取到 {len(channels)} 条有效直播源", flush=True)
@@ -135,10 +150,11 @@ def fetch_json_channels(host):
 
             for item in items:
                 if isinstance(item, dict):
-                    name = item.get("name") or item.get("title") or item.get("ChannelName")
+                    raw_name = item.get("name") or item.get("title") or item.get("ChannelName")
+                    name = fix_mojibake(raw_name)
                     url = item.get("url") or item.get("link") or item.get("PlayUrl")
                     if name and url:
-                        discovered_channels.append({"name": name.strip(), "url": clean_url(url)})
+                        discovered_channels.append({"name": name, "url": clean_url(url)})
     except Exception:
         pass
     return host, discovered_channels
@@ -154,8 +170,6 @@ def fetch_zhgxtv_channels(host):
         r = requests.get(test_url, headers=HEADERS, timeout=3)
         if r.status_code == 200:
             content = r.text
-            # 兼容解析该文本接口（通常每行或通过特定格式呈现，如 名称,URL 或 JSON/文本混合）
-            # 这里支持常见的 csv 格式以及类似 m3u/文本格式
             lines = content.splitlines()
             for line in lines:
                 line = line.strip()
@@ -164,18 +178,17 @@ def fetch_zhgxtv_channels(host):
                 
                 if "," in line:
                     parts = line.split(",", 1)
-                    name = parts[0].strip()
+                    name = fix_mojibake(parts[0])
                     url = clean_url(parts[1])
                 else:
                     parts = line.split()
                     if len(parts) >= 2 and parts[-1].startswith("http"):
-                        name = " ".join(parts[:-1]).strip()
+                        name = fix_mojibake(" ".join(parts[:-1]))
                         url = clean_url(parts[-1])
                     else:
                         continue
 
                 if name and url.startswith("http"):
-                    # 💡 核心点：将远程接口中可能存在的内网 IP 替换为当前外网有效 host (IP:Port)
                     parsed_sub = urlparse(url)
                     path_query = parsed_sub.path + (f"?{parsed_sub.query}" if parsed_sub.query else "")
                     new_url = f"http://{host}{path_query}"
@@ -185,9 +198,6 @@ def fetch_zhgxtv_channels(host):
     return host, discovered_channels
 
 def enhance_output_ts_from_json():
-    """
-    从 output_ts.txt 中提取所有 IP+端口，利用多线程探测 http://host/iptv/live/1000.json?key=txipt 进行补全
-    """
     if not os.path.exists(OUTPUT_TS):
         return
 
@@ -207,12 +217,14 @@ def enhance_output_ts_from_json():
                     current_groups[current_host] = set()
             elif current_host and "," in line:
                 parts = line.split(",", 1)
-                current_groups[current_host].add((parts[0].strip(), parts[1].strip()))
+                current_groups[current_host].add((fix_mojibake(parts[0]), parts[1].strip()))
 
     hosts_to_check = list(current_groups.keys())
     print(f"📡 TS类待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
 
-    new_found_count = 0
+    total_new_found = 0
+    success_ip_count = 0
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         futures = {executor.submit(fetch_json_channels, host): host for host in hosts_to_check}
         for future in concurrent.futures.as_completed(futures):
@@ -225,8 +237,9 @@ def enhance_output_ts_from_json():
 
             existing_paths = {urlparse(url).path for _, url in current_groups[host]}
             
+            ip_added = 0
             for ch in remote_channels:
-                c_name = ch["name"]
+                c_name = fix_mojibake(ch["name"])
                 c_url = ch["url"]
                 c_path = urlparse(c_url).path + (f"?{urlparse(c_url).query}" if urlparse(c_url).query else "")
                 
@@ -234,13 +247,18 @@ def enhance_output_ts_from_json():
                     full_url = f"http://{host}{c_path}"
                     current_groups[host].add((c_name, full_url))
                     existing_paths.add(c_path)
-                    new_found_count += 1
+                    ip_added += 1
 
-    print(f"✨ TS类探测补全完毕！共补全了 {new_found_count} 条高清直播源。", flush=True)
+            if ip_added > 0:
+                success_ip_count += 1
+                total_new_found += ip_added
+                print(f"   🎯 [TS破解成功] IP: {host} -> 成功连通并扩充了 {ip_added} 个新频道", flush=True)
+
+    print(f"✨ TS类探测补全完毕！共成功破解 {success_ip_count} 个 IP，累计补全 {total_new_found} 条高清直播源。", flush=True)
 
     with open(OUTPUT_TS, "w", encoding="utf-8") as f:
         f.write("# ==========================================\n")
-        f.write("# 📺 TS类直播源聚合总表 (含API智能补全)\n")
+        f.write("# 📺 TS类直播源聚合总表 (含API智能补全与中文纠错)\n")
         f.write("# ==========================================\n\n")
         
         for host, ch_set in current_groups.items():
@@ -256,11 +274,6 @@ def enhance_output_ts_from_json():
             f.write("\n")
 
 def enhance_output_hls_from_interface():
-    """
-    (💡 核心新增) 从 output_hls.txt 中提取所有 IP+端口，
-    访问 http://host/ZHGXTV/Public/json/live_interface.txt，
-    动态替换内网IP并与 output_hls.txt 比对补全缺少的内容。
-    """
     if not os.path.exists(OUTPUT_HLS):
         return
 
@@ -280,12 +293,14 @@ def enhance_output_hls_from_interface():
                     current_groups[current_host] = set()
             elif current_host and "," in line:
                 parts = line.split(",", 1)
-                current_groups[current_host].add((parts[0].strip(), parts[1].strip()))
+                current_groups[current_host].add((fix_mojibake(parts[0]), parts[1].strip()))
 
     hosts_to_check = list(current_groups.keys())
     print(f"📡 HLS类待探测验证的 IP 组共计: {len(hosts_to_check)} 个", flush=True)
 
-    new_found_count = 0
+    total_new_found = 0
+    success_ip_count = 0
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         futures = {executor.submit(fetch_zhgxtv_channels, host): host for host in hosts_to_check}
         for future in concurrent.futures.as_completed(futures):
@@ -298,21 +313,27 @@ def enhance_output_hls_from_interface():
 
             existing_paths = {urlparse(url).path for _, url in current_groups[host]}
             
+            ip_added = 0
             for ch in remote_channels:
-                c_name = ch["name"]
+                c_name = fix_mojibake(ch["name"])
                 c_url = ch["url"]
                 c_path = urlparse(c_url).path + (f"?{urlparse(c_url).query}" if urlparse(c_url).query else "")
                 
                 if c_path not in existing_paths:
                     current_groups[host].add((c_name, c_url))
                     existing_paths.add(c_path)
-                    new_found_count += 1
+                    ip_added += 1
 
-    print(f"✨ HLS类探测补全完毕！共通过 ZHGXTV 接口补全了 {new_found_count} 条高质直播源。", flush=True)
+            if ip_added > 0:
+                success_ip_count += 1
+                total_new_found += ip_added
+                print(f"   🎯 [HLS破解成功] IP: {host} -> 成功连通并扩充了 {ip_added} 个新频道", flush=True)
+
+    print(f"✨ HLS类探测补全完毕！共成功破解 {success_ip_count} 个 IP，通过 ZHGXTV 接口累计补全 {total_new_found} 条高质直播源。", flush=True)
 
     with open(OUTPUT_HLS, "w", encoding="utf-8") as f:
         f.write("# ==========================================\n")
-        f.write("# 📺 HLS类直播源聚合总表 (含ZHGXTV接口智能补全)\n")
+        f.write("# 📺 HLS类直播源聚合总表 (含ZHGXTV接口智能补全与中文纠错)\n")
         f.write("# ==========================================\n\n")
         
         for host, ch_set in current_groups.items():
@@ -426,7 +447,6 @@ def run_processor():
     write_grouped_file(OUTPUT_TS, ts_groups, "TS类直播源")
     write_grouped_file(OUTPUT_NEWLIVE, newlive_groups, "NewLive类直播源")
 
-    # 💡 依次进行 TS 与 HLS 的接口探测、内网IP转换与智能补全
     enhance_output_ts_from_json()
     enhance_output_hls_from_interface()
 
