@@ -3,16 +3,20 @@ name: Run IPTV Processors
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # 每天定时运行一次，可根据需要自行修改
+    - cron: '0 0 * * *'
+
+# 🚀 必须加上这一段，否则私库/公开库 push 会因权限不足而卡死挂起！
+permissions:
+  contents: write
 
 jobs:
   build:
-  # 如果你的脚本和 downloads 文件夹存放在私库或指定仓库中，请确保 checkout 对应仓库
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # 显式传入 token
 
       - name: Set up Python
         uses: actions/setup-python@v5
