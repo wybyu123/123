@@ -812,6 +812,6 @@ http://www.kaniptv.cn/uadl.php?etoken=O1q3Z18SS%2BUUkDxIOETBxSx6RSVzboPmhMiqdSd4
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰卫视香港台" tvg-logo="./pic/logos凤凰香港.png" group-title="🌏港澳台频道",凤凰卫视香港台
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://www.kaniptv.cn/uadl.php?etoken=TnG2NuGjulXo8nW0ZWHsoNfvWHGhXbOp5jvBNayByR3RwBfFDEhXNmTS5SIgkKzz%2BsNXRsoNAlBtYv8XWAFfpU7A%2FkBfKVJozfv7IFLYpuIg2mJvKafyaORgVd9%2Fst1OwxBUNiKKBYeqKrEPw1cZaMaXMzXG7pHlrHGUmjz6srYDtRAYKlLhcpyypYiVVI1fn15xdc0A9UBaM%2FgrtJ%2BpNgu10uoHihwM8BvW9KwLt4guxsxVMKkbNGLJCUhyuHMUr4UUYimyy8VAAoeNl3R12tOBEFGuI%2FW%2FdZAok5xDNhTTWxKB0gl3BOffM9LPkh4DdEya8JYiAxbY9gkUjxz3Tg%3D%3D
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-08-10 03:09:29
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-08-10 16:05:34
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://demo.medrun.cn:4022/rtp/233.18.204.52:5140
