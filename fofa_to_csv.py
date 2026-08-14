@@ -3,11 +3,9 @@ import os
 import requests
 
 # ---------------- 配置区域 ----------------
-FOFA_EMAIL = "dimo01@linyubo214.filegear-sg.me"       # 修改为你的 FOFA 邮箱
-FOFA_KEY = "c2d51481e4cdf1114a34d83947369b93"         # 修改为你的 FOFA API Key
 QUERY_STR = 'newlive /live'           # 搜索语句
 CSV_FILE = "202608100451.csv"         # 你的本地 CSV 文件名
-MAX_SIZE = 100                        # 每次抓取获取的最大条数（普通账号一般100以内）
+MAX_SIZE = 100                        # 每次抓取获取的最大条数
 # ------------------------------------------
 
 def get_existing_hosts(csv_path):
@@ -25,13 +23,21 @@ def get_existing_hosts(csv_path):
     return existing
 
 def fetch_and_append_fofa():
+    # 从环境变量中安全获取 GitHub Secrets 注入的配置
+    fofa_email = os.environ.get("FOFA_EMAIL")
+    fofa_key = os.environ.get("FOFA_KEY")
+    
+    if not fofa_email or not fofa_key:
+        print("❌ 错误: 未检测到 FOFA_EMAIL 或 FOFA_KEY 环境变量！")
+        return
+
     print(f"📡 正在通过 FOFA API 查询: {QUERY_STR}")
     
     # 1. Base64 编码查询语句
     qbase64 = base64.b64encode(QUERY_STR.encode("utf-8")).decode("utf-8")
     
-    # 2. 请求 FOFA API (指定 fields 返回 ip,port)
-    url = f"https://fofa.info/api/v1/search/all?email={FOFA_EMAIL}&key={FOFA_KEY}&qbase64={qbase64}&fields=ip,port&size={MAX_SIZE}"
+    # 2. 请求 FOFA API
+    url = f"https://fofa.info/api/v1/search/all?email={fofa_email}&key={fofa_key}&qbase64={qbase64}&fields=ip,port&size={MAX_SIZE}"
     
     try:
         response = requests.get(url, timeout=15)
@@ -56,14 +62,11 @@ def fetch_and_append_fofa():
         for item in results:
             ip = item[0]
             port = str(item[1])
-            
-            # 拼装成你要求的 host 格式 (如 ip:port)
             host = f"{ip}:{port}"
             
             # 去重判断
             if host not in existing_hosts:
                 existing_hosts.add(host)
-                # 格式: host,ip,port
                 new_rows.append(f"{host},{ip},{port}\n")
                 added_count += 1
                 
