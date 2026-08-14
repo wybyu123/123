@@ -30,7 +30,8 @@ jobs:
           playwright install-deps chromium
 
       - name: 运行网页抓取与合并脚本
-        run: |
+        env:
+          FOFA_COOKIE: ${{ secrets.FOFA_COOKIE }}
           python fofa_web_spider.py
 
       - name: 自动提交并推送更新后的 CSV 文件
