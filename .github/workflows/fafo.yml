@@ -1,4 +1,4 @@
-name: Auto Fetch Stream Files
+name: Auto Fetch fafo Files
 
 on:
   workflow_dispatch: # 支持网页后台手动点击运行
