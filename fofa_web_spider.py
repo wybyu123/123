@@ -7,6 +7,7 @@ CSV_FILE = "202608100451.csv"
 # ------------------------------------------
 
 def get_existing_hosts(csv_path):
+    """读取本地已有的 host 用于去重"""
     existing = set()
     if not os.path.exists(csv_path):
         return existing
@@ -92,12 +93,9 @@ def fetch_fofa_web():
     for ip, port in new_items:
         host = f"{ip}:{port}"
         if host not in existing_hosts:
-        def add_host():
             existing_hosts.add(host)
             new_rows.append(f"{host},{ip},{port}\n")
-            nonlocal added_count
             added_count += 1
-        add_host()
 
     if added_count == 0:
         print("✨ 抓取到的 IP 在本地 CSV 中全部已存在。")
