@@ -7,64 +7,76 @@ CSV_FILE = "202608100451.csv"
 # ------------------------------------------
 
 def get_existing_hosts(csv_path):
-    """读取本地已有的 host 用于去重"""
     existing = set()
     if not os.path.exists(csv_path):
         return existing
-    
     with open(csv_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
-        for line in lines[1:]: # 跳过表头
+        for line in lines[1:]:
             parts = line.strip().split(",")
             if parts and parts[0]:
                 existing.add(parts[0].strip())
     return existing
 
 def fetch_fofa_web():
-    print(f"🌐 正在启动浏览器访问 FOFA 页面: {TARGET_URL}")
-    
+    # 从 GitHub Secrets 获取 Cookie
+    cookie_str = os.environ.get("FOFA_COOKIE")
+    if not cookie_str:
+        print("❌ 错误: 未检测到 FOFA_COOKIE 环境变量，请在 GitHub Secrets 中配置！")
+        return
+
+    print(f"🌐 正在启动带 Cookie 的浏览器访问 FOFA: {TARGET_URL}")
     new_items = []
     
     with sync_playwright() as p:
-        # 启动无头浏览器
         browser = p.chromium.launch(headless=True)
-        page = browser.new_context().new_page()
+        context = browser.new_context()
+        
+        # 将你的 Cookie 字符串解析并注入到浏览器上下文中
+        cookies = []
+        for item in cookie_str.split(";"):
+            if "=" in item:
+                try:
+                    name, val = item.strip().split("=", 1)
+                    cookies.append({
+                        "name": name, 
+                        "value": val, 
+                        "domain": ".fofa.info", 
+                        "path": "/"
+                    })
+                except Exception:
+                    continue
+        if cookies:
+            context.add_cookies(cookies)
+            print("🍪 成功注入用户登录 Cookie")
+
+        page = context.new_page()
         
         try:
-            # 访问目标搜索链接
             page.goto(TARGET_URL, timeout=60000)
+            print("⏳ 正在等待网页渲染数据表格...")
+            # 等待表格加载
+            page.wait_for_selector(".el-table__body", timeout=25000)
             
-            # 等待页面上的数据表格加载出来
-            print("⏳ 正在等待网页渲染数据...")
-            page.wait_for_selector(".el-table__body", timeout=20000)
-            
-            # 抓取页面上所有的文本或者通过选择器精准提取 IP 和 端口
-            # 这里我们获取页面上所有的链接或文本，通过正则或解析提取出 IP:Port
-            content = page.content()
-            
-            # 利用 Playwright 获取表格里的每一行数据
             rows = page.locator(".el-table__body tr")
             count = rows.count()
-            print(f"📊 浏览器成功抓取到网页表格行数: {count}")
+            print(f"📊 浏览器成功抓取到表格行数: {count}")
             
             for i in range(count):
                 row_text = rows.nth(i).inner_text()
-                # 根据 FOFA 网页的文本结构，提取其中的 IP 和端口
-                # 通常表格里会包含 IP 和端口信息，我们按行分割或正则提取
                 lines = row_text.split("\n")
                 for line in lines:
                     line = line.strip()
-                    # 简单匹配 IP:Port 格式
                     if ":" in line and "." in line:
                         parts = line.split(":")
                         if len(parts) >= 2 and parts[0].replace(".", "").isdigit():
                             ip = parts[0].strip()
-                            port = parts[1].split()[0].strip() # 防止后面有其他多余文字
+                            port = parts[1].split()[0].strip()
                             if ip and port.isdigit():
                                 new_items.append((ip, port))
                                 
         except Exception as e:
-            print(f"❌ 抓取过程发生异常（可能触发了安全拦截或需要登录）: {e}")
+            print(f"❌ 抓取过程发生异常（可能是 Cookie 过期或仍被拦截）: {e}")
         finally:
             browser.close()
 
@@ -80,15 +92,17 @@ def fetch_fofa_web():
     for ip, port in new_items:
         host = f"{ip}:{port}"
         if host not in existing_hosts:
+        def add_host():
             existing_hosts.add(host)
             new_rows.append(f"{host},{ip},{port}\n")
+            nonlocal added_count
             added_count += 1
+        add_host()
 
     if added_count == 0:
-        print("✨ 网页抓取到的 IP 在本地 CSV 中全部已存在，无需更新。")
+        print("✨ 抓取到的 IP 在本地 CSV 中全部已存在。")
         return
 
-    # 追加写入文件
     file_exists = os.path.exists(CSV_FILE)
     with open(CSV_FILE, "a", encoding="utf-8") as f:
         if not file_exists:
