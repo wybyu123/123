@@ -29,17 +29,17 @@ jobs:
       # ----------------------------------------------------
       # 如果你后续写了自动抓取 FOFA 并合并到 CSV 的 Python 脚本
       # 可以在这里加上执行命令，例如：
-      # - name: 运行 FOFA 抓取与合并脚本
-      #   env:
-      #     FOFA_EMAIL: ${{ secrets.FOFA_EMAIL }}
-      #     FOFA_KEY: ${{ secrets.FOFA_KEY }}
-      #   run: |
-      #     python fofa_to_csv.py
+      - name: 运行 FOFA 抓取与合并脚本
+        env:
+          FOFA_EMAIL: ${{ secrets.FOFA_EMAIL }}
+          FOFA_KEY: ${{ secrets.FOFA_KEY }}
+        run: |
+           python fofa_to_csv.py
       # ----------------------------------------------------
 
-      - name: 运行下载/检测脚本
-        run: |
-          python fetch_streams.py
+      # - name: 运行下载/检测脚本
+      #  run: |
+      #    python fetch_streams.py
 
       - name: 自动提交并推送文件到仓库
         run: |
