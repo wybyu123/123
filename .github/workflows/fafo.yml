@@ -1,16 +1,16 @@
-name: Import Web FOFA Data
+name: FOFA Web Spider & Update CSV
 
 on:
-  workflow_dispatch: # 支持后台手动点击运行
+  workflow_dispatch: # 支持网页后台手动点击运行
   schedule:
-    - cron: '0 8 * * *' # 每天自动运行一次（可按需调整）
+    - cron: '0 8 * * *' # 每天北京时间早上 8 点自动运行（可自行调整）
 
 jobs:
-  run-import-script:
+  run-spider:
     runs-on: ubuntu-latest
     
     permissions:
-      contents: write # 允许脚本提交代码回仓库
+      contents: write # 赋予写权限，允许脚本自动提交代码回仓库
 
     steps:
       - name: 签出仓库代码
@@ -21,10 +21,17 @@ jobs:
         with:
           python-version: '3.10'
 
-      # 如果脚本不需要第三方库（requests 等），这里甚至可以不写 pip install
-      - name: 运行网页数据本地合并脚本
+      - name: 安装依赖和 Playwright 浏览器
         run: |
-          python fofa_to_csv.py
+          python -m pip install --upgrade pip
+          pip install playwright
+          # 在 GitHub Actions 的 Ubuntu 环境中自动安装 Chromium 浏览器及依赖
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: 运行网页抓取与合并脚本
+        run: |
+          python fofa_web_spider.py
 
       - name: 自动提交并推送更新后的 CSV 文件
         run: |
@@ -34,10 +41,10 @@ jobs:
           # 推送前先拉取，避免冲突
           git pull --rebase origin main || echo "No remote changes or rebase skipped"
           
-          # 添加你的 CSV 文件（如果你希望顺便把处理完的 raw 文件也提交或忽略，可以只 add CSV）
+          # 添加你的 CSV 文件
           git add 202608100451.csv
           git status
           
           # 检查是否有改动，有则提交并推送
-          git diff --staged --quiet || git commit -m "Auto-merge web FOFA IP list to CSV [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto-update FOFA web spider results [skip ci]"
           git push
