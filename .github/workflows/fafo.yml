@@ -24,7 +24,7 @@ jobs:
       # 如果脚本不需要第三方库（requests 等），这里甚至可以不写 pip install
       - name: 运行网页数据本地合并脚本
         run: |
-          python import_fofa_web.py
+          python fofa_to_csv.py
 
       - name: 自动提交并推送更新后的 CSV 文件
         run: |
