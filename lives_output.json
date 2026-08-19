@@ -375,8 +375,8 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
-      "name": "源_0819h38",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h38.m3u"
+      "name": "源_0819k05",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819k05.txt"
     },
     {
       "type": 0,
@@ -384,8 +384,8 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
-      "name": "源_0819k05",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819k05.txt"
+      "name": "源_0819h38",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h38.m3u"
     },
     {
       "type": 0,
@@ -404,15 +404,6 @@
       "timeout": 10,
       "name": "源_0819h40",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h40.m3u"
-    },
-    {
-      "type": 0,
-      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
-      "playerType": 2,
-      "timeout": 10,
-      "name": "源_0819h41",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h41.m3u"
     },
     {
       "type": 0,
@@ -440,6 +431,15 @@
       "timeout": 10,
       "name": "源_0819k08",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819k08.txt"
+    },
+    {
+      "type": 0,
+      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
+      "playerType": 2,
+      "timeout": 10,
+      "name": "源_0819h41",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h41.m3u"
     },
     {
       "type": 0,
@@ -501,15 +501,6 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
-      "name": "源_0819h48",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h48.m3u"
-    },
-    {
-      "type": 0,
-      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
-      "playerType": 2,
-      "timeout": 10,
       "name": "源_0819k09",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819k09.txt"
     },
@@ -528,6 +519,15 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
+      "name": "源_0819h48",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h48.m3u"
+    },
+    {
+      "type": 0,
+      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
+      "playerType": 2,
+      "timeout": 10,
       "name": "源_0819h49",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h49.m3u"
     },
@@ -539,15 +539,6 @@
       "timeout": 10,
       "name": "源_0819h50",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h50.m3u"
-    },
-    {
-      "type": 0,
-      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
-      "playerType": 2,
-      "timeout": 10,
-      "name": "源_0819h51",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h51.m3u"
     },
     {
       "type": 0,
@@ -609,6 +600,15 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
+      "name": "源_0819h51",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h51.m3u"
+    },
+    {
+      "type": 0,
+      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
+      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
+      "playerType": 2,
+      "timeout": 10,
       "name": "源_0819h52",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h52.m3u"
     },
@@ -654,15 +654,6 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
-      "name": "源_0819h57",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h57.m3u"
-    },
-    {
-      "type": 0,
-      "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
-      "logo": "https://gongdian.top/tv/taibiao/{name}.png",
-      "playerType": 2,
-      "timeout": 10,
       "name": "源_0819k17",
       "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819k17.txt"
     },
@@ -672,8 +663,8 @@
       "logo": "https://gongdian.top/tv/taibiao/{name}.png",
       "playerType": 2,
       "timeout": 10,
-      "name": "源_0819h58",
-      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h58.m3u"
+      "name": "源_0819h57",
+      "url": "https://raw.githubusercontent.com/wybyu123/123/main/special_files/0819h57.m3u"
     }
   ]
 }
