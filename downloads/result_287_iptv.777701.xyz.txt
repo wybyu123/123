@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="http://iptv.777701.xyz/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ•ҳпёҸжӣҙж–°ж—¶й—ҙ",2026-08-14 06:49:52
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ•ҳпёҸжӣҙж–°ж—¶й—ҙ",2026-08-19 07:00:32
 http://120.76.248.139/live/bfgd/4200000489.m3u8
 #EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-1
 http://120.76.248.139/live/bfgd/4200000489.m3u8

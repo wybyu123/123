@@ -15,8 +15,8 @@ http://38.75.136.137:98/gslb/dsdqpub/cctv1hd.m3u8?auth=testpub
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://74.91.26.218:82/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-2
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://pull-hls-f1.douyincdn.com/media/stream-407987562509501100/playlist.m3u8?keeptime=00093a80&wsSecret=70ba7ec30965743accbcfb926a58fd7c&wsTime=6a6c7613&exp_hrchy=w1&arch_hrchy=w1&major_anchor_level=common&t_id=037-2026073118165145DD5015353E316620A0-ZYOHNH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/2/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="./pic/logosCCTV3.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-3
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://demo.medrun.cn:4022/rtp/233.18.204.69:5140
@@ -107,21 +107,9 @@ http://drive.mxmy.net:8888/udp/239.3.1.61:8104
 #EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="./pic/logosCCTV7.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-7
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://38.75.136.137:98/gslb/dsdqbv/cctv7hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="./pic/logosCCTV8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.rogerxlj.top:9998/rtp/233.18.204.74:5140
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="./pic/logosCCTV8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.74:5140
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="./pic/logosCCTV8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="./pic/logosCCTV8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://bztv.tvbus.cc:8081/cdnlive/cctv8.m3u8
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="./pic/logosCCTV8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://38.75.136.137:98/gslb/dsdqpub/cctv8hd.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/9/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="./pic/logosCCTV9.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-9
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://183.129.255.66:8480/hls/10/index.m3u8
@@ -140,36 +128,15 @@ http://38.75.136.137:98/gslb/dsdqpub/cctv9hd.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-10
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 https://hwapi.yntv.net/ew265l/z1z6s5.m3u8
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="./pic/logosCCTV11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
+#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-10
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://183.129.255.66:8480/hls/12/index.m3u8
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="./pic/logosCCTV11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.77:5140
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="./pic/logosCCTV11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://drive.mxmy.net:8888/udp/239.3.1.152:8120
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="./pic/logosCCTV11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.rogerxlj.top:9998/rtp/233.18.204.77:5140
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="./pic/logosCCTV11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://120.202.94.181:9446/tsfile/live/0011_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://tb.zbds.top/logo/CCTV12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://222.223.41.27:8888/hls/12/index.m3u8
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="./pic/logosCCTV12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.78:5140
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="./pic/logosCCTV12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.rogerxlj.top:9998/rtp/233.18.204.78:5140
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="./pic/logosCCTV12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://183.129.255.66:8480/hls/13/index.m3u8
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="./pic/logosCCTV12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://222.89.96.36:8001/hls/12/index.m3u8
+https://hwapi.yntv.net/62hdvf/utrat7.m3u8
+#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/12/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/13/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://tb.zbds.top/logo/CCTV13.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-13
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
@@ -186,20 +153,8 @@ http://demo.medrun.cn:4022/rtp/233.18.204.79:5140
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://bztv.tvbus.cc:8081/cdnlive/cctv13.m3u8
 #EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-14
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-https://event.pull.hebtv.com/jishi/cp2.m3u8
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="./pic/logosCCTV14.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-14
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://183.129.255.66:8480/hls/15/index.m3u8
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="./pic/logosCCTV14.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-14
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.rogerxlj.top:9998/rtp/233.18.204.80:5140
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="./pic/logosCCTV14.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-14
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.80:5140
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="./pic/logosCCTV14.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-14
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://bztv.tvbus.cc:8081/cdnlive/cctv14.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/15/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="./pic/logosCCTV15.png" group-title="рҹ“әеӨ®и§Ҷйў‘йҒ“",CCTV-15
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://drive.mxmy.net:8888/udp/239.3.1.153:8136
@@ -326,36 +281,12 @@ http://www.rogerxlj.top:9998/rtp/233.18.204.87:5140
 #EXTINF:-1 tvg-id="еҢ—дә¬еҚ«и§Ҷ" tvg-name="еҢ—дә¬еҚ«и§Ҷ" tvg-logo="./pic/logosеҢ—дә¬еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еҢ—дә¬еҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://38.75.136.137:98/gslb/dsdqbv/bjwshd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="./pic/logosж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://mg.cttv.vip/947472496
-#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="./pic/logosж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.92:5140
-#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="./pic/logosж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.745612.xyz:7788/rtp/235.254.198.72:1564
-#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="./pic/logosж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-https://live.264788.xyz/channel/hubeiweishi?streamid=501fea86d3931580a92805df154b7002&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="./pic/logosж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-https://live.264788.xyz/channel/hubeiweishi?streamid=5f57cbadedc2a213746e3a599219e2f1&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="https://tb.zbds.top/logo/й»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-https://idclive.hljtv.com:4430/live/hljws_own.m3u8
-#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="./pic/logosй»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://www.rogerxlj.top:9998/rtp/233.18.204.90:5140
-#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="./pic/logosй»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.90:5140
-#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="./pic/logosй»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="./pic/logosй»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://204.12.221.218:8181/3m1080p/hljws.m3u8
+#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж№–еҢ—еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж№–еҢ—еҚ«и§Ҷ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/36/live.m3u8
+#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/й»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",й»‘йҫҷжұҹеҚ«и§Ҷ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
 #EXTINF:-1 tvg-id="е®үеҫҪеҚ«и§Ҷ" tvg-name="е®үеҫҪеҚ«и§Ҷ" tvg-logo="./pic/logosе®үеҫҪеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",е®үеҫҪеҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:06:9A:77&stream=1919481
@@ -542,21 +473,9 @@ http://107.150.60.122/live/qhws.m3u8
 #EXTINF:-1 tvg-id="йқ’жө·еҚ«и§Ҷ" tvg-name="йқ’жө·еҚ«и§Ҷ" tvg-logo="./pic/logosйқ’жө·еҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",йқ’жө·еҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://198.204.228.26/live/qhws.m3u8
-#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="./pic/logosеұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://bztv.tvbus.cc:8081/cdnlive/sdws.m3u8
-#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="./pic/logosеұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="./pic/logosеұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://demo.medrun.cn:4022/rtp/233.18.204.91:5140
-#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="./pic/logosеұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://107.150.60.122/live/sdwshd.m3u8
-#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="./pic/logosеұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://116.76.254.170:44330/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еұұдёңеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұдёңеҚ«и§Ҷ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/35/live.m3u8
 #EXTINF:-1 tvg-id="еұұиҘҝеҚ«и§Ҷ" tvg-name="еұұиҘҝеҚ«и§Ҷ" tvg-logo="https://tb.zbds.top/logo/еұұиҘҝеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еұұиҘҝеҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
@@ -569,21 +488,9 @@ http://222.169.85.8:9901/tsfile/live/0123_1.m3u8
 #EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="./pic/logosеӣӣе·қеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",еӣӣе·қеҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://116.77.33.98:44330/tsfile/live/0123_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="./pic/logosж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://173.208.212.130:8181/720p/szws.m3u8
-#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="./pic/logosж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://bztv.tvbus.cc:8081/cdnlive/szws.m3u8
-#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="./pic/logosж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://204.12.221.218:8181/3m1080p/szws.m3u8
-#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="./pic/logosж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="./pic/logosж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-http://107.150.60.122/live/szwshd.m3u8
+#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж·ұеңіеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",ж·ұеңіеҚ«и§Ҷ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+http://221.226.51.220:50081/newlive/live/hls/37/live.m3u8
 #EXTINF:-1 tvg-id="дёүжІҷеҚ«и§Ҷ" tvg-name="дёүжІҷеҚ«и§Ҷ" tvg-logo="https://tb.zbds.top/logo/дёүжІҷеҚ«и§Ҷ.png" group-title="рҹ“ЎеҚ«и§Ҷйў‘йҒ“",дёүжІҷеҚ«и§Ҷ
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
@@ -764,6 +671,6 @@ http://www.kaniptv.cn/uadl.php?etoken=O1q3Z18SS%2BUUkDxIOETBxSx6RSVzboPmhMiqdSd4
 #EXTINF:-1 tvg-id="еҮӨеҮ°йҰҷжёҜ" tvg-name="еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°" tvg-logo="./pic/logosеҮӨеҮ°йҰҷжёҜ.png" group-title="рҹҢҸжёҜжҫіеҸ°йў‘йҒ“",еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://www.kaniptv.cn/uadl.php?etoken=TnG2NuGjulXo8nW0ZWHsoNfvWHGhXbOp5jvBNayByR3RwBfFDEhXNmTS5SIgkKzz%2BsNXRsoNAlBtYv8XWAFfpU7A%2FkBfKVJozfv7IFLYpuIg2mJvKafyaORgVd9%2Fst1OwxBUNiKKBYeqKrEPw1cZaMaXMzXG7pHlrHGUmjz6srYDtRAYKlLhcpyypYiVVI1fn15xdc0A9UBaM%2FgrtJ%2BpNgu10uoHihwM8BvW9KwLt4guxsxVMKkbNGLJCUhyuHMUr4UUYimyy8VAAoeNl3R12tOBEFGuI%2FW%2FdZAok5xDNhTTWxKB0gl3BOffM9LPkh4DdEya8JYiAxbY9gkUjxz3Tg%3D%3D
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ•ҳпёҸжӣҙж–°ж—¶й—ҙ",2026-08-14 16:07:28
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ•ҳпёҸжӣҙж–°ж—¶й—ҙ",2026-08-19 16:03:53
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 http://demo.medrun.cn:4022/rtp/233.18.204.52:5140
