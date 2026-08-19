@@ -35,18 +35,15 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 1. 先把当前生成的改动临时暂存起来，防止拉取冲突
           git stash
-
-          # 2. 安全地拉取远程最新代码（带 rebase）
           git pull --rebase origin main || echo "Rebase skipped"
-
-          # 3. 把刚才暂存的改动释放回来
           git stash pop || echo "No stash to pop"
 
-          # 4. 添加 downloads、special_files 目录以及 lives_output.json 文件
-          git add downloads/ special_files/ lives_output.json
+          # 只添加实际存在的目录和文件，避免因为没生成文件而报错
+          [ -d downloads ] && git add downloads/
+          [ -d special_files ] && git add special_files/
+          [ -f lives_output.json ] && git add lives_output.json
 
-          # 5. 检查是否有变动，有则提交并推送
+          # 检查是否有变动，有则提交并推送
           git diff --staged --quiet || git commit -m "Auto-update stream files and json [skip ci]"
           git push
