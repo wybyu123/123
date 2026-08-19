@@ -1,0 +1,536 @@
+#EXTM3U x-tvg-url="http://192.168.31.200/epg/epg.gz"
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="рҹ•ҳпёҸжӣҙж–°ж—¶й—ҙ",2026-08-19 21:00:10
+http://iptv.4666888.xyz/iptv2A.php?id=7
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://live.fanmingming.com/tv/CCTV01.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-1
+http://iptv.4666888.xyz/iptv2A.php?id=7
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-1
+http://113.57.140.161:10081/newlive/live/hls/1/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-2
+http://1.28.123.148:9901/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-3
+http://221.7.175.154:8445/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-3
+http://1.28.123.148:9901/tsfile/live/1028_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-3
+http://1.24.39.180:9003/hls/3/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-3
+http://113.9.214.47:9003/hls/3/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-4
+http://1.24.39.180:9003/hls/4/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-4
+http://221.7.175.154:8445/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5
+http://1.24.39.180:9003/hls/5/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5
+http://221.7.175.154:8445/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5
+http://113.9.214.47:9003/hls/5/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://i.imgur.com/OK8mdJV.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5+
+https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5+
+http://113.9.214.47:9003/hls/18/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5+
+http://223.112.114.228:50080/newlive/live/hls/180/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-5+
+http://120.238.94.82:9901/tsfile/live/1030_1.m3u8
+#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-6
+http://112.30.73.119:229/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-6
+http://1.24.39.180:9003/hls/6/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-6
+http://112.30.73.119:9901/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-6
+http://221.7.175.154:8445/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-7
+http://223.78.65.165:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-7
+http://1.24.39.180:9003/hls/7/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-7
+http://113.9.214.47:9003/hls/7/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-7
+http://221.7.175.154:8445/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-8
+http://112.30.73.119:9901/tsfile/live/0008_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-8
+http://221.7.175.154:8445/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-8
+http://1.24.39.180:9003/hls/8/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-9
+http://1.24.39.180:9003/hls/9/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-9
+http://113.9.214.47:9003/hls/9/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-9
+http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-10
+http://1.24.39.180:9003/hls/10/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-10
+http://183.223.157.123:85/tsfile/live/0010_1.m3u8?key=txiptv
+#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-11
+http://1.24.39.180:9003/hls/11/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-12
+http://1.24.39.180:9003/hls/12/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-12
+http://113.9.214.47:9003/hls/12/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-12
+http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-13
+http://iptv.4666888.xyz/iptv2A.php?id=11
+#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-14
+http://113.90.154.189:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-14
+http://www.li0580.top:4022/udp/233.50.201.124:5140
+#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-14
+http://www.li0580.top:4022/udp/233.50.200.20:5140
+#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-14
+http://1.24.39.180:9003/hls/14/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-14
+http://118.122.144.115:8888/newlive/live/hls/15/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-15
+http://1.24.39.180:9003/hls/15/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-15
+http://118.122.144.115:8888/newlive/live/hls/16/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-15
+http://120.40.39.246:352/newlive/live/hls/16/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-16
+http://1.24.39.180:9003/hls/60/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-16
+http://www.li0580.top:4022/udp/233.50.201.192:5140
+#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-16
+http://118.122.144.115:8888/newlive/live/hls/17/live.m3u8
+#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-16
+http://www.li0580.top:4022/udp/233.50.200.112:5140
+#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-17
+http://113.90.154.189:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-17
+http://1.24.39.180:9003/hls/61/index.m3u8
+#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-17
+http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
+#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-17
+http://221.7.175.154:8445/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="еӨ®и§Ҷйў‘йҒ“",CCTV-17
+http://113.9.214.47:9003/hls/17/index.m3u8
+#EXTINF:-1 tvg-id="ж№–еҚ—еҚ«и§Ҷ" tvg-name="ж№–еҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж№–еҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҚ—еҚ«и§Ҷ
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 tvg-id="ж№–еҚ—еҚ«и§Ҷ" tvg-name="ж№–еҚ—еҚ«и§Ҷ" tvg-logo="https://tb.zbds.top/logo/ж№–еҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҚ—еҚ«и§Ҷ
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 tvg-id="еҢ—дә¬еҚ«и§Ҷ" tvg-name="еҢ—дә¬еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҢ—дә¬еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еҢ—дә¬еҚ«и§Ҷ
+http://111.59.24.227:8181/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="ж·ұеңіеҚ«и§Ҷ" tvg-name="ж·ұеңіеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж·ұеңіеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж·ұеңіеҚ«и§Ҷ
+http://120.238.94.82:9901/tsfile/live/1065_1.m3u8
+#EXTINF:-1 tvg-id="жөҷжұҹеҚ«и§Ҷ 4k" tvg-name="жөҷжұҹеҚ«и§Ҷ 4k" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жөҷжұҹеҚ«и§Ҷ 4k.png" group-title="еҚ«и§Ҷ",жөҷжұҹеҚ«и§Ҷ 4k
+http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
+#EXTINF:-1 tvg-id="жұҹиӢҸеҚ«и§Ҷ" tvg-name="жұҹиӢҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиӢҸеҚ«и§Ҷ
+http://113.9.214.47:9003/hls/30/index.m3u8
+#EXTINF:-1 tvg-id="жұҹиӢҸеҚ«и§Ҷ" tvg-name="жұҹиӢҸеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/жұҹиӢҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиӢҸеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.106:5140
+#EXTINF:-1 tvg-id="жұҹиӢҸеҚ«и§Ҷ" tvg-name="жұҹиӢҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиӢҸеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="жұҹиӢҸеҚ«и§Ҷ" tvg-name="жұҹиӢҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиӢҸеҚ«и§Ҷ
+http://113.57.140.161:10081/newlive/live/hls/31/live.m3u8
+#EXTINF:-1 tvg-id="жұҹиӢҸеҚ«и§Ҷ" tvg-name="жұҹиӢҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиӢҸеҚ«и§Ҷ
+http://118.122.144.115:8888/newlive/live/hls/31/live.m3u8
+#EXTINF:-1 tvg-id="дёңж–№еҚ«и§Ҷ" tvg-name="дёңж–№еҚ«и§Ҷ" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/дёңж–№еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёңж–№еҚ«и§Ҷ
+#EXTVLCOPT:http-user-agent=AptvPlayer-UA
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+#EXTINF:-1 tvg-id="дёңж–№еҚ«и§Ҷ" tvg-name="дёңж–№еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңж–№еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёңж–№еҚ«и§Ҷ
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+#EXTINF:-1 tvg-id="дёңж–№еҚ«и§Ҷ" tvg-name="дёңж–№еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңж–№еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёңж–№еҚ«и§Ҷ
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӣӣе·қеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӣӣе·қеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0123_1.m3u8
+#EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/еӣӣе·қеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӣӣе·қеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.139:5140
+#EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӣӣе·қеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӣӣе·қеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/еӣӣе·қеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӣӣе·қеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.200.118:5140
+#EXTINF:-1 tvg-id="еӣӣе·қеҚ«и§Ҷ" tvg-name="еӣӣе·қеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӣӣе·қеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӣӣе·қеҚ«и§Ҷ
+http://124.116.183.146:9901/tsfile/live/0123_1.m3u8
+#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еұұдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еұұдёңеҚ«и§Ҷ
+http://112.123.243.37:50085/tsfile/live/0122_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/еұұдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еұұдёңеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.105:5140
+#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еұұдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еұұдёңеҚ«и§Ҷ
+http://113.57.140.161:10081/newlive/live/hls/35/live.m3u8
+#EXTINF:-1 tvg-id="еұұдёңеҚ«и§Ҷ" tvg-name="еұұдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еұұдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еұұдёңеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0131_1.m3u8
+#EXTINF:-1 tvg-id="дёңеҚ—еҚ«и§Ҷ" tvg-name="дёңеҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңеҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёңеҚ—еҚ«и§Ҷ
+https://live.chinacert.cftest5.cn/cnmg/live/849116810
+#EXTINF:-1 tvg-id="дёңеҚ—еҚ«и§Ҷ" tvg-name="дёңеҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңеҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёңеҚ—еҚ«и§Ҷ
+http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 tvg-id="дә‘еҚ—еҚ«и§Ҷ" tvg-name="дә‘еҚ—еҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/дә‘еҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дә‘еҚ—еҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.200.115:5140
+#EXTINF:-1 tvg-id="дә‘еҚ—еҚ«и§Ҷ" tvg-name="дә‘еҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дә‘еҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дә‘еҚ—еҚ«и§Ҷ
+http://120.237.39.10:9901/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&down=1
+#EXTINF:-1 tvg-id="е…өеӣўеҚ«и§Ҷ" tvg-name="е…өеӣўеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е…өеӣўеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е…өеӣўеҚ«и§Ҷ
+http://222.71.55.147:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="е…өеӣўеҚ«и§Ҷ" tvg-name="е…өеӣўеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е…өеӣўеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е…өеӣўеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еҶ…и’ҷеҸӨеҚ«и§Ҷ" tvg-name="еҶ…и’ҷеҸӨеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҶ…и’ҷеҸӨеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еҶ…и’ҷеҸӨеҚ«и§Ҷ
+http://222.71.55.147:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="еҗүжһ—еҚ«и§Ҷ" tvg-name="еҗүжһ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҗүжһ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еҗүжһ—еҚ«и§Ҷ
+http://59.39.89.130:60901/tsfile/live/0125_19.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еҗүжһ—еҚ«и§Ҷ" tvg-name="еҗүжһ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҗүжһ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еҗүжһ—еҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еӨ©жҙҘеҚ«и§Ҷ" tvg-name="еӨ©жҙҘеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӨ©жҙҘеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӨ©жҙҘеҚ«и§Ҷ
+http://111.59.24.227:8181/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е®ҒеӨҸеҚ«и§Ҷ" tvg-name="е®ҒеӨҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®ҒеӨҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®ҒеӨҸеҚ«и§Ҷ
+http://222.71.55.147:9901/tsfile/live/0112_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="е®ҒеӨҸеҚ«и§Ҷ" tvg-name="е®ҒеӨҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®ҒеӨҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®ҒеӨҸеҚ«и§Ҷ
+http://1.192.153.44:9901/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е®ҒеӨҸеҚ«и§Ҷ" tvg-name="е®ҒеӨҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®ҒеӨҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®ҒеӨҸеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0112_1.m3u8
+#EXTINF:-1 tvg-id="е®үеҫҪеҚ«и§Ҷ" tvg-name="е®үеҫҪеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®үеҫҪеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®үеҫҪеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е®үеҫҪеҚ«и§Ҷ" tvg-name="е®үеҫҪеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/е®үеҫҪеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®үеҫҪеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.113:5140
+#EXTINF:-1 tvg-id="е®үеҫҪеҚ«и§Ҷ" tvg-name="е®үеҫҪеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®үеҫҪеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®үеҫҪеҚ«и§Ҷ
+http://123.138.216.44:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е®үеҫҪеҚ«и§Ҷ" tvg-name="е®үеҫҪеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®үеҫҪеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е®үеҫҪеҚ«и§Ҷ
+http://59.39.89.130:60901/tsfile/live/0125_6.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е№ҝдёңеҚ«и§Ҷ" tvg-name="е№ҝдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝдёңеҚ«и§Ҷ
+http://113.90.154.189:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е№ҝдёңеҚ«и§Ҷ" tvg-name="е№ҝдёңеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/е№ҝдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝдёңеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.102:5140
+#EXTINF:-1 tvg-id="е№ҝдёңеҚ«и§Ҷ" tvg-name="е№ҝдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝдёңеҚ«и§Ҷ
+http://113.57.140.161:10081/newlive/live/hls/34/live.m3u8
+#EXTINF:-1 tvg-id="е№ҝдёңеҚ«и§Ҷ" tvg-name="е№ҝдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝдёңеҚ«и§Ҷ
+http://120.40.39.246:352/newlive/live/hls/34/live.m3u8
+#EXTINF:-1 tvg-id="е№ҝдёңеҚ«и§Ҷ" tvg-name="е№ҝдёңеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝдёңеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="е№ҝиҘҝеҚ«и§Ҷ" tvg-name="е№ҝиҘҝеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝиҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝиҘҝеҚ«и§Ҷ
+https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
+#EXTINF:-1 tvg-id="е№ҝиҘҝеҚ«и§Ҷ" tvg-name="е№ҝиҘҝеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝиҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",е№ҝиҘҝеҚ«и§Ҷ
+https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
+#EXTINF:-1 tvg-id="ж–°з–ҶеҚ«и§Ҷ" tvg-name="ж–°з–ҶеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж–°з–ҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж–°з–ҶеҚ«и§Ҷ
+http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
+#EXTINF:-1 tvg-id="ж–°з–ҶеҚ«и§Ҷ" tvg-name="ж–°з–ҶеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж–°з–ҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж–°з–ҶеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0110_1.m3u8
+#EXTINF:-1 tvg-id="ж–°з–ҶеҚ«и§Ҷ" tvg-name="ж–°з–ҶеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж–°з–ҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж–°з–ҶеҚ«и§Ҷ
+http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="жұҹиҘҝеҚ«и§Ҷ" tvg-name="жұҹиҘҝеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиҘҝеҚ«и§Ҷ
+http://111.59.24.227:8181/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="жұҹиҘҝеҚ«и§Ҷ" tvg-name="жұҹиҘҝеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жұҹиҘҝеҚ«и§Ҷ
+http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="жІіеҢ—еҚ«и§Ҷ" tvg-name="жІіеҢ—еҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/жІіеҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жІіеҢ—еҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.140:5140
+#EXTINF:-1 tvg-id="жІіеҢ—еҚ«и§Ҷ" tvg-name="жІіеҢ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жІіеҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жІіеҢ—еҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="жІіеҚ—еҚ«и§Ҷ" tvg-name="жІіеҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жІіеҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жІіеҚ—еҚ«и§Ҷ
+http://1.94.31.214/php/hntv.php?id=hnws
+#EXTINF:-1 tvg-id="жөҷжұҹеҚ«и§Ҷ" tvg-name="жөҷжұҹеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жөҷжұҹеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жөҷжұҹеҚ«и§Ҷ
+http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
+#EXTINF:-1 tvg-id="жөҷжұҹеҚ«и§Ҷ" tvg-name="жөҷжұҹеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жөҷжұҹеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жөҷжұҹеҚ«и§Ҷ
+http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
+#EXTINF:-1 tvg-id="жө·еҚ—еҚ«и§Ҷ" tvg-name="жө·еҚ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жө·еҚ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жө·еҚ—еҚ«и§Ҷ
+http://113.9.214.47:9003/hls/48/index.m3u8
+#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж№–еҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҢ—еҚ«и§Ҷ
+http://59.39.89.130:60901/tsfile/live/0125_12.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж№–еҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҢ—еҚ«и§Ҷ
+http://118.122.144.115:8888/newlive/live/hls/36/live.m3u8
+#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж№–еҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҢ—еҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0132_1.m3u8
+#EXTINF:-1 tvg-id="ж№–еҢ—еҚ«и§Ҷ" tvg-name="ж№–еҢ—еҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/ж№–еҢ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",ж№–еҢ—еҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.114:5140
+#EXTINF:-1 tvg-id="з”ҳиӮғеҚ«и§Ҷ" tvg-name="з”ҳиӮғеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/з”ҳиӮғеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",з”ҳиӮғеҚ«и§Ҷ
+http://218.13.170.98:9901/tsfile/live/0141_1.m3u8
+#EXTINF:-1 tvg-id="иҘҝи—ҸеҚ«и§Ҷ" tvg-name="иҘҝи—ҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҘҝи—ҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҘҝи—ҸеҚ«и§Ҷ
+http://222.71.55.147:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="иҘҝи—ҸеҚ«и§Ҷ" tvg-name="иҘҝи—ҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҘҝи—ҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҘҝи—ҸеҚ«и§Ҷ
+http://120.198.86.186:9901/tsfile/live/1089_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="иҘҝи—ҸеҚ«и§Ҷ" tvg-name="иҘҝи—ҸеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҘҝи—ҸеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҘҝи—ҸеҚ«и§Ҷ
+http://8.137.121.66:20240/live?url=http%3A//111.196.134.175%3A20000/rtp/239.3.1.166%3A8188
+#EXTINF:-1 tvg-id="иҙөе·һеҚ«и§Ҷ" tvg-name="иҙөе·һеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҙөе·һеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҙөе·һеҚ«и§Ҷ
+http://59.39.89.130:60901/tsfile/live/0125_15.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="иҙөе·һеҚ«и§Ҷ" tvg-name="иҙөе·һеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/иҙөе·һеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҙөе·һеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.142:5140
+#EXTINF:-1 tvg-id="иҙөе·һеҚ«и§Ҷ" tvg-name="иҙөе·һеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҙөе·һеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҙөе·һеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0120_1.m3u8
+#EXTINF:-1 tvg-id="иҫҪе®ҒеҚ«и§Ҷ" tvg-name="иҫҪе®ҒеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҫҪе®ҒеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҫҪе®ҒеҚ«и§Ҷ
+http://111.59.24.227:8181/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="иҫҪе®ҒеҚ«и§Ҷ" tvg-name="иҫҪе®ҒеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иҫҪе®ҒеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",иҫҪе®ҒеҚ«и§Ҷ
+http://120.237.39.10:9901/tsfile/live/1051_1.m3u8?key=txiptv&playlive=1&down=1
+#EXTINF:-1 tvg-id="йҮҚеәҶеҚ«и§Ҷ" tvg-name="йҮҚеәҶеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҮҚеәҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",йҮҚеәҶеҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="йҮҚеәҶеҚ«и§Ҷ" tvg-name="йҮҚеәҶеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/йҮҚеәҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",йҮҚеәҶеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.201.143:5140
+#EXTINF:-1 tvg-id="йҮҚеәҶеҚ«и§Ҷ" tvg-name="йҮҚеәҶеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/йҮҚеәҶеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",йҮҚеәҶеҚ«и§Ҷ
+http://www.li0580.top:4022/udp/233.50.200.114:5140
+#EXTINF:-1 tvg-id="йҷ•иҘҝеҚ«и§Ҷ" tvg-name="йҷ•иҘҝеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҷ•иҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",йҷ•иҘҝеҚ«и§Ҷ
+http://222.169.85.8:9901/tsfile/live/0136_1.m3u8
+#EXTINF:-1 tvg-id="йқ’жө·еҚ«и§Ҷ" tvg-name="йқ’жө·еҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/йқ’жө·еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",йқ’жө·еҚ«и§Ҷ
+http://iptv.4666888.xyz/iptv2A.php?id=17
+#EXTINF:-1 tvg-id="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-name="й»‘йҫҷжұҹеҚ«и§Ҷ" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/й»‘йҫҷжұҹеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",й»‘йҫҷжұҹеҚ«и§Ҷ
+https://idclive.hljtv.com:4430/live/hljws_own.m3u8
+#EXTINF:-1 tvg-id="зҺҜзҗғз”өи§Ҷ" tvg-name="зҺҜзҗғз”өи§Ҷ" tvg-logo="https://live.fanmingming.cn/tv/зҺҜзҗғз”өи§Ҷ.png" group-title="еҚ«и§Ҷ",зҺҜзҗғз”өи§Ҷ
+http://utv1.hqtvzb.com:9999/hls/world.m3u8
+#EXTINF:-1 tvg-id="дёӯеӣҪеӨ©ж°”" tvg-name="дёӯеӣҪеӨ©ж°”" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёӯеӣҪеӨ©ж°”.png" group-title="еҚ«и§Ҷ",дёӯеӣҪеӨ©ж°”
+https://live.chinacert.cftest5.cn/cnmg/live/959986621
+#EXTINF:-1 tvg-id="еӨ§ж№ҫеҢәеҚ«и§Ҷ" tvg-name="еӨ§ж№ҫеҢәеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӨ§ж№ҫеҢәеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еӨ§ж№ҫеҢәеҚ«и§Ҷ
+http://222.128.55.152:9080/live/dwq.m3u8
+#EXTINF:-1 tvg-id="еҺҰй—ЁеҚ«и§Ҷ" tvg-name="еҺҰй—ЁеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҺҰй—ЁеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еҺҰй—ЁеҚ«и§Ҷ
+http://118.122.144.115:8888/newlive/live/hls/28/live.m3u8
+#EXTINF:-1 tvg-id="дёүжІҷеҚ«и§Ҷ" tvg-name="дёүжІҷеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёүжІҷеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёүжІҷеҚ«и§Ҷ
+http://171.38.148.188:9003/hls/78/index.m3u8
+#EXTINF:-1 tvg-id="еұұиҘҝеҚ«и§Ҷ" tvg-name="еұұиҘҝеҚ«и§Ҷ" tvg-logo="https://live.fanmingming.com/tv/еұұиҘҝеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",еұұиҘҝеҚ«и§Ҷ
+https://livehhhttps.sxrtv.com/lsdream/q8RVWgs/1000/p3sh84V.m3u8
+#EXTINF:-1 tvg-id="жө·еіЎеҚ«и§Ҷ" tvg-name="жө·еіЎеҚ«и§Ҷ" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/жө·еіЎеҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",жө·еіЎеҚ«и§Ҷ
+http://r.jdshipin.com/WtYt3
+#EXTINF:-1 tvg-id="дёӯеӣҪеҶңжһ—еҚ«и§Ҷ" tvg-name="дёӯеӣҪеҶңжһ—еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёӯеӣҪеҶңжһ—еҚ«и§Ҷ.png" group-title="еҚ«и§Ҷ",дёӯеӣҪеҶңжһ—еҚ«и§Ҷ
+https://live.chinacert.cftest5.cn/cnmg/live/956904896
+#EXTINF:-1 tvg-id="ж№–еҚ—з»Ҹи§Ҷ" tvg-name="ж№–еҚ—з»Ҹи§Ҷ" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8D%97%E7%BB%8F%E8%A7%86.png" group-title="е…¶д»–ең°ж–№еҸ°",ж№–еҚ—з»Ҹи§Ҷ
+http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzg3MTE4ODg2JnV1aWQ9NWFkODVkZDA2Y2U2NTRhOTQ0MWVmY2YxM2Q5MzUyZmEtNmEwZTI2Mzcmcz0wMDczMjUyNDdjZmE5OTAwY2RkZmVjYTU1M2RkMjE0NCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/HNGJMPP360.m3u8
+#EXTINF:-1 tvg-id="иҖҒж•…дәӢ" tvg-name="йҮҚжё©з»Ҹе…ё" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҮҚжё©з»Ҹе…ё.png" group-title="е…¶д»–ең°ж–№еҸ°",йҮҚжё©з»Ҹе…ё
+http://218.206.193.218:8888/hls/29/index.m3u8
+#EXTINF:-1 tvg-id="йҮ‘й№°еҚЎйҖҡ" tvg-name="йҮ‘й№°еҚЎйҖҡ" tvg-logo="https://live.fanmingming.com/tv/йҮ‘й№°еҚЎйҖҡ.png" group-title="е…¶д»–ең°ж–№еҸ°",йҮ‘й№°еҚЎйҖҡ
+https://live.mgtv.com/?channelId=287#video://https://www.mgtv.com/live/
+#EXTINF:-1 tvg-id="еҢ—дә¬еҚЎй…·е°‘е„ҝ" tvg-name="еҚЎй…·еҠЁз”»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚЎй…·еҠЁз”».png" group-title="е…¶д»–ең°ж–№еҸ°",еҚЎй…·еҠЁз”»
+http://111.59.139.82:11888/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еұұдёңж•ҷиӮІ" tvg-name="еұұдёңж•ҷиӮІ" tvg-logo="https://tb.zbds.top/logo/еұұдёңж•ҷиӮІ.png" group-title="е…¶д»–ең°ж–№еҸ°",еұұдёңж•ҷиӮІ
+https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
+#EXTINF:-1 tvg-id="еҝ«д№җеһӮй’“" tvg-name="еҝ«д№җеһӮй’“" tvg-logo="https://live.fanmingming.cn/tv/еҝ«д№җеһӮй’“.png" group-title="е…¶д»–ең°ж–№еҸ°",еҝ«д№җеһӮй’“
+http://drive.mxmy.net:8888/udp/239.3.1.164:8001
+#EXTINF:-1 tvg-id="BTVж–Үиүә" tvg-name="BTVж–Үиүә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/BTVж–Үиүә.png" group-title="е…¶д»–ең°ж–№еҸ°",BTVж–Үиүә
+http://123.118.55.165:45237/tsfile/live/0017_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="BTVз§‘ж•ҷ" tvg-name="BTVз§‘ж•ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/BTVз§‘ж•ҷ.png" group-title="е…¶д»–ең°ж–№еҸ°",BTVз§‘ж•ҷ
+http://123.118.55.165:45237/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="BTVеҪұи§Ҷ" tvg-name="BTVеҪұи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/BTVеҪұи§Ҷ.png" group-title="е…¶д»–ең°ж–№еҸ°",BTVеҪұи§Ҷ
+http://123.118.55.165:45237/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="BTVж–°й—»" tvg-name="BTVж–°й—»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/BTVж–°й—».png" group-title="е…¶д»–ең°ж–№еҸ°",BTVж–°й—»
+http://123.118.55.165:45237/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="е…¶д»–ең°ж–№еҸ°",CGTN
+https://0472.org/hls/cgtn.m3u8
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CGTN.png" group-title="е…¶д»–ең°ж–№еҸ°",CGTN
+http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CGTN.png" group-title="е…¶д»–ең°ж–№еҸ°",CGTN
+https://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="е…¶д»–ең°ж–№еҸ°",CGTN
+https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
+#EXTINF:-1 tvg-id="еӣӣе·қз§‘ж•ҷ" tvg-name="еӣӣе·қз§‘ж•ҷ" tvg-logo="https://tb.zbds.top/logo/еӣӣе·қз§‘ж•ҷ.png" group-title="е…¶д»–ең°ж–№еҸ°",еӣӣе·қз§‘ж•ҷ
+http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8
+#EXTINF:-1 tvg-id="еіЁзңүз”өеҪұ" tvg-name="еіЁзңүз”өеҪұ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еіЁзңүз”өеҪұ.png" group-title="е…¶д»–ең°ж–№еҸ°",еіЁзңүз”өеҪұ
+http://118.122.144.115:8888/newlive/live/hls/32/live.m3u8
+#EXTINF:-1 tvg-id="ж–°и§Ҷи§ү" tvg-name="ж–°и§Ҷи§ү" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж–°и§Ҷи§ү.png" group-title="дёӯеӣҪеӨ§йҷҶ",ж–°и§Ҷи§ү
+http://221.7.49.226:50085/tsfile/live/0016_2.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еҸ‘зҺ°д№Ӣж—…" tvg-name="еҸ‘зҺ°д№Ӣж—…" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҸ‘зҺ°д№Ӣж—….png" group-title="дёӯеӣҪеӨ§йҷҶ",еҸ‘зҺ°д№Ӣж—…
+https://live.chinacert.cftest5.cn/cnmg/live/624878970
+#EXTINF:-1 tvg-id="дёӯеӯҰз”ҹ" tvg-name="дёӯеӯҰз”ҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёӯеӯҰз”ҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",дёӯеӯҰз”ҹ
+https://live.chinacert.cftest5.cn/cnmg/live/708869532
+#EXTINF:-1 tvg-id="еӨ®и§ҶеҸ°зҗғ" tvg-name="еӨ®и§ҶеҸ°зҗғ" tvg-logo="https://live.fanmingming.cn/tv/еӨ®и§ҶеҸ°зҗғ.png" group-title="дёӯеӣҪеӨ§йҷҶ",еӨ®и§ҶеҸ°зҗғ
+http://dassby.qqff.top:99/live/еӨ®и§ҶеҸ°зҗғ/index.m3u8
+#EXTINF:-1 tvg-id="й«ҳе°”еӨ«зҪ‘зҗғ" tvg-name="й«ҳе°”еӨ«зҪ‘зҗғ" tvg-logo="https://live.fanmingming.cn/tv/еӨ®и§Ҷй«ҳзҪ‘.png" group-title="дёӯеӣҪеӨ§йҷҶ",й«ҳе°”еӨ«зҪ‘зҗғ
+http://dassby.qqff.top:99/live/й«ҳе°”еӨ«зҪ‘зҗғ/index.m3u8
+#EXTINF:-1 tvg-id="дё–з•Ңең°зҗҶ" tvg-name="дё–з•Ңең°зҗҶ" tvg-logo="https://live.fanmingming.cn/tv/дё–з•Ңең°зҗҶ.png" group-title="дёӯеӣҪеӨ§йҷҶ",дё–з•Ңең°зҗҶ
+http://dassby.qqff.top:99/live/дё–з•Ңең°зҗҶ/index.m3u8
+#EXTINF:-1 tvg-id="еҘіжҖ§ж—¶е°ҡ" tvg-name="еҘіжҖ§ж—¶е°ҡ" tvg-logo="https://live.fanmingming.cn/tv/еҘіжҖ§ж—¶е°ҡ.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҘіжҖ§ж—¶е°ҡ
+http://dassby.qqff.top:99/live/еҘіжҖ§ж—¶е°ҡ/index.m3u8
+#EXTINF:-1 tvg-id="йЈҺдә‘йҹід№җ" tvg-name="йЈҺдә‘йҹід№җ" tvg-logo="https://live.fanmingming.cn/tv/йЈҺдә‘йҹід№җ.png" group-title="дёӯеӣҪеӨ§йҷҶ",йЈҺдә‘йҹід№җ
+http://dassby.qqff.top:99/live/йЈҺдә‘йҹід№җ/index.m3u8
+#EXTINF:-1 tvg-id="жҖҖж—§еү§еңә" tvg-name="жҖҖж—§еү§еңә" tvg-logo="https://live.fanmingming.cn/tv/жҖҖж—§еү§еңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",жҖҖж—§еү§еңә
+http://dassby.qqff.top:99/live/жҖҖж—§еү§еңә/index.m3u8
+#EXTINF:-1 tvg-id="з¬¬дёҖеү§еңә" tvg-name="з¬¬дёҖеү§еңә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/з¬¬дёҖеү§еңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",з¬¬дёҖеү§еңә
+http://dassby.qqff.top:99/live/з¬¬дёҖеү§еңә/index.m3u8
+#EXTINF:-1 tvg-id="йЈҺдә‘еү§еңә" tvg-name="йЈҺдә‘еү§еңә" tvg-logo="https://live.fanmingming.cn/tv/йЈҺдә‘еү§еңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",йЈҺдә‘еү§еңә
+http://dassby.qqff.top:99/live/йЈҺдә‘еү§еңә/index.m3u8
+#EXTINF:-1 tvg-id="йЈҺдә‘и¶ізҗғ" tvg-name="йЈҺдә‘и¶ізҗғ" tvg-logo="https://live.fanmingming.cn/tv/йЈҺдә‘и¶ізҗғ.png" group-title="дёӯеӣҪеӨ§йҷҶ",йЈҺдә‘и¶ізҗғ
+http://dassby.qqff.top:99/live/йЈҺдә‘и¶ізҗғ/index.m3u8
+#EXTINF:-1 tvg-id="еҠЁжј«з§Җеңә" tvg-name="еҠЁжј«з§Җеңә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҠЁжј«з§Җеңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҠЁжј«з§Җеңә
+http://113.9.214.47:9003/hls/57/index.m3u8
+#EXTINF:-1 tvg-id="йҮ‘иүІеӯҰе Ӯ" tvg-name="йҮ‘иүІеӯҰе Ӯ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҮ‘иүІеӯҰе Ӯ.png" group-title="дёӯеӣҪеӨ§йҷҶ",йҮ‘иүІеӯҰе Ӯ
+http://8.137.121.66:20240/live?url=http%3A//112.27.5.218%3A9901/tsfile/live/faacts/1051_1.m3u8%3Fkey%3Dtxiptv%26playlive%3D1%26authid%3D0
+#EXTINF:-1 tvg-id="е№ҝдёңзҸ жұҹ" tvg-name="е№ҝдёңзҸ жұҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңзҸ жұҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",е№ҝдёңзҸ жұҹ
+http://120.237.39.10:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&down=1
+#EXTINF:-1 tvg-id="е№ҝдёңзҸ жұҹ" tvg-name="е№ҝдёңзҸ жұҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е№ҝдёңзҸ жұҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",е№ҝдёңзҸ жұҹ
+http://183.11.239.36:808/hls/83/index.m3u8
+#EXTINF:-1 tvg-id="зқӣеҪ©дёӯеҺҹ" tvg-name="зқӣеҪ©дёӯеҺҹ" tvg-logo="https://live.fanmingming.cn/tv/зқӣеҪ©дёӯеҺҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зқӣеҪ©дёӯеҺҹ
+http://1.94.31.214/php/hntv.php?id=jczy
+#EXTINF:-1 tvg-id="зқӣеҪ©дёӯеҺҹ" tvg-name="зқӣеҪ©дёӯеҺҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зқӣеҪ©дёӯеҺҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зқӣеҪ©дёӯеҺҹ
+https://dxtx.hntv.tv/live/jczy.m3u8?txSecret=e785008e49564e5e738439b4dd2ae68e&txTime=7C4C6207&wsSecret=fd9d771e13aade24db1a69b31a40dd83&wsTime=1786942852
+#EXTINF:-1 tvg-id="зқӣеҪ©дёӯеҺҹ" tvg-name="зқӣеҪ©дёӯеҺҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зқӣеҪ©дёӯеҺҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зқӣеҪ©дёӯеҺҹ
+https://dxtx.hntv.tv/live/jczy.m3u8?txSecret=e785008e49564e5e738439b4dd2ae68e&txTime=7C4C6207&wsSecret=e37310678e95c8853977bd5371218458&wsTime=1786597222
+#EXTINF:-1 tvg-id="зқӣеҪ©дёӯеҺҹ" tvg-name="зқӣеҪ©дёӯеҺҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зқӣеҪ©дёӯеҺҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зқӣеҪ©дёӯеҺҹ
+https://dxtx.hntv.tv/live/jczy.m3u8?txSecret=e785008e49564e5e738439b4dd2ae68e&txTime=7C4C6207&wsSecret=d2416a9fc699f024bb24bb4edb887216&wsTime=1786770060
+#EXTINF:-1 tvg-id="зқӣеҪ©дёӯеҺҹ" tvg-name="зқӣеҪ©дёӯеҺҹ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зқӣеҪ©дёӯеҺҹ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зқӣеҪ©дёӯеҺҹ
+https://dxtx.hntv.tv/live/jczy.m3u8?txSecret=e785008e49564e5e738439b4dd2ae68e&txTime=7C4C6207&wsSecret=b82d98dc37b8767b26a4f6bd88fd7c55&wsTime=1786687236
+#EXTINF:-1 tvg-id="CHCеҠЁдҪңз”өеҪұ" tvg-name="CHCеҠЁдҪңз”өеҪұ" tvg-logo="https://tb.zbds.top/logo/CHCеҠЁдҪңз”өеҪұ.png" group-title="дёӯеӣҪеӨ§йҷҶ",CHCеҠЁдҪңз”өеҪұ
+http://120.238.84.45:9901/tsfile/live/1094_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CHCе®¶еәӯеҪұйҷў" tvg-name="CHCе®¶еәӯеҪұйҷў" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CHCе®¶еәӯеҪұйҷў.png" group-title="дёӯеӣҪеӨ§йҷҶ",CHCе®¶еәӯеҪұйҷў
+http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
+#EXTINF:-1 tvg-id="зІҫеҪ©еҪұи§Ҷ" tvg-name="зІҫеҪ©еҪұи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зІҫеҪ©еҪұи§Ҷ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зІҫеҪ©еҪұи§Ҷ
+http://8.137.121.66:20240/live?url=http%3A//112.27.5.218%3A9901/tsfile/live/faacts/1040_1.m3u8%3Fkey%3Dtxiptv%26playlive%3D1%26authid%3D0
+#EXTINF:-1 tvg-id="дёҠи§Ҷдёңж–№еҪұи§Ҷ" tvg-name="дёҠи§Ҷдёңж–№еҪұи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёҠи§Ҷдёңж–№еҪұи§Ҷ.png" group-title="дёӯеӣҪеӨ§йҷҶ",дёҠи§Ҷдёңж–№еҪұи§Ҷ
+https://live.chinacert.cftest5.cn/cnmg/live/617290047
+#EXTINF:-1 tvg-id="еҚ—дә¬ж–°й—»з»јеҗҲйў‘йҒ“" tvg-name="еҚ—дә¬ж–°й—»з»јеҗҲйў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚ—дә¬ж–°й—»з»јеҗҲйў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҚ—дә¬ж–°й—»з»јеҗҲйў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/838109047
+#EXTINF:-1 tvg-id="еҚ—дә¬ж•ҷз§‘йў‘йҒ“" tvg-name="еҚ—дә¬ж•ҷз§‘йў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚ—дә¬ж•ҷз§‘йў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҚ—дә¬ж•ҷз§‘йў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/838153729
+#EXTINF:-1 tvg-id="еҚ—дә¬еҚҒе…«йў‘йҒ“" tvg-name="еҚ—дә¬еҚҒе…«йў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚ—дә¬еҚҒе…«йў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҚ—дә¬еҚҒе…«йў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/838151753
+#EXTINF:-1 tvg-id="жұҹиӢҸеҹҺеёӮйў‘йҒ“" tvg-name="жұҹиӢҸеҹҺеёӮйў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҹҺеёӮйў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",жұҹиӢҸеҹҺеёӮйў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/626064714
+#EXTINF:-1 tvg-id="жұҹиӢҸеӣҪйҷ…" tvg-name="жұҹиӢҸеӣҪйҷ…" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеӣҪйҷ….png" group-title="дёӯеӣҪеӨ§йҷҶ",жұҹиӢҸеӣҪйҷ…
+http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=156423
+#EXTINF:-1 tvg-id="жұҹиӢҸеҪұи§Ҷйў‘йҒ“" tvg-name="жұҹиӢҸеҪұи§Ҷйў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸеҪұи§Ҷйў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",жұҹиӢҸеҪұи§Ҷйў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/626064697
+#EXTINF:-1 tvg-id="жұҹиӢҸз»јиүәйў‘йҒ“" tvg-name="жұҹиӢҸз»јиүәйў‘йҒ“" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹиӢҸз»јиүәйў‘йҒ“.png" group-title="дёӯеӣҪеӨ§йҷҶ",жұҹиӢҸз»јиүәйў‘йҒ“
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/626065193
+#EXTINF:-1 tvg-id="зӣҗеҹҺж–°й—»з»јеҗҲ" tvg-name="зӣҗеҹҺж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зӣҗеҹҺж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зӣҗеҹҺж–°й—»з»јеҗҲ
+https://live.chinacert.cftest5.cn/cnmg/live/639731825
+#EXTINF:-1 tvg-id="ж·®е®үж–°й—»з»јеҗҲ" tvg-name="ж·®е®үж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж·®е®үж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",ж·®е®үж–°й—»з»јеҗҲ
+http://192.168.31.200:50085/live?url=http%3A//192.168.31.200%3A3000/639731826
+#EXTINF:-1 tvg-id="жұҹйҳҙж–°й—»з»јеҗҲ" tvg-name="жұҹйҳҙж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жұҹйҳҙж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",жұҹйҳҙж–°й—»з»јеҗҲ
+https://live.chinacert.cftest5.cn/cnmg/live/955227979
+#EXTINF:-1 tvg-id="е®ңе…ҙж–°й—»з»јеҗҲ" tvg-name="е®ңе…ҙж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®ңе…ҙж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",е®ңе…ҙж–°й—»з»јеҗҲ
+https://live.chinacert.cftest5.cn/cnmg/live/955227996
+#EXTINF:-1 tvg-id="й•Үжұҹж–°й—»з»јеҗҲ" tvg-name="й•Үжұҹж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/й•Үжұҹж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",й•Үжұҹж–°й—»з»јеҗҲ
+http://zjtv-wshls.homecdn.com/live/2aa50.m3u8?wsSession=a263bdc5a26cd01b57a80359-170493712215358&wsIPSercert=f56bd6194d219a5172dbed60eca6e9b0
+#EXTINF:-1 tvg-id="й•Үжұҹж–°й—»з»јеҗҲ" tvg-name="й•Үжұҹж–°й—»з»јеҗҲ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/й•Үжұҹж–°й—»з»јеҗҲ.png" group-title="дёӯеӣҪеӨ§йҷҶ",й•Үжұҹж–°й—»з»јеҗҲ
+http://cm-wshls.homecdn.com/live/2aa50.m3u8
+#EXTINF:-1 tvg-id="иӢҸе·һ4K" tvg-name="иӢҸе·һ4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/иӢҸе·һ4K.png" group-title="дёӯеӣҪеӨ§йҷҶ",иӢҸе·һ4K
+https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
+#EXTINF:-1 tvg-id="иӢҸе·һ4K" tvg-name="иӢҸе·һ4K" tvg-logo="https://live.fanmingming.cn/tv/иӢҸе·һ4K.png" group-title="дёӯеӣҪеӨ§йҷҶ",иӢҸе·һ4K
+https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8
+#EXTINF:-1 tvg-id="зӣёеЈ°е°Ҹе“Ғ" tvg-name="зӣёеЈ°е°Ҹе“Ғ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зӣёеЈ°е°Ҹе“Ғ.png" group-title="дёӯеӣҪеӨ§йҷҶ",зӣёеЈ°е°Ҹе“Ғ
+http://live.nctv.top/douyu1.php?id=9286868
+#EXTINF:-1 tvg-id="CETV-1" tvg-name="CETV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV1.png" group-title="дёӯеӣҪеӨ§йҷҶ",CETV1
+https://live.chinacert.cftest5.cn/cnmg/live/923287154
+#EXTINF:-1 tvg-id="CETV-2" tvg-name="CETV2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV2.png" group-title="дёӯеӣҪеӨ§йҷҶ",CETV2
+https://live.chinacert.cftest5.cn/cnmg/live/923287211
+#EXTINF:-1 tvg-id="CETV-4" tvg-name="CETV4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV4.png" group-title="дёӯеӣҪеӨ§йҷҶ",CETV4
+https://live.chinacert.cftest5.cn/cnmg/live/923287339
+#EXTINF:-1 tvg-id="зҺҜзҗғж—…жёё" tvg-name="зҺҜзҗғж—…жёё" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зҺҜзҗғж—…жёё.png" group-title="дёӯеӣҪеӨ§йҷҶ",зҺҜзҗғж—…жёё
+https://live.chinacert.cftest5.cn/cnmg/live/958475356
+#EXTINF:-1 tvg-id="дёӯеҚҺзү№дә§" tvg-name="дёӯеҚҺзү№дә§" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёӯеҚҺзү№дә§.png" group-title="дёӯеӣҪеӨ§йҷҶ",дёӯеҚҺзү№дә§
+https://live.chinacert.cftest5.cn/cnmg/live/959986618
+#EXTINF:-1 tvg-id="зҲұеҘҮиүә" tvg-name="зҲұеҘҮиүә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зҲұеҘҮиүә.png" group-title="дёӯеӣҪеӨ§йҷҶ",зҲұеҘҮиүә
+http://iptv.4666888.xyz/iptv2A.php?id=21
+#EXTINF:-1 tvg-id="NewTVеҸӨиЈ…еү§еңә" tvg-name="еҸӨиЈ…еү§еңә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҸӨиЈ…еү§еңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҸӨиЈ…еү§еңә
+http://123.118.55.165:45237/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="NewTVеҶӣж—…еү§еңә" tvg-name="еҶӣж—…еү§еңә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҶӣж—…еү§еңә.png" group-title="дёӯеӣҪеӨ§йҷҶ",еҶӣж—…еү§еңә
+http://123.118.55.165:45237/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="NewTVжӯҰжҗҸдё–з•Ң" tvg-name="жӯҰжҗҸдё–з•Ң" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жӯҰжҗҸдё–з•Ң.png" group-title="дёӯеӣҪеӨ§йҷҶ",жӯҰжҗҸдё–з•Ң
+https://live.chinacert.cftest5.cn/cnmg/live/958475359
+#EXTINF:-1 tvg-id="зҝЎзҝ еҸ°" tvg-name="зҝЎзҝ еҸ°" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/зҝЎзҝ еҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",зҝЎзҝ еҸ°
+http://r.jdshipin.com/qrfbg
+#EXTINF:-1 tvg-id="ж— зәҝж–°й—»еҸ°" tvg-name="ж— зәҝж–°й—»еҸ°" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж— зәҝж–°й—».png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",ж— зәҝж–°й—»еҸ°
+http://r.jdshipin.com/CkuBd
+#EXTINF:-1 tvg-id="жҳҺзҸ еҸ°" tvg-name="жҳҺзҸ еҸ°" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/жҳҺзҸ еҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",жҳҺзҸ еҸ°
+http://r.jdshipin.com/ZQ4kN
+#EXTINF:-1 tvg-id="жёҜеҸ°з”өи§Ҷ 31" tvg-name="жёҜеҸ°з”өи§Ҷ31" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жёҜеҸ°з”өи§Ҷ31.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",жёҜеҸ°з”өи§Ҷ31
+http://iptv.4666888.xyz/iptv2A.php?id=23
+#EXTINF:-1 tvg-id="еҮӨеҮ°еҚ«и§Ҷ" tvg-name="еҮӨеҮ°еҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°еҚ«и§Ҷ.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°еҚ«и§Ҷ
+http://221.7.175.154:8445/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еҮӨеҮ°дёӯж–Ү" tvg-name="еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°
+http://zmgd.zyrnet.com:8888/hls/110/index.m3u8
+#EXTINF:-1 tvg-id="еҮӨеҮ°дёӯж–Ү" tvg-name="еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/еҮӨеҮ°дёӯж–ҮеҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°
+#EXTVLCOPT:http-user-agent=iPhone
+http://101.35.240.114:88/phenix.php?id=fhzw
+#EXTINF:-1 tvg-id="еҮӨеҮ°дёӯж–Ү" tvg-name="еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°еҚ«и§Ҷдёӯж–ҮеҸ°
+http://101.35.240.114:88/phenix.php?id=fhzw
+#EXTINF:-1 tvg-id="еҮӨеҮ°йҰҷжёҜ" tvg-name="еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/еҮӨеҮ°йҰҷжёҜеҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°
+#EXTVLCOPT:http-user-agent=iPhone
+http://101.35.240.114:88/phenix.php?id=fhhk
+#EXTINF:-1 tvg-id="еҮӨеҮ°йҰҷжёҜ" tvg-name="еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°еҚ«и§ҶйҰҷжёҜеҸ°
+http://101.35.240.114:88/phenix.php?id=fhhk
+#EXTINF:-1 tvg-id="еӨ©жҳ з»Ҹе…ё" tvg-name="еӨ©жҳ з»Ҹе…ё" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еӨ©жҳ з»Ҹе…ё.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еӨ©жҳ з»Ҹе…ё
+http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463
+#EXTINF:-1 tvg-id="йҰҷжёҜеҚ«и§Ҷ" tvg-name="йҰҷжёҜеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҰҷжёҜеҚ«и§Ҷ.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",йҰҷжёҜеҚ«и§Ҷ
+http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+#EXTINF:-1 tvg-id="йҰҷжёҜеҚ«и§Ҷ" tvg-name="йҰҷжёҜеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҰҷжёҜеҚ«и§Ҷ.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",йҰҷжёҜеҚ«и§Ҷ
+https://hkstv.tv/api/m3u8-proxy?url=http%3A%2F%2Fwebcast.hkstv.tv%2Flivestream%2Fmutfysrq%2Fplaylist.m3u8
+#EXTINF:-1 tvg-id="TVBжҳҹжІі" tvg-name="TVBжҳҹжІі" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/TVBжҳҹжІі.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",TVBжҳҹжІі
+http://r.jdshipin.com/sXuuD
+#EXTINF:-1 tvg-id="еҮӨеҮ°з”өеҪұ" tvg-name="еҮӨеҮ°з”өеҪұ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°з”өеҪұ.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°з”өеҪұ
+http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="еҮӨеҮ°иө„и®Ҝ" tvg-name="еҮӨеҮ°иө„и®Ҝ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҮӨеҮ°иө„и®Ҝ.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҮӨеҮ°иө„и®Ҝ
+http://zmgd.zyrnet.com:8888/hls/109/index.m3u8
+#EXTINF:-1 tvg-id="жңүзәҝж–°й—»" tvg-name="жңүзәҝж–°й—»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жңүзәҝж–°й—».png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",жңүзәҝж–°й—»
+http://61.10.2.141:80/live_freedirect/freehd209_h.live/chunklist.m3u8
+#EXTINF:-1 tvg-id="жңүзәҝж–°й—»" tvg-name="жңүзәҝж–°й—»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/жңүзәҝж–°й—».png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",жңүзәҝж–°й—»
+http://61.10.2.141/live_freedirect/freehd209_h.live/playlist.m3u8
+#EXTINF:-1 tvg-id="жңүзәҝж–°й—»" tvg-name="жңүзәҝж–°й—»" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/жңүзәҝж–°й—».png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",жңүзәҝж–°й—»
+http://iptv.4666888.xyz/iptv2A.php?id=31
+#EXTINF:-1 tvg-id="ViuTV" tvg-name="ViuTV" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/ViuTV.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1 tvg-id="еҚғзҰ§з»Ҹе…ё" tvg-name="еҚғзҰ§з»Ҹе…ё" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚғзҰ§з»Ҹе…ё.png" group-title="йҰҷжёҜз”өи§ҶеҸ°еҲ—иЎЁ",еҚғзҰ§з»Ҹе…ё
+http://iptv.4666888.xyz/iptv2A.php?id=22
+#EXTINF:-1 tvg-id="еҸ°и§Ҷ" tvg-name="еҸ°и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҸ°и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",еҸ°и§Ҷ
+rtmp://f13h.mine.nu/sat/tv071
+#EXTINF:-1 tvg-id="еҸ°и§Ҷ" tvg-name="еҸ°и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҸ°и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",еҸ°и§Ҷ
+http://211.72.174.95:8112/0.ts
+#EXTINF:-1 tvg-id="дёӯи§Ҷ" tvg-name="дёӯи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёӯи§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дёӯи§Ҷ
+rtmp://f13h.mine.nu/sat/tv091
+#EXTINF:-1 tvg-id="еҚҺи§Ҷ" tvg-name="еҚҺи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚҺи§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",еҚҺи§Ҷ
+rtmp://f13h.mine.nu/sat/tv111
+#EXTINF:-1 tvg-id="ж°‘и§Ҷ" tvg-name="ж°‘и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж°‘и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",ж°‘и§Ҷ
+rtmp://f13h.mine.nu/sat/tv051
+#EXTINF:-1 tvg-id="ж°‘и§Ҷж–°й—»еҸ°" tvg-name="ж°‘и§Ҷж–°й—»еҸ°" tvg-logo="https://live.fanmingming.cn/tv/ж°‘и§Ҷж–°й—»еҸ°.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",ж°‘и§Ҷж–°й—»еҸ°
+http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
+#EXTINF:-1 tvg-id="е…¬и§Ҷ" tvg-name="е…¬и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е…¬и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",е…¬и§Ҷ
+http://74.91.26.218:82/live/pts.m3u8
+#EXTINF:-1 tvg-id="е®ўе®¶з”өи§Ҷ" tvg-name="е®ўе®¶з”өи§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е®ўе®¶з”өи§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",е®ўе®¶з”өи§Ҷ
+http://4gtv.cnlive.club/channel/n855e5fe/index.m3u8?q=1782639885837
+#EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TVBS.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",TVBS
+http://4gtv.cnlive.club/channel/58f128b2/index.m3u8?q=1782639885837
+#EXTINF:-1 tvg-id="дёңжЈ®и¶…и§Ҷ" tvg-name="дёңжЈ®и¶…и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңжЈ®и¶…и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дёңжЈ®и¶…и§Ҷ
+rtmp://f13h.mine.nu/sat/tv331
+#EXTINF:-1 tvg-id="дёңжЈ®иҙӯзү©1" tvg-name="дёңжЈ®иҙӯзү©1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңжЈ®иҙӯзү©1.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дёңжЈ®иҙӯзү©1
+http://220.135.64.124:5050/of-4gtv-4gtv102/index.m3u8?proxy=true
+#EXTINF:-1 tvg-id="дёңжЈ®иҙӯзү©2" tvg-name="дёңжЈ®иҙӯзү©2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңжЈ®иҙӯзү©2.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дёңжЈ®иҙӯзү©2
+http://220.135.64.124:5050/of-4gtv-4gtv103/index.m3u8?proxy=true
+#EXTINF:-1 tvg-id="дёңжЈ®иҙӯзү©3" tvg-name="дёңжЈ®иҙӯзү©3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дёңжЈ®иҙӯзү©3.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дёңжЈ®иҙӯзү©3
+http://220.135.64.124:5050/4gtv-live048/index.m3u8?proxy=true
+#EXTINF:-1 tvg-id="йҫҷеҚҺз”өеҪұ" tvg-name="йҫҷеҚҺз”өеҪұ" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/йҫҷеҚҺз”өеҪұ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",йҫҷеҚҺз”өеҪұ
+http://iptv.4666888.xyz/iptv2A.php?id=45
+#EXTINF:-1 tvg-id="йҫҷеҚҺжҙӢзүҮ" tvg-name="йҫҷеҚҺжҙӢзүҮ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йҫҷеҚҺжҙӢзүҮ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",йҫҷеҚҺжҙӢзүҮ
+http://iptv.4666888.xyz/iptv2A.php?id=60
+#EXTINF:-1 tvg-id="йқ–еӨ©жҳ з”»" tvg-name="йқ–еӨ©жҳ з”»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/йқ–еӨ©жҳ з”».png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",йқ–еӨ©жҳ з”»
+http://4gtv.cnlive.club/channel/n610faa83/index.m3u8?q=1782639885837
+#EXTINF:-1 tvg-id="еӨ§з«Ӣз”өи§ҶеҸ°" tvg-name="еӨ§з«Ӣз”өи§ҶеҸ°" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/dalitv.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",еӨ§з«Ӣз”өи§ҶеҸ°
+http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+#EXTINF:-1 tvg-id="дәәй—ҙеҚ«и§Ҷ" tvg-name="дәәй—ҙеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дәәй—ҙеҚ«и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дәәй—ҙеҚ«и§Ҷ
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+#EXTINF:-1 tvg-id="дәәй—ҙеҚ«и§Ҷ" tvg-name="дәәй—ҙеҚ«и§Ҷ" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BLTV.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дәәй—ҙеҚ«и§Ҷ
+http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
+#EXTINF:-1 tvg-id="дәәй—ҙеҚ«и§Ҷ" tvg-name="дәәй—ҙеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дәәй—ҙеҚ«и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дәәй—ҙеҚ«и§Ҷ
+http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
+#EXTINF:-1 tvg-id="дәәй—ҙеҚ«и§Ҷ" tvg-name="дәәй—ҙеҚ«и§Ҷ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/дәәй—ҙеҚ«и§Ҷ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",дәәй—ҙеҚ«и§Ҷ
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+#EXTINF:-1 tvg-id="ж°‘и§Ҷз»јиүә" tvg-name="ж°‘и§Ҷз»јиүә" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж°‘и§Ҷз»јиүә.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",ж°‘и§Ҷз»јиүә
+http://iptv.4666888.xyz/iptv2A.php?id=46
+#EXTINF:-1 tvg-id="зҢӘе“Ҙдә®жӯҢеҺ…з§Җ" tvg-name="зҢӘе“Ҙдә®жӯҢеҺ…з§Җ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/зҢӘе“Ҙдә®жӯҢеҺ…з§Җ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",зҢӘе“Ҙдә®жӯҢеҺ…з§Җ
+http://4gtv.cnlive.club/channel/n4271efdd/index.m3u8?q=1782639885837
+#EXTINF:-1 tvg-id="еҘҪж¶ҲжҒҜ" tvg-name="еҘҪж¶ҲжҒҜ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҘҪж¶ҲжҒҜ.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",еҘҪж¶ҲжҒҜ
+https://dqhxk7sbp7xog.cloudfront.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8
+#EXTINF:-1 tvg-id="й•ңж–°й—»" tvg-name="й•ңж–°й—»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/й•ңж–°й—».png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",й•ңж–°й—»
+http://4gtv.cnlive.club/channel/351c8485/index.m3u8?q=1782639885837
+#EXTINF:-1 tvg-id="ж°‘и§ҶеҪұеү§" tvg-name="ж°‘и§ҶеҪұеү§" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ж°‘и§ҶеҪұеү§.png" group-title="еҸ°ж№ҫз”өи§ҶеҸ°еҲ—иЎЁ",ж°‘и§ҶеҪұеү§
+http://iptv.4666888.xyz/iptv2A.php?id=53
+#EXTINF:-1 tvg-id="йҹ©еӣҪз”өеҪұ1" tvg-name="йҹ©еӣҪз”өеҪұ1" tvg-logo="https://tb.zbds.top/logo/йҹ©еӣҪз”өеҪұ1.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",йҹ©еӣҪз”өеҪұ1
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
+#EXTINF:-1 tvg-id="йҹ©еӣҪз”өеҪұ2" tvg-name="йҹ©еӣҪз”өеҪұ2" tvg-logo="https://live.fanmingming.cn/tv/йҹ©еӣҪз”өеҪұ2.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",йҹ©еӣҪз”өеҪұ2
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=743
+#EXTINF:-1 tvg-id="CNA" tvg-name="CNA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/ChannelAsia.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-id="CINEMAX" tvg-name="CINEMAX" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CINEMAX.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",CINEMAX
+http://220.135.64.124:5050/4gtv-live069/index.m3u8?proxy=true
+#EXTINF:-1 tvg-id="TRACEURBAN" tvg-name="TRACEURBAN" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TRACEURBAN.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",TRACEURBAN
+https://php.946985.filegear-sg.me/mytv265.php?id=TRUR
+#EXTINF:-1 tvg-id="Arirang" tvg-name="Arirang" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/ArirangTV.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",Arirang
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+#EXTINF:-1 tvg-id="е…«еәҰз©әй—ҙ" tvg-name="е…«еәҰз©әй—ҙ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/е…«еәҰз©әй—ҙ.png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",е…«еәҰз©әй—ҙ
+http://iptv.4666888.xyz/iptv2A.php?id=52
+#EXTINF:-1 tvg-id="еҚҠеІӣж–°й—»" tvg-name="еҚҠеІӣж–°й—»" tvg-logo="https://www.xn--rgv465a.top/tvlogo/еҚҠеІӣж–°й—».png" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",еҚҠеІӣж–°й—»
+http://live-hls-web-aja.getaj.net/AJA/02.m3u8
+#EXTINF:-1 tvg-id="DD India (1080p)" tvg-name="DD India (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s158251_ld_h15_aa.png?lock=720x540" group-title="дёңеҚ—дәҡеӣҪйҷ…еўғеӨ–д»ЈзҗҶеҸ°",DD India (1080p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/ceda14583477426aa162a65392d8ea07/index.m3u8
+#EXTINF:-1 tvg-id="KCTV кҙ‘мЈј CH05 (720p) [Not 24/7]" tvg-name="KCTV кҙ‘мЈј CH05 (720p) [Not 24/7]" tvg-logo="https://i.imgur.com/IHkZpaI.png" group-title="йҹ©еӣҪз”өи§ҶеҸ°еҲ—иЎЁ",KCTV кҙ‘мЈј CH05 (720p) [Not 24/7]
+http://119.77.96.184:1935/chn05/chn05/playlist.m3u8
+#EXTINF:-1 tvg-id="SBS6 Classics (1080p) [Geo-blocked]" tvg-name="SBS6 Classics (1080p) [Geo-blocked]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8d/SBS_6_logo_2013.png" group-title="йҹ©еӣҪз”өи§ҶеҸ°еҲ—иЎЁ",SBS6 Classics (1080p) [Geo-blocked]
+https://sbs6classic.prd1.talpatvcdn.nl/v1/master/8ada1ed2ae3b9c3db6fc5e604cfa78fc7d2d745e/sbs6classic_ssai/fea54560ba684701a2143f33a9cf4489/index.m3u8
+#EXTINF:-1 tvg-id="TVB1" tvg-name="TVB1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TVB1.png" group-title="зҫҺеӣҪз”өи§ҶеҸ°еҲ—иЎЁ",TVB1
+http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=153396
+#EXTINF:-1 tvg-id="TVBe" tvg-name="TVBe" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TVBe.png" group-title="зҫҺеӣҪз”өи§ҶеҸ°еҲ—иЎЁ",TVBe
+http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=153398
+#EXTINF:-1 tvg-id="TVB DRAMA" tvg-name="TVB DRAMA" tvg-logo="https://www.xn--rgv465a.top/tvlogo/TVB DRAMA.png" group-title="зҫҺеӣҪз”өи§ҶеҸ°еҲ—иЎЁ",TVB DRAMA
+http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=153400
