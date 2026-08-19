@@ -1,7 +1,7 @@
-ï»¿æ´æ°æ¶é´,#genre#
+更新时间,#genre#
 ,2026-08-15 01:06:17
 
-ðºå¤®è§çµè§å°,#genre#
+📺央视电视台,#genre#
 CCTV-2 [1080P],https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 CCTV-2 [1080P],http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-3 [1080P],http://222.169.85.8:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -15,43 +15,43 @@ CCTV-13 [1080P],https://event.pull.hebtv.com/jishi/cp1.m3u8
 CCTV-14 [1080P],https://event.pull.hebtv.com/jishi/cp2.m3u8
 CCTV-14 [1080P],http://112.27.235.94:8000/hls/15/index.m3u8
 
-ð¡å«è§çµè§å°,#genre#
-å¹¿ä¸å«è§ [1080P],http://222.169.85.8:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
-æµæ±å«è§ [1080P],http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
-æµæ±å«è§ [1080P],http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
-æµæ±å«è§ [1080P],http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
-æµæ±å«è§ [1080P],http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8
-æµæ±å«è§ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
-æ¹åå«è§ [4K],http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-æ¹åå«è§ [4K],http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-åäº¬å«è§ [1080P],http://112.27.235.94:8000/hls/27/index.m3u8
-é»é¾æ±å«è§ [1080P],http://112.27.235.94:8000/hls/48/index.m3u8
-ä¸æ¹å«è§ [1080P],http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
-ä¸æ¹å«è§ [1080P],http://112.27.235.94:8000/hls/28/index.m3u8
-ä¸åå«è§ [1080P],http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
-æ²³åå«è§ [1080P],http://1.94.31.214/php/hntv.php?id=hnws
-åèå¤å«è§ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-å±±è¥¿å«è§ [1080P],http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
-åå·å«è§ [1080P],http://112.27.235.94:8000/hls/35/index.m3u8
-æ·±å³å«è§ [1080P],http://112.27.235.94:8000/hls/33/index.m3u8
-å¤©æ´¥å«è§ [1080P],http://222.169.85.8:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
-å¤©æ´¥å«è§ [1080P],http://112.27.235.94:8000/hls/42/index.m3u8
-æ°çå«è§,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
-å¤§æ¹¾åºå«è§ [1080P],http://222.128.55.152:9080/live/dwq.m3u8
+📡卫视电视台,#genre#
+广东卫视 [1080P],http://222.169.85.8:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
+浙江卫视 [1080P],http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+浙江卫视 [1080P],http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
+浙江卫视 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+浙江卫视 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8
+浙江卫视 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+湖南卫视 [4K],http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+湖南卫视 [4K],http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+北京卫视 [1080P],http://112.27.235.94:8000/hls/27/index.m3u8
+黑龙江卫视 [1080P],http://112.27.235.94:8000/hls/48/index.m3u8
+东方卫视 [1080P],http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+东方卫视 [1080P],http://112.27.235.94:8000/hls/28/index.m3u8
+东南卫视 [1080P],http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+河南卫视 [1080P],http://1.94.31.214/php/hntv.php?id=hnws
+内蒙古卫视 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+山西卫视 [1080P],http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
+四川卫视 [1080P],http://112.27.235.94:8000/hls/35/index.m3u8
+深圳卫视 [1080P],http://112.27.235.94:8000/hls/33/index.m3u8
+天津卫视 [1080P],http://222.169.85.8:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
+天津卫视 [1080P],http://112.27.235.94:8000/hls/42/index.m3u8
+新疆卫视,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
+大湾区卫视 [1080P],http://222.128.55.152:9080/live/dwq.m3u8
 
-âï¸æµæ±çµè§å°,#genre#
-æµæ±æ°é» [1080P],http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-æµæ±æ°é» [1080P],https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-æµæ±å½é [1080P],http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-æµæ±å½é [1080P],https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-æµæ±å°å¿ [1080P],http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-æµæ±å°å¿ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-æµæ±æç§ [1080P],http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-æµæ±æç§ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-ä¹æ±çºªå½ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-æµæ±æ°ç [1080P],http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
-æµæ±æ°ç [1080P],https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
-æµæ±ç»æµ [1080P],http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-æµæ±ç»æµ [1080P],https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-æµæ±é±æ± [1080P],http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-æµæ±é±æ± [1080P],https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+☘️浙江电视台,#genre#
+浙江新闻 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+浙江新闻 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+浙江国际 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+浙江国际 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+浙江少儿 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+浙江少儿 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+浙江教科 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+浙江教科 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+之江纪录 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+浙江民生 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+浙江民生 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+浙江经济 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江经济 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江钱江 [1080P],http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+浙江钱江 [1080P],https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
