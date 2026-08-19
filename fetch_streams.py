@@ -34,7 +34,8 @@ def run_scraper(csv_file):
         next(reader, None) # 跳过表头
         
         for index, row in enumerate(reader):
-            if not row: continue
+            if not row: 
+                continue
             host_val = row[0].strip()
             url = host_val if host_val.startswith("http") else f"http://{host_val}"
             
@@ -58,7 +59,10 @@ def run_scraper(csv_file):
                         with open(file_path, "w", encoding="utf-8") as out:
                             out.write(content)
                         
-                        # 添加到 JSON 列表
+                        # 添加到 JSON 列表 (注意这里换成了网络可访问的 Raw 链接，方便TVBox等工具直接远程读取)
+                        # 如果你的仓库叫 wybyu123/123，这里会自动生成对应的直链
+                        raw_url = f"https://raw.githubusercontent.com/wybyu123/123/main/{special_dir}/{file_name}"
+
                         json_output["lives"].append({
                             "type": 0,
                             "epg": "http://epg.52sw.top:668/?ch={name}&date={date}",
@@ -66,11 +70,13 @@ def run_scraper(csv_file):
                             "playerType": 2,
                             "timeout": 10,
                             "name": f"源_{date_str}h{count:02d}",
-                            "url": file_path 
+                            "url": raw_url 
                         })
                         
-                        if is_m3u_file: m3u_count += 1
-                        else: txt_count += 1
+                        if is_m3u_file: 
+                            m3u_count += 1
+                        else: 
+                            txt_count += 1
                         print(f"✅ 已存入 special_files: {file_name}")
                     else:
                         # 非直播源文件存入 downloads
@@ -86,5 +92,6 @@ def run_scraper(csv_file):
         json.dump(json_output, jf, indent=2, ensure_ascii=False)
     print("\n✨ 全部处理完毕，JSON 已生成。")
 
-# 调用示例
-# run_scraper("202608100451.csv")
+if __name__ == "__main__":
+    # 【核心修复】：取消了这里的注释，指定正确的 CSV 文件运行
+    run_scraper("202608100451.csv")
