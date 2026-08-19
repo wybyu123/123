@@ -35,12 +35,18 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 先拉取远程最新代码，防止冲突被拒
-          git pull --rebase origin main || echo "No remote changes or rebase skipped"
+          # 1. 先把当前生成的改动临时暂存起来，防止拉取冲突
+          git stash
           
+          # 2. 安全地拉取远程最新代码（带 rebase）
+          git pull --rebase origin main || echo "Rebase skipped"
+          
+          # 3. 把刚才暂存的改动释放回来
+          git stash pop || echo "No stash to pop"
+          
+          # 4. 添加 downloads 目录下的所有变动
           git add downloads/
-          git status
           
-          # 检查是否有新文件变动，有则提交
+          # 5. 检查是否有变动，有则提交并推送
           git diff --staged --quiet || git commit -m "Auto-update downloaded files [skip ci]"
           git push
