@@ -22,9 +22,15 @@ for d in [output_dir, special_dir]:
 
 def detect_real_format_by_ratio(content):
     """
-    通过计算内容中不同特征的行数比例来精确判断真实格式
+    通过计算内容中不同特征的行数比例来精确判断真实格式，
+    并优先过滤掉 HTML 网页
     """
-    content_str = content.strip()
+    content_str = content.strip().lower()
+    
+    # 1. 优先拦截：如果包含标准 HTML 网页特征，直接返回 "html"（视为无效直播源）
+    if "<html" in content_str or "<doctype html" in content_str or "<head>" in content_str:
+        return "html"
+
     lines = content_str.splitlines()
     
     m3u_score = 0
@@ -36,7 +42,7 @@ def detect_real_format_by_ratio(content):
             continue
             
         # 统计 M3U 特征
-        if line.startswith("#EXTM3U") or line.startswith("#EXTINF:"):
+        if line.startswith("#extm3u") or line.startswith("#extinf:"):
             m3u_score += 2
         elif ".m3u8" in line or ".ts" in line:
             m3u_score += 1
@@ -54,7 +60,7 @@ def detect_real_format_by_ratio(content):
     elif m3u_score > txt_score:
         return "m3u"
     else:
-        if "#EXTM3U" in content_str:
+        if "#extm3u" in content_str:
             return "m3u"
         if "#genre#" in content_str:
             return "txt"
@@ -80,12 +86,10 @@ def smart_decode(content_bytes):
     for enc in encodings:
         try:
             decoded = content_bytes.decode(enc)
-            # 如果解码成功，并且包含常见的中文或者合法的直播源标签，就认为编码正确
             if '#' in decoded or ',' in decoded or '\n' in decoded:
                 return decoded
         except UnicodeDecodeError:
             continue
-    # 兜底
     return content_bytes.decode('utf-8', errors='ignore')
 
 def safe_print(text):
@@ -124,7 +128,6 @@ def run_scraper(csv_file):
                 response = requests.get(url, headers=headers, timeout=12, allow_redirects=True)
                 
                 if response.status_code == 200:
-                    # 使用封装好的智能解码处理字节流，彻底解决 GBK/UTF-8 乱码问题
                     content = smart_decode(response.content)
                     
                     base_name = get_safe_filename_from_url(url, index+1)
@@ -135,6 +138,11 @@ def run_scraper(csv_file):
 
                     real_type = detect_real_format_by_ratio(content)
                     
+                    # 拦截并跳过 HTML 网页
+                    if real_type == "html":
+                        safe_print(f"    ⚠️ [跳过] 该链接返回的是 HTML 网页（非直播源）")
+                        continue
+
                     ext = None
                     count_str = ""
                     if real_type == "m3u":
@@ -165,16 +173,16 @@ def run_scraper(csv_file):
                             "url": raw_url 
                         })
                         
-                        safe_print(f"   ✨ [成功分拣] 识别为 {real_type.upper()} -> 存入 special_files/{file_name} (编码正常)")
+                        safe_print(f"    ✨ [成功分拣] 识别为 {real_type.upper()} -> 存入 special_files/{file_name}")
                     else:
-                        safe_print(f"   ⚠️ [跳过] 非标准格式")
+                        safe_print(f"    ⚠️ [跳过] 非标准格式")
                         
             except Exception as e:
-                safe_print(f"   ⚠️ 访问失败: {e}")
+                safe_print(f"    ⚠️ 访问失败: {e}")
 
     with open("lives_output.json", "w", encoding="utf-8") as jf:
         json.dump(json_output, jf, indent=2, ensure_ascii=False)
-    safe_print("\n✨ 全部处理完毕！已加入多编码自动适配修复乱码。")
+    safe_print("\n✨ 全部处理完毕！已加入 HTML 网页自动拦截过滤。")
 
 if __name__ == "__main__":
     run_scraper("202608100451.csv")
