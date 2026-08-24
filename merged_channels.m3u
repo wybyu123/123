@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="http://8.153.108.11:8080/epg/epg.gz"
-#EXTINF:-1 tvg-id="Update" tvg-name="更新时间" group-title="更新时间",📅 汇总更新于 2026-08-24 04:06:42
+#EXTINF:-1 tvg-id="Update" tvg-name="更新时间" group-title="更新时间",📅 汇总更新于 2026-08-24 07:14:15
 http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=bestzb
 #EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
 http://113.90.154.189:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
