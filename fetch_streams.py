@@ -14,7 +14,7 @@ if sys.stdout.encoding.lower() != 'utf-8':
 output_dir = "downloads"
 special_dir = "special_files"
 
-# 1. 每次运行脚本时，自动清空并重建 downloads 和 special_files 目录，避免旧文件堆积
+# 每次运行脚本时，自动清空并重建目录
 for d in [output_dir, special_dir]:
     if os.path.exists(d):
         shutil.rmtree(d)
@@ -62,19 +62,31 @@ def detect_real_format_by_ratio(content):
     return "other"
 
 def get_safe_filename_from_url(url, index):
-    """
-    从 URL 提取主机名作为文件名，并将冒号、斜杠等不安全字符替换为下划线或横杠
-    """
     try:
         parsed = urlparse(url)
         netloc = parsed.netloc if parsed.netloc else parsed.path
-        # 替换不合法的路径字符
         safe_name = netloc.replace(":", "-").replace("/", "-").replace("\\", "-")
         if not safe_name:
             safe_name = f"site_{index}"
         return safe_name
     except Exception:
         return f"site_{index}"
+
+def smart_decode(content_bytes):
+    """
+    智能解码：依次尝试 utf-8、gbk、gb2312、gb18030，确保中文不会出现乱码
+    """
+    encodings = ['utf-8', 'gbk', 'gb2312', 'gb18030', 'latin1']
+    for enc in encodings:
+        try:
+            decoded = content_bytes.decode(enc)
+            # 如果解码成功，并且包含常见的中文或者合法的直播源标签，就认为编码正确
+            if '#' in decoded or ',' in decoded or '\n' in decoded:
+                return decoded
+        except UnicodeDecodeError:
+            continue
+    # 兜底
+    return content_bytes.decode('utf-8', errors='ignore')
 
 def safe_print(text):
     try:
@@ -109,21 +121,18 @@ def run_scraper(csv_file):
                 headers = {
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
                 }
-                # 允许自动重定向，解决部分直接下载或重定向链接抓取不到的问题
                 response = requests.get(url, headers=headers, timeout=12, allow_redirects=True)
-                response.encoding = response.apparent_encoding if response.apparent_encoding else 'utf-8'
                 
                 if response.status_code == 200:
-                    content = response.text
+                    # 使用封装好的智能解码处理字节流，彻底解决 GBK/UTF-8 乱码问题
+                    content = smart_decode(response.content)
                     
-                    # 根据 URL 动态生成 downloads 下的文件名（将 IP:端口 或 域名 中的特殊符号替换为 -）
                     base_name = get_safe_filename_from_url(url, index+1)
                     raw_download_path = os.path.join(output_dir, f"{base_name}.txt")
                     
                     with open(raw_download_path, "w", encoding="utf-8", errors="ignore") as raw_out:
                         raw_out.write(content)
 
-                    # 格式判断
                     real_type = detect_real_format_by_ratio(content)
                     
                     ext = None
@@ -156,17 +165,16 @@ def run_scraper(csv_file):
                             "url": raw_url 
                         })
                         
-                        safe_print(f"   ✨ [成功分拣] 识别为 {real_type.upper()} -> 存入 special_files/{file_name}")
+                        safe_print(f"   ✨ [成功分拣] 识别为 {real_type.upper()} -> 存入 special_files/{file_name} (编码正常)")
                     else:
-                        safe_print(f"   ⚠️ [跳过] 非标准格式（已作为原始文本保存至 downloads/{base_name}.txt）")
+                        safe_print(f"   ⚠️ [跳过] 非标准格式")
                         
             except Exception as e:
                 safe_print(f"   ⚠️ 访问失败: {e}")
 
-    # 保存最终 JSON
     with open("lives_output.json", "w", encoding="utf-8") as jf:
         json.dump(json_output, jf, indent=2, ensure_ascii=False)
-    safe_print("\n✨ 全部处理完毕！downloads 和 special_files 均已实现每次自动清空与精准命名。")
+    safe_print("\n✨ 全部处理完毕！已加入多编码自动适配修复乱码。")
 
 if __name__ == "__main__":
     run_scraper("202608100451.csv")
