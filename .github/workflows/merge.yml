@@ -1,0 +1,31 @@
+name: Merge Stream Files
+
+on:
+  workflow_run:
+    workflows: ["Auto Update Streams"] # 假设你原有的抓取工作流叫这个名字，或者改成你实际的 workflow 名称
+    types:
+      - completed
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Merge Script
+        run: python merge_streams.py
+
+      - name: Commit and push merged files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.io"
+          git add merged_channels.txt merged_channels.m3u
+          git diff --staged --quiet || git commit -m "Auto-merge special files and update timestamps [skip ci]"
+          git push
