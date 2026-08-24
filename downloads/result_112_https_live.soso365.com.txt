@@ -1,1223 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="Robots" content="noindex,nofollow">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-<meta name="apple-mobile-web-app-title" content="çµè§çµå°" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="apple-touch-icon" href="https://www.soso365.com/app/tv.png">
-<title>ç´æ­ Â· SOSO365</title>
-<meta name="Keywords" content="å¨çº¿çµè§,å¨çº¿ç´æ­,çµè§ç´æ­,å½å¤çµè§ç´æ­" />
-<meta name="Description" content="æ¬ç«æä¾çµè§ç´æ­æå¡ï¼åæ¬å¤®è§å¨çº¿ç´æ­ï¼åå°æ¹å«è§å¨çº¿ç´æ­ï¼æ¸¯æ¾³å°çµè§å°å¨çº¿ç´æ­åå½å¤çµè§å°å¨çº¿ç´æ­ã" />
-
-
-<style>
-*, *:before, *:after {
--moz-box-sizing: border-box; /*Firefox3.5+*/
--webkit-box-sizing: border-box; /*Safari3.2+*/
--o-box-sizing: border-box; /*Opera9.6*/
--ms-box-sizing: border-box; /*IE8*/
-box-sizing: border-box; /*W3Cæ å(IE9+ï¼Safari5.1+,Chrome10.0+,Opera10.6+)*/
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
-}
-html, body {
-margin: 0;
-padding: 0;
-height: 100%;
-background-color: #000!important;
-color: goldenrod;
-font-size:14px;
-}
-::-webkit-scrollbar {
-display: none;
-}
-a {
-text-decoration: none;
-}
-input {
-border: none;
-background: none;
-border-bottom: 1px solid goldenrod;
-color: #fff;
-width: 100%;
-padding: 0 0.25em;
-outline: none;
-font-size: 1em;
-line-height: 2;
-}
-input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
-border: none;
-background: goldenrod;
-border-bottom: 1px solid goldenrod;
-color: #333;
-width: auto;
-font-size: 1em;
-padding: 0 0.25em;
-line-height: 2;
-cursor:pointer;
-position: absolute;
-right: 0;
-top: 0;
-}
-#playbox {
-width:100%;
-height:75%;
-padding-top:24px;
-}
-.tabs input[type=radio] {
-position: absolute;
-top: -9999px;
-left: -9999px;
-}
-.tabs {
-float: none;
-list-style: none;
-position: relative;
-padding: 0;
-margin: 1em 0;
-}
-.tabs li {
-float: left;
-}
-.tabs label {
-display: block;
-margin-right: 1px;
-padding: 0 0.5em;
-color: goldenrod;
-font-size: 1em;
-line-height: 2;
-font-weight: normal;
-cursor: pointer;
-position: relative;
-}
-.tabs label:hover, [id^=tab]:checked + label {
-background: goldenrod;
-color: #333;
-}
-[id^=tab]:checked ~ [class^=tab-content], [id^=tab]:checked ~ [class^=tab-content] > div {
-display: block;
-}
-.tab-content {
-z-index: 2;
-display: none;
-text-align: left;
-overflow: hidden;
-width: 100%;
-border-top: 1px solid goldenrod;
-padding-top: 1em;
-color: white;
-position: absolute;
-left: 0;
-box-sizing: border-box;
-}
-.tab-content a {
-line-height: 2;
-padding: 0 0.5em;
-margin: 0 0.5em 0.5em 0;
-float: left;
-background: #202732;
-color: #ddd;
-border-radius: 0;
-}
-.tab-content a:hover, .tab-content a.active {
-background: goldenrod;
-color: #333;
-}
-.tab-content > div {
-display: none;
--webkit-animation-duration: 0.5s;
--o-animation-duration: 0.5s;
--moz-animation-duration: 0.5s;
-animation-duration: 0.5s;
-}
-@media screen and (orientation: portrait) {
-body {
-font-size:12px;
-}
-#playbox {
-height: 50%;
-}
-.desktop {
-display: none;
-}
-.mobile {
-display: block;
-}
-.tabs label {
-padding: 0 0.25em;
-}
-}
-@media screen and (orientation: landscape) {
-.desktop {
-
-display: block;
-}
-.mobile {
-display: none;
-}
-}
-</style>
-<script>var $pageInfo = { publishmentSystemID : 1, channelID : 1, contentID : 0, siteUrl : "http://www.soso365.com", homeUrl : "http://www.soso365.com/home", currentUrl : "http://www.soso365.com/live/", rootUrl : "", apiUrl : "/api" }</script>
-
-<!--<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id: "JoW7bxPN5pY7DyqC",ck: "JoW7bxPN5pY7DyqC"})</script>-->
-<script async data-id="101423860" src="//static.getclicky.com/js"></script>
-</head>
-<body class="channel live">
-<div id="playbox"></div>
-<div class="main">
-<ul class="tabs">
-<li>
-<input type="radio" checked name="tabs" id="tab-ä½è²">
-<label for="tab-ä½è²">ä½è²</label>
-<div class="tab-content animated fadeIn">
-<br>
-<a target="liveiframe" href="https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8">Red Bull TV</a>
-<a target="liveiframe" href="http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³ç</a>
-<!--<a target="liveiframe" href="https://d12a2vxqkkh1bo.cloudfront.net/hls/1080p/playlist.m3u8">æ³å»èµ</a>-->
-<!--<a target="liveiframe" href="http://109.61.81.45:43756/713/video.m3u8?token=QUWJEnwmm2">SkySports</a>-->
-<!--
-<a target="liveiframe" href="http://154.7.177.5:5000/TVOD/5000000011000031207/bestzb/index.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é­åè¶³ç</a>
-
-
-
-<!---->
-<!--<a target="liveiframe" href="http://wuwenxidong.work:2333/udp/225.1.8.249:4120.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">å¤©ä¸è¶³çä¹å¤</a>-->
-
-<!--<a target="liveiframe" href="https://d2anxt9uu5yxtz.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ja4uwkkhcliwv/v1/chili_fifa_eng_1/samsungheadend_us/latest/main/hls/playlist.m3u8">FIFAè¶³ç(PC:Firefoxï¼Mobile:alook)</a>-->
-<!--<a target="liveiframe" href="http://223.13.182.149:4022/udp/239.1.1.75:8075.m3u8">é­åè¶³çï¼å¡é¡¿ï¼</a>-->
-<!--
-<!--<a target="liveiframe" href="http://223.10.24.82:8084/udp/239.1.1.75:8075.m3u8">é­åè¶³çï¼å¡é¡¿ï¼</a>-->
-
-<!--<a target="liveiframe" href="http://223.215.104.165:18888/rtp/238.1.79.57:4592.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³ç</a>-->
-
-<!--<a target="liveiframe" href="http://120.76.248.139/live/bfgd/4200000249.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">æ°è§è§</a>-->
-<!--<a target="liveiframe" href="http://119.32.12.32:2901/udp/224.1.100.129:11111.m3u8">å²çä½è²ï¼ç¯®çï¼</a>-->
-<!--<a target="liveiframe" href="http://xiaoge.myds.me:9900/TVOD/5000000011000031207/bestzb/index.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é­åè¶³çï¼å¡é¡¿ï¼</a>-->
-<a target="liveiframe" href="http://120.76.248.139/live/bfgd/4200000249.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">æ°è§è§</a>
-<!--<a target="liveiframe" href="http://slb.5gtv.hbcatv.cn:8060/live/OP001/IP-MLZQ-HD/index.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é­åè¶³ç</a>
-<a target="liveiframe" href="http://122.189.103.182:8010/udp/228.0.0.236:6108.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³ç</a>
-<a target="liveiframe" href="http://221.198.202.170:8888/udp/225.1.2.168:5002.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³ç</a>
-<a target="liveiframe" href="http://slb.5gtv.hbcatv.cn:8060/live/OP001/IP-FYZQ-HD/index.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³ç</a>
-<a target="liveiframe" href="http://111.61.236.247:9081/hls/58/index.m3u8" title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³çï¼å¡é¡¿ï¼</a>-->
-
-<a target="liveiframe" href="http://120.76.248.139/live/bfgd/4200000633.m3u8">å¤©åå´æ£</a>
-
-<!--<a target="liveiframe" href="http://z.b.bkpcp.top/m.php?id=mlzq.m3u8">é­åè¶³ç</a>-->
-<!--
-
-<!--<a target="liveiframe" href="http://123.112.50.33:8888/rtp/239.3.1.89:4120.m3u8">è¶³çä¹å¤</a>-->
-
-
-<!---->
-
-
-<!--
-<!--<a target="liveiframe" href="http://extraott.com/live/6772191932/1654508883/153691.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">æ°è§è§</a>
-
-
-<!--<a target="liveiframe" href="http://42.176.185.28:9901/tsfile/live/1017_1.m3u8"title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é£äºè¶³çï¼å¡é¡¿ï¼</a>
-<!--<a target="liveiframe" href="http://58.19.13.92:9901/tsfile/live/1034_1.m3u8">é£äºè¶³çï¼å¡é¡¿ï¼</a>-->
-
-
-<!--
-
-
-<!--<a target="liveiframe" href="http://cdn.ggapk.net/live/m3u8?photocall=aHR0cHM6Ly9jbnR2LnNicy90dj9hdXRoPTIzMTAyMDE4NTUmaWQ9eHNq&type=.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">æ°è§è§</a>-->
-<!---->
-<!--<a target="liveiframe" href="http://140.249.29.151/liveplay-kk.rtxapp.com/live/program/live/xsjhd8m/8000000/mnf.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">æ°è§è§</a>-->
-
-
-<!---->
-<!--<a target="liveiframe" href="http://645c6e6320d051d49b446bac57d65143.v.smtcdns.net/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012375003.m3u8">CCTV-16å¥¥æå¹å</a>
-<a target="liveiframe" href="http://cfss.cc/ds/bst/bst.php?cdn=42e83a32dc4e03efd8bbca6906228db9.h2.smtcdns.net/t-fjnetv51.live.bestvcdn.com.cn&hf=2&vid=cctv16hd8m/8000000&Bst.m3u8">CCTV-16å¥¥æå¹å</a>
-<a target="liveiframe" href=http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226921/index.m3u8">CCTV-16å¥¥æå¹å</a>
-<!--<a target="liveiframe" href=http://jscbn.tx-cdn.gitv.tv/gitv_escape/G_CCTV-16-CQ/G_CCTV-16-CQ.m3u8">CCTV-16å¥¥æå¹å</a>-->
-
-<!--<a target="liveiframe" href="http://gslbserv.itv.cmvideo.cn:80/5000000010000017540/index.m3u8?channel-id=bestzb&Contentid=5000000010000017540&livemode=1&stbId=3">äºæä½è²(æ£ç)</a><a target="liveiframe" href="http://123.118.59.194:8686/rtp/239.3.1.243:8000.m3u8">BRTVä½è²ä¼é²</a>-->
-
-<!--<a target="liveiframe" href="http://fangke.blueswords.com:9901/tsfile/live/0005_1.m3u8">CCTV-5HD</a>
-<a target="liveiframe" href="http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221225494/index.m3u8">CCTV-5+HD</a>
-<-->
-
-<!--<a target="liveiframe" href="http://xyt.186738613.xyz/lngd.php?id=246&Cf.m3u8">CCTV-5+HD</a>	
-
-
-<!--<a target="liveiframe" href="http://58.248.112.205:8006/GD_CUCC/G_CCTV-5PLUS-CQ.m3u8?Authinfo=56fbZo0WT6rfM%2FXuA%2B6zBYdR%2FXUke9cnQAha7YFSVSe71iqwQ7l064%2Fcza9NPPzC">CCTV-5+HD</a>-->
-<!--<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8">CCTV-5HD</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8">CCTV-5+HD</a>	-->
-
-
-
-<!--<a target="liveiframe" href="http://180.97.247.27/1301-tx.otvstream.otvcloud.com/otv/skcc/live/channel43038/2300.m3u8">å²çä½è²</a>-->
-                                 
-<!--<a target="liveiframe" href="https://stream.ggapk.net/live/">çº¬æ¥ä½è²</a>-->
-
-
-
-<!--
-<a target="liveiframe" href="http://58.205.220.58/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000205103.m3u8">CCTV-5HD</a>-->
-
-<!--<a target="liveiframe" href="hhttp://58.205.220.58:8088/tlivectfree-cdn.ysp.cctv.cn/ysp/2012514203.m3u8">é£äºè¶³ç</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8">CCTV-5+HD</a>-->
-<!--<a target="liveiframe" href="http://39.135.138.58:18890/PLTV/88888888/224/3221225676/index.m3u8">åäº¬å¬å¥¥çºªå®é«æ¸</a>
-<!--<a target="liveiframe" href="http://223.110.243.172/PLTV/3/224/3221227166/index.m3u8" title="å»ºè®®ä½¿ç¨Edgeæµè§å¨æ¶çæ¬å°ï¼æ¬å°æå¡å¨ä¸ç¨³å®å¶å°ä¼åºç°è®¿é®å¤±è´¥ï¼è¯·ç¨ååè¯ï¼">CCTV-5HD</a>
-
-<a target="liveiframe" href="http://39.134.115.163:8080/PLTV/88888910/224/3221225649/index.m3u8">åªåä½è²</a>-->
-<!--<a target="liveiframe" href="http://183.207.255.188/live/program/live/mlyyhd/4000000/mnf.m3u8">é­åè¶³ç</a>
-<!--<a target="liveiframe" href="http://183.207.255.188/live/program/live/xsjhd/4000000/mnf.m3u8">æ°è§è§</a>-->
-<!--<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8">CCTV-5HD</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8">CCTV-5+HD</a>-->
-<!--<a target="liveiframe" href="http://cm.wshls.homecdn.com/live/11eec.m3u8">CCTV-5HD</a>-->
-<!--<a target="liveiframe" href="http://extraott.com/live/6772191932/1654508883/191881.m3u8">BEIN SPORTS HD</a>-->
-<a target="liveiframe" href="http://119.49.183.205:5003/cctv5.m3u8?token=7375646fd296bccff80c6d25015ea428576d87cd&z=1151">CCTV-5HD</a>
-<a target="liveiframe" href="https://tv.cctv.com/live/cctv5/?spm=C28340.P4hQlpYBT2vN.ExidtyEJcS5K.16" title="çæåå è§é¢æ æ³æ­æ¾ï¼è¯·å³é®æå¼æ°ç½é¡µæ­æ¾ï¼">CCTV-5(å®ç½)</a>
-
-
-<!--<a target="liveiframe" href="http://player.200877926.top/169l/cq/cqyx.php?id=mlzq" title="ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨">é­åè¶³ç</a>-->
-
-<!--<a target="liveiframe" href="http://223.109.210.41/4309-tx.otvstream.otvcloud.com/otv/skcc/live/channel43083/2300.m3u8">é­åè¶³ç</a>
--->
-<!---->
-
-
-
-
-
-<form id="testform" onSubmit="liveplay($('#testsrc').val(),'æµè¯');return false;" style="display:block;clear:left;position:relative;">
-<input type="text" value="è¾å¥m3u8å°å" id="testsrc" onClick="$(this).val('')">
-<input type="submit" value="æäº¤æµè¯">
-</form>
-<!-- <p style="color: goldenrod;padding: 0 5px;font-size: 12px;">æç¤ºï¼ç´æ­æºæ¥èªç½ç»åäº«ï¼å¦æä¾µæè¯·ç¹æ­¤èç³»å é¤ã</p><a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/13e83b20bc716e68221da438d761d352.m3u8">HBO HD</a><a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/b3d2208824d1ca27dad3068e376ab557.m3u8">FOX MOVIES</a><a target="liveiframe" href="http://hls-ott-zhibo.wasu.tv/live/156/index.m3u8">æ¬§ç¾åé©</a> -->
-<a href="mailto:isoso365@foxmail.com" onclick="alert('è¯·åéé®ä»¶è³ï¼isoso365@foxmail.com')">æç¤ºï¼ç§»å¨ç«¯æ¨èä½¿ç¨alookæµè§å¨ï¼ç´æ­æºæ¥èªç½ç»åäº«ï¼å¦æä¾µæè¯·ç¹æ­¤èç³»å é¤ã</a>
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-çµå½±">
-<label for="tab-çµå½±">çµå½±</label>
-<div class="tab-content animated fadeIn"> 
-<br>
-<a target="liveiframe" href="http://118.122.144.115:8888/newlive/live/hls/38/live.m3u8">movie</a>
-
-<!--<a target="liveiframe" href="http://61.221.215.25:8800/hls/47/index.m3u8" title="è¶³çèµäºä¸çµè§å§è½®æµæ­æ¾">ä¸­å¤©å¨±ä¹</a>-->
-<!--<a target="liveiframe" href="https://ali.hlspull.yximgs.com/live/diyp_chcjiating.flv">CHCå®¶åº­å½±é¢</a>-->
-<!--
-<a target="liveiframe" href="https://mytime-tcl.amagi.tv/playlist1080-p.m3u8">Moviesphere UK</a>
-<a target="liveiframe" href="https://rakuten-tvshows-2-eu.rakuten.wurl.tv/3000.m3u8">Rakuten TV(Italy)</a>
-<a target="liveiframe" href="https://bbceu-bbcdrama-2-it.samsung.wurl.tv/3000.m3u8">BBC drama</a>-->
-<!--
-<a target="liveiframe" href="http://111.8.242.84:9901/tsfile/live/1023_1.m3u8">CHCå¨ä½çµå½±</a>
-<a target="liveiframe" href="http://epg.112114.xyz/douyu/20415">æ¬§ç¾å¤§ç1</a> 
-<a target="liveiframe" href="http://epg.112114.xyz/douyu/2793084">æ¬§ç¾å¤§ç2</a> 
-<a target="liveiframe" href="http://epg.112114.xyz/douyu/9249162">æ¬§ç¾å¤§ç3</a> 
--->
-<!--<a target="liveiframe" href="http://61.185.200.30:55555/rtp/239.112.205.206:5140.m3u8">CHCé«æ¸çµå½±</a>-->
-<!--<a target="liveiframe" href="http://jscbn.tx-cdn.gitv.tv/gitv_escape/G_DIYIJC-CQ/G_DIYIJC-CQ.m3u8"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CCTVç¬¬ä¸å§åº</a> 
-<a target="liveiframe" href="http://jscbn.tx-cdn.gitv.tv/gitv_escape/G_FENGYUNJC-CQ/G_FENGYUNJC-CQ.m3u8"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CCTVé£äºå§åº</a> 
-<a target="liveiframe" href="http://jscbn.tx-cdn.gitv.tv/gitv_escape/G_HUAIJIUJC-CQ/G_HUAIJIUJC-CQ.m3u8"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CCTVææ§å§åº</a> 
--->
-
-<!--<a target="liveiframe" href="http://50.7.234.10:8278/hollywoodmovies_twn/playlist.m3u8?tid=MECE5611281156112811&ct=19225&tsum=ad8884ee16b04f885f24bae98fc5fb9f">å¥½è±åçµå½±</a>
-<!-<a target="liveiframe" href="http://170.254.18.106/HBO_FAMILY/index.m3u8"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">HBOfamily</a> -->
-
-<!--<a target="liveiframe" href="http://182.40.121.196/test-txdwk.flv.huya.com/src/1394565196-1394565196-5989611908959830016-2789253848-10057-A-0-1.flv">æè¿æ°ç»å¸çµå½±</a>
-<a target="liveiframe" href="http://182.40.121.196/test-txdwk.flv.huya.com/src/1448738174-1448738174-6222283077796757504-2847699112-10057-A-0-1_2000.flv" >å¨ä½ç»å¸</a>-->
-<!--
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/qjshd/4000000/mnf.m3u8">ä¸æµ·å¨çºªå®</a>  
-
-
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/shsshd/4000000/mnf.m3u8">ä¸æµ·çæ´»æ¶å°</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/yxfyhd/4000000/mnf.m3u8">æ¸¸æé£äº</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/dmxchd/4000000/mnf.m3u8">å¨æ¼«ç§åº</a>-->
-
-<!--<a target="liveiframe" href="http://183.207.255.188/live/program/live/wypdhd/4000000/mnf.m3u8">ä¸æµ·å¤è¯­é¢é</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/jykt/1300000/mnf.m3u8">éé¹°å¡é</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/jjkt/1300000/mnf.m3u8">åä½³å¡é</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/xdkt/1300000/mnf.m3u8">ååç«å¨</a>
-<a target="liveiframe" href="http://www.336699.live:1935/blocksix/4gtv-live021.stream/chunklist.m3u8">èçµå½±</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/hxjchd/4000000/mnf.m3u8">æ¬¢ç¬å§åºæå§</a>
-<a target="liveiframe" href="http://183.207.255.188/live/program/live/jspdhd/4000000/mnf.m3u8">ä¸æµ·çºªå®äººæ</a>  -->
-<!--<a target="liveiframe" href="http://183.207.255.188/live/program/live/jsqchd/4000000/mnf.m3u8">æ¥éæ±½è½¦</a>-->
-<!---->
-
-
-
-
-<!--<a target="liveiframe" href="http://210.210.155.35/dr9445/h/h16/02.m3u8"title="å¤å°è¯ä¸¤æ¬¡å°±è½æå¼">Blueç¾å§</a>-->
-
-<!--<a class="active" target="liveiframe" href="https://wzb-vod.cutv.com/myun-storage/melj80jz/ln18joo5/1609433287613836664.m3u8">2020-2021æ¶é´çæåè·¨å¹´æ¼è®²</a>-->
-<!--<a class="active" target="liveiframe" href="http://ivi.bupt.edu.cn/hls/chchd.m3u8">CHCé«æ¸çµå½±</a>-->
-<!-- <a class="active" target="liveiframe" href="http://192.154.103.75:8080/ZZ_chZZongzuo/ZZ_chZZongzuo.m3u8">CHCå¨ä½çµå½±</a> -->
-<!-- 	  <a class="active" target="liveiframe" href="http://192.200.120.82:8080/ZZ_chcgaoqing/ZZ_chcgaoqing.m3u8">CHCé«æ¸çµå½±å¤ç¨ä¸åç¡®</a> -->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8">CCTV-6é«æ¸</a>-->
-
-<!--<a target="liveiframe" href="http://39.134.115.163:8080/PLTV/88888910/224/3221225632/index.m3u8">CCTV-6çµå½±</a>-->
-<!--<a target="liveiframe" href="https://hlslive.1905.com/live/LIVEQYR8M567KGOXO/index.m3u8?tm=1647747531&sign=4e1e7da350a40ea26e6e2fb0cc2f0a4b">CCTV-6çµå½±</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s4/index.m3u8">åäº¬å½±è§</a>-->
-<!---->
-
-<!--<a target="liveiframe" href="http://zbbf2.ahtv.cn/live/756.m3u8">å®å¾½å½±è§</a>-->
-<!--<a target="liveiframe" href="http://39.134.65.70/wh7f454c46tw2636200741_-668690211/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8" title="å¹¿åè¾å¤ï¼ä¸è¦ç¸ä¿¡ï¼">NewTVç²¾åçºªå½</a>
-<a target="liveiframe" href="http://39.134.65.69/wh7f454c46tw3596126157_405015036/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8">NewTVåäºè¯è®º</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gedocu.m3u8">éé¹°çºªå®é«æ¸</a>
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/docuchina.m3u8">ä¸æµ·çºªå®é«æ¸</a>-->
-<!--
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=channelv"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">ChannelV</a>
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=chcatv"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CHCå¨ä½çµå½±</a>
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=hjjctv"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CCTVææ§å§åº</a>  
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=dyjctv"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">CCTVç¬¬ä¸å§åº</a>  
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=discovery"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">æ¢ç´¢é¢é</a>  
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=natlgeo"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">å½å®¶å°ç</a>  
- 
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=startv"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">æç©ºTV</a> 
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=jlu_ccyl"title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">é¿æ¥å¨±ä¹</a> -->
-
-</div>
-</li>
-
-<li>
-<input type="radio" name="tabs" id="tab-å¤®è§">
-<label for="tab-å¤®è§">å¤®è§</label>
-<div class="tab-content animated fadeIn">   
-<br>
-<a target="liveiframe" href="https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/chunklist_w1437750423_b1000000.m3u8">CGTN beta</a>
-<a target="liveiframe" href="https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master1080p.m3u8">CGTN Documentary</a>
-<!--<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv1.m3u8">CCTV-1</a>-->
-<!--<a target="liveiframe" href="http://pi.0472.org/tv/cbn.php?id=xfjcHD.m3u8">CGTN</a>-->
-<!--a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv2.m3u8">CCTV-2</a>
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv3.m3u8">CCTV-3HD</a>
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv4k.m3u8">CCTV-4HD</a>
-
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv5.m3u8">CCTV-5HD</a>
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv5p.m3u8">CCTV-5+</a>
-<a target="liveiframe" href="http://47.79.37.86:35455/gaoma/cctv6.m3u8">CCTV-6HD</a>
-<a target="liveiframe" href="http://111.170.172.113:35455/gaoma/cctv7.m3u8">CCTV-7</a>
-<a target="liveiframe" href="http://47.79.37.86:35455/gaoma/cctv8.m3u8">CCTV-8</a>
-<a target="liveiframe" href="hhttp://47.79.37.86:35455/gaoma/cctv9.m3u8">CCTV-9</a>
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv10.m3u8">CCTV-10</a>
-<a target="liveiframe" href="http://47.79.37.86:35455/gaoma/cctv11.m3u8">CCTV-11</a>
-<a target="liveiframe" href="http://47.79.37.86:35455/gaoma/cctv12.m3u8">CCTV-12</a>
-<a target="liveiframe" href="http://146.235.213.45:35455/gaoma/cctv13.m3u8">CCTV-13HD</a>
-
-<a target="liveiframe" href="http://112.74.115.68:35455/gaoma/cctv14.m3u8">CCTV-14</a>
-<a target="liveiframe" href="http://112.74.115.68:35455/gaoma/cctv15.m3u8">CCTV-15</a>
-<a target="liveiframe" href="http://47.79.37.86:35455/gaoma/cctv16.m3u8">CCTV-16å¥¥æå¹å</a>
-<a target="liveiframe" href="http://lt.hxtre.com:35455/gaoma/cctv17.m3u8">CCTV-17</a>-->
-<!--
-<a target="liveiframe" href="http://gmxw.7766.org:808/hls/31/index.m3u8">CCTV-13</a>
--->
-<!--
-
-<a target="liveiframe" href="https://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8">CCTV-2HD</a>
-
-
-
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV6HD/hls.m3u8">CCTV-6</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8">CCTV-7</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8">CCTV-8</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8">CCTV-9</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8">CCTV-10</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8">CCTV-17</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/2/live.m3u8">CCTV-1</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/3/live.m3u8">CCTV-2</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/4/live.m3u8">CCTV-3</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/5/live.m3u8">CCTV-4</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/6/live.m3u8">CCTV-5</a>
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/18/live.m3u8">CCTV-5+</a>
-<!---->
-<!--
-
-<a target="liveiframe" href="http://61.148.223.18:8888/newlive/live/hls/17/live.m3u8">CGTN</a>
-
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/b455c7a019d404d571655c457e0ee8a9440a7802/ff9b5c2d31-0-0-d7b140b009a52e1827623f1311cdf882/index.m3u8">CCTV-1HD</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/6b13fe5368d391761312a985ace065c0ecad2f5e/f39e2f07da-0-0-01cf9d192f9ef15bda8a9cfabd5f1aa9/index.m3u8">CCTV-2HD</a>
-
-
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8">CCTV-5HD</a>
-<a <a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8">CCTV-5+HD</a>	
-<!--<a <a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8">CCTV-5+HD</a>-->
-<!--
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/f116a0a5035935a3435155998163d8eaa60554c3/65032ef695-0-0-e20dc79f925e4cc9f9a8f21767351800/index.m3u8">CCTV-7HD</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8">CCTV-7HD</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8">CCTV-8HD</a>
-
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/9e6e3b618b5dc902d992949f0c669bb674f6cde8/0a11ba53ae-0-0-7c358df233eee83bca617036e1e86dd7/index.m3u8">CCTV-8HD</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/0d0f0da65ba843b8d1dd6fed315bfea896ddd20d/c4a4a1ea6e-0-0-a54dd6d676eba3a7fe2237118e29e041/index.m3u8">CCTV-9HD</a>
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8">CCTV-10</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/96f212c8bb9eca90c8f15ae041b4f64b3a3ba67b/0e42e24575-0-0-19151c6120cb28e410f81c21da8306f5/index.m3u8">CCTV-10HD</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/924e6292a0e6f7440e8380075908fed9915b3c00/7500b51818-0-0-4a64f49bc885fcbd6eff8bc87b5178ac/index.m3u8">CCTV-10</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/3d0aa0f1604f13f0ae90c2dc0590ca22a1bcaaa2/8b36b231b5-0-0-1a8cb55a1367cd3bc1adfbdaea93f9f4/index.m3u8">CCTV-11</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/fb84bde1de15cdb0308a7910cebc0497594ae94e/182545f0ad-0-0-0a69922e5cf8c43809266be62d7d8070/index.m3u8">CCTV-12HD</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/0e0973e58d4835f4b872548164462930003f77b4/36a0c62c1f-0-0-e18a6d02c86472632e6b8b6c89f1834f/index.m3u8">CCTV-14HD</a>
-<a target="liveiframe" href="https://iptv.luas.edu.cn/liverespath/59c02d176e7c3b05a62a9bb42be1ca2a92df2e1c/2d556bd21f-0-0-4f067578054154b5968f1bc18ae00d9c/index.m3u8">CCTV-15</a>
-
-
-<a target="liveiframe" href="https://livedoc.cgtn.com/1000d/prog_index.m3u8">CGTN-DOCé«æ¸</a>-->
-<a target="liveiframe" href="https://tv.cctv.com/live/cctv5/?spm=C28340.P4hQlpYBT2vN.ExidtyEJcS5K.16" title="çæåå è§é¢æ æ³æ­æ¾ï¼è¯·å³é®æå¼æ°ç½é¡µæ­æ¾ï¼">CCTV-5(å®ç½)</a>
-
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-å«è§">
-<label for="tab-å«è§">å«è§</label>
-<div class="tab-content animated fadeIn"> 
-<br>
-
-<!--<a target="liveiframe" href="http://140.207.241.2:8080/live/program/live/szwshd/4000000/mnf.m3u8">æ·±å³å«è§é«æ¸</a>-->
-<!--
-
-
-<a target="liveiframe" href="http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225745/index.m3u8">æ¹åå«è§é«æ¸</a>
-<a target="liveiframe" href="http://39.134.66.66/PLTV/88888888/224/3221225665/index.m3u8">å¤©æ´¥å«è§é«æ¸</a>
-
-<a target="liveiframe" href="http://39.135.138.58:18890/PLTV/88888888/224/3221225676/index.m3u8">åäº¬å¬å¥¥çºªå®é«æ¸</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s9/index.m3u8">åäº¬æ°é»</a>
-
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s2/index.m3u8">åäº¬æèº</a>
-<a target="liveiframe" href="http://183.207.249.7/PLTV/3/224/3221225574/index.m3u8">åäº¬ç§æ</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s4/index.m3u8">åäº¬å½±è§</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s5/index.m3u8">åäº¬è´¢ç»</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s7/index.m3u8">åäº¬çæ´»</a>
-<a target="liveiframe" href="http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s8/index.m3u8">åäº¬éå¹´</a>
-<a target="liveiframe" href="http://223.110.251.152:6610/cntv/live1/kakukaton/kakukaton/1.m3u8?IASHttpSessionId=OTT1829720211219145657028008">åäº¬å¡é·å°å¿</a>-->
-
-
-
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/btv1hd.m3u8">åäº¬å«è§é«æ¸</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/btv2hd.m3u8">åäº¬æèºé«æ¸</a>
-
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/btv9hd.m3u8">åäº¬æ°é»é«æ¸</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/btv4hd.m3u8">åäº¬å½±è§é«æ¸</a>-->
-<!--<a target="liveiframe" href="http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225692/index.m3u8">éåºå«è§é«æ¸</a>
-<a target="liveiframe" href="http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/3221227410/index.m3u8">è¾½å®å«è§é«æ¸</a>
-<a target="liveiframe" href="http://117.169.120.140:8080/live/jiangxistv/.m3u8">æ±è¥¿å«è§é«æ¸</a>
-<a target="liveiframe" href="http://223.110.245.157/ott.js.chinamobile.com/PLTV/3/224/3221225815/index.m3u8">æ²³åå«è§é«æ¸</a>
-<a target="liveiframe" href="http://117.169.120.140:8080/live/jilinstv/.m3u8">åæå«è§é«æ¸</a>
-<a target="liveiframe" href="http://223.110.245.143/ott.js.chinamobile.com/PLTV/3/224/3221225800/index.m3u8">å®å¾½å«è§é«æ¸</a>
-<a target="liveiframe" href="http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225690/index.m3u8">é»é¾æ±å«è§é«æ¸</a>
-
-<a target="liveiframe" href="http://223.110.243.171/PLTV/3/224/3221227211/index.m3u8">æ¹åå«è§é«æ¸</a>	
-
-<a target="liveiframe" href="http://117.169.120.140:8080/live/dongnanstv/.m3u8">ç¦å»ºä¸åå«è§é«æ¸</a>
-<a target="liveiframe" href="http://117.169.120.140:8080/live/sichuanstv/.m3u8">åå·å«è§é«æ¸</a>
-<a target="liveiframe" href="http://hbpx.chinashadt.com:2036/live/px4.stream/playlist.m3u8">æ²³åå«è§é«æ¸</a>
-<a target="liveiframe" href="http://124.47.33.200/PLTV/88888888/224/3221225498/index.m3u8">éè¥¿å«è§</a>-->
-<!--<a target="liveiframe" href="http://fangke.blueswords.com:9901/tsfile/live/0142_1.m3u8">å¹¿ä¸å«è§</a>-->
-
-
-<!--
-<a target="liveiframe" href="https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8">æµæ±å«è§é«æ¸</a>
-<a target="liveiframe" href="http://39.164.160.249:9901/tsfile/live/0107_1.m3u8">ä¸æ¹å«è§é«æ¸</a>
-<a target="liveiframe" href="http://39.164.160.249:9901/tsfile/live/0127_1.m3u8">æ±èå«è§é«æ¸</a>
-<a target="liveiframe" href="http://stream.qhbtv.com/qhws/sd/live.m3u8">éæµ·å«è§</a>  
-<a target="liveiframe" href="http://118.144.105.55:91/live/BTVXW-1500k/live.m3u8">åäº¬å«è§æ°é»</a>  
-<a target="liveiframe" href="http://60.220.167.11:8082/rtp/226.0.2.149:9104">å±±ä¸å«è§é«æ¸</a>
-<a target="liveiframe" href="http://80ec27bff7f9ae80b961481da488e302.livehwc3.cn/liveflash.sxrtv.com/live/sxwshd.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d04ce01474da4193c8863ea281ec4759">å±±è¥¿å«è§</a>-->
-
-
-<!--<a target="liveiframe" href="http://1eec15.netsite.cc/proxy/1975883896/1975883896.m3u8">ä¸æµ·çºªå®äººæé«æ¸</a>
-<a target="liveiframe" href="http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel18/index.m3u8">æ±èå«è§é«æ¸</a>
-
-
-<a target="liveiframe" href="http://1eec15.netsite.cc/proxy/1187608335/1187608335.m3u8">æ¹åå«è§é«æ¸</a>
-<a target="liveiframe" href="http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel24/index.m3u8">åäº¬å«è§é«æ¸</a>
-
-<a target="liveiframe" href="http://116.162.6.191/1301-txt.otvstream.otvcloud.com/otv/skcc/live/channel22030/index.m3u8">åäº¬çºªå®ç§æ</a>  
-<a target="liveiframe" href="http://1eec15.netsite.cc/proxy/1094148202/1094148202.m3u8">å¹¿ä¸å«è§</a>  
-<a target="liveiframe" href="https://node1.olelive.com:6443/live/LIAONINGHD/hls.m3u8">è¾½å®å«è§é«æ¸</a>
-<a target="liveiframe" href="http://1eec15.netsite.cc/proxy/1817490980/1817490980.m3u8">å®å¾½å«è§é«æ¸</a>
-
-<a target="liveiframe" href="https://histar.zapi.us.kg/?id=tianjin">å¤©æ´¥å«è§é«æ¸</a>
-<a target="liveiframe" href="http://1eec15.netsite.cc/proxy/1210483979/1210483979.m3u8">æ·±å³å«è§é«æ¸</a>
-<a target="liveiframe" href="https://histar.zapi.us.kg/?id=xinjiang">æ°çå«è§</a>
-<a target="liveiframe" href="http://123.122.162.250:19999/rtp/239.3.1.243:8000.m3u8">BRTVä½è²ä¼é²</a>-->
-<!--<a target="liveiframe" href="http://live.ybtvyun.com/video/s10016-7e5f23de35df/index.m3u8">å»¶è¾¹å«è§</a> -->
-<a target="liveiframe" href="http://124.152.34.102:8030/wCMq71/wCMq71_0.m3u8">çèä¸´å¤</a>
-<!--<a target="liveiframe" href="http://wanzhoulive.cbg.cn:8017/c2F0hmi/1000/live.m3u8">éåºä¸å³¡èåªä½ä¸­å¿</a>-->
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/qdls02_1/index.m3u8">æ¥ååç å³°</a>
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8">äºåä¿å±±</a>
-<!--<a target="liveiframe" href="http://udnhls.skilldns.com:80/qq.m3u8">çç«é¢é</a>  -->
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8">æ´é³ä¸å±±æ¹é£å</a>
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8">æ­¦æ±é»é¹¤æ¥¼</a>
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001">å¨å½é£æ¯æ»è§</a>
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8">éè¥¿æ¸­å</a>
-<a target="liveiframe" href="https://gcalic.v.myalicdn.com/gc/qdls03_1/index.m3u8">è´µå·é»ä¸å</a>
-
-<!--å»¶è¾¹å«è§åå¾å·å½±è§åå¾å»è¯å¹¿åä¸å¥½-->
-
-<!--<a target="liveiframe" href="http://stream.wfcmw.cn/1/sd/live.m3u8">æ½åçµè§1</a>
-<a target="liveiframe" href="https://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s1/index.m3u8?time=1654253025&sign=a50f6faf0514714b2992c967083c70e1">åäº¬å«è§</a>  
-<a target="liveiframe" href="https://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s9/index.m3u8?time=1654254693&sign=91d62302fc230e7fabb36db2250927dd">åäº¬æ°é»</a>  -->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sstv.m3u8">ä¸æ²å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sztv.m3u8">æ·±å³å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/dftv.m3u8">ä¸æ¹å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gxhd.m3u8">å¹¿è¥¿å«è§é«æ¸</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/btv11.m3u8">åäº¬å¬å¥¥çºªå®</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/ahtv.m3u8">å®å¾½å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/hntv.m3u8">æ²³åå«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/lyhd.m3u8">æµ·åå«è§é«æ¸</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/jltv.m3u8">åæå«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gdtv.m3u8">å¹¿ä¸å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gzhd.m3u8">è´µå·å«è§é«æ¸</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sdtv.m3u8">å±±ä¸å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sdetv.m3u8">å±±ä¸æè²</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/hbtv.m3u8">æ¹åå«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gxtv.m3u8">å¹¿è¥¿å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/hebtv.m3u8">æ²³åå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/xztv.m3u8">è¥¿èå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/nmtv.m3u8">åèå¤å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/qhtv.m3u8">éæµ·å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sctv.m3u8">åå·å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/jstv.m3u8">æ±èå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/tjtv.m3u8">å¤©æ´¥å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/sxrtv.m3u8">å±±è¥¿å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/lntv.m3u8">è¾½å®å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/xmtv.m3u8">å¦é¨å«è§</a>
-
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/hljtv.m3u8">é»é¾æ±å«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/hunantv.m3u8">æ¹åå«è§</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/yntv.m3u8">äºåå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/jxtv.m3u8">æ±è¥¿å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/dntv.m3u8">ç¦å»ºä¸åå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gztv.m3u8">è´µå·å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/nxtv.m3u8">å®å¤å«è§</a>-->
-<!-- <a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=nxtv">å®å¤å«è§</a> -->
-
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/gstv.m3u8">çèå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/cqtv.m3u8">éåºå«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/bttv.m3u8">åµå¢å«è§</a>
-<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/lytv.m3u8">æµ·åå«è§</a>	 -->
-
-
-
-<!-- <a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/zjtv.m3u8">æµæ±å«è§</a> -->
-<!--<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=zjhd" title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">æµæ±å«è§</a>
-<a target="liveiframe" href="https://itv.ahcme.edu.cn/player.html?p=jlu_zjhd" title="åªæé¨åç½ç»ç¨æ·å¯ä»¥æ­£å¸¸æå¼">æµæ±å«è§</a>-->
-<!-- 		<a target="liveiframe" href="http://httpdvb.slave.homed.hrtn.net/playurl?playtype=live&protocol=hls&accesstoken=R5D22D2B7U309E0093K7735BBEDIAC2DC601PBM3187915V10453Z6B7EDWE3620470C71&&playtoken=&programid=4200000215.m3u8">æ­¦æ±æ°é»ç»¼åé¢é</a>
-<a target="liveiframe" href="http://stream.appwuhan.com/1tzb/sd/live.m3u8">æ­¦æ±æ°é»ç»¼åé¢é2</a>
-
-<a target="liveiframe" href="http://httpdvb.slave.homed.hrtn.net/playurl?playtype=live&protocol=hls&accesstoken=R5D22D2B7U309E0093K7735BBEDIAC2DC601PBM3187915V10453Z6B7EDWE3620470C71&&playtoken=&programid=4200000148.m3u8">æ¹åå¬å±æ°é»</a> -->
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-æ¸¯å°">
-<label for="tab-æ¸¯å°">æ¸¯å°</label>
-<div class="tab-content animated fadeIn">
-<br>
-
-
-<a target="liveiframe" href="https://cdn9.163189.xyz/smt3.1.1.php?id=phoenixinfo_hd">å¤å°èµè®¯HD</a>														
-
-<a target="liveiframe" href="https://cdn9.163189.xyz/smt3.1.1.php?id=phoenixtv_hd">å¤å°ä¸­æHD</a>	
-
-<!--<a target="liveiframe" href="http://223.8.183.191:8066/udp/239.1.1.127:8127.m3u8">å¤å°èµè®¯HD</a>
-<a target="liveiframe" href="http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzx.m3u8">å¤å°èµè®¯HD</a>-->
-															
-
-<!--<a target="liveiframe" href="http://php.jdshipin.com/TVOD/iptv.php?id=fhzw.m3u8">å¤å°ä¸­æHD</a>-->
-<a target="liveiframe" href="http://152.32.229.52:5050/4gtv-4gtv152/index.m3u8?proxy=true">ä¸æ£®æ°é»</a>
-<!--
-<a target="liveiframe" href="https://live.tvfix.org/live/fhzw/1/v4000000/index.m3u8" title="ä¿¡å·å¡é¡¿">å¤å°ä¸­æHD</a> 
-<a target="liveiframe" href="http://php.jdshipin.com/TVOD/iptv.php?id=fhzx.m3u8">å¤å°èµè®¯HD</a>
-<a target="liveiframe" href="http://php.jdshipin.com/TVOD/iptv.php?id=fhzw">å¤å°ä¸­æHD</a>
-
-<a target="liveiframe" href="http://php.jdshipin.com/TVOD/iptv.php?id=fhzw">å¤å°ä¸­æHD</a>-->
-<a target="liveiframe" href="http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8">å°æ¹¾TVBSæ°é»</a>
-<a target="liveiframe" href="https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8">å°æ¹¾Plus</a>
-<!--
-<a target="liveiframe" href="http://php.jdshipin.com:8880/smt.php?id=jade_twn">TVBç¿¡ç¿ å°</a>-->
-
-<!-- 	 backup-->
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-æ¥é©">
-<label for="tab-æ¥é©">æ¥é©</label>
-<div class="tab-content animated fadeIn"> 
-<br>
-<a target="liveiframe" href="https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8">æ°å å¡NewsAsia</a>
-
-<a target="liveiframe" href="https://cdn.skygo.mn/live/disk1/NHK_World_Premium/HLSv3-FTA/NHK_World_Premium.m3u8">æ¥æ¬NHK World Premium(JP)èé</a>
-<a target="liveiframe" href="http://38b891c9.rossteleccom.net/iptv/4HP7GES799X3WU/729/index.m3u8">æ¥æ¬NHK World(EN)</a>
-<a target="liveiframe" href="http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8">é©å½Arirang (Opt-1)</a>
-<a target="liveiframe" href="http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8">é©å½MBC</a>
-<!--<a target="liveiframe" href="https://cdn.skygo.mn/live/disk1/NHK_World_Premium/HLSv3-FTA/NHK_World_Premium.m3u8">æ¥æ¬NHK World(JP)</a>-->
-<!--<a target="liveiframe" href="https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8">æ¥æ¬NHK World(EN)</a>-->
-<!--<a target="liveiframe" href="https://nhkwlive-pre-in.webcdn.stream.ne.jp/hls/live/nhkwlive-pre/index_1M.m3u8">æ¥æ¬NHK World Premium(JP)</a>
-<a target="liveiframe" href="http://redlabmcdn.s.llnwi.net/nv02/ryowa6hd/tracks-v1a1/mono.m3u8">ä¸äº¬çµè§(JP)</a>
-<a target="liveiframe" href="https://cdn-us-154.cloudrsst.com/live/igasennmonn_720/playlist.m3u8">æ¥æ¬æ ç»(JP)</a>-->
-
-<!--<a target="liveiframe" href="https://pull-l3-cny.douyincdn.com/live/cb8b1fff46d7df478d713c7db7eaacf0.m3u8">çº¬æ¥æ¥æ¬(JP)</a>-->
-
-<!--<a target="liveiframe" href="https://nhkw-zh-hlscomp.akamaized.net/ixxemlzk1vqvy44o/playlist.m3u8">æ¥æ¬NHKåæ</a>-->
-<!--<a target="liveiframe" href="https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8">æ¥æ¬NHKåæ(å¤ç¨)</a>-->
-<!--<a target="liveiframe" href="https://n24-cdn-live.ntv.co.jp/ch01/high.m3u8">Japan24news</a>-->
-
-<!--<a target="liveiframe" href="http://source07.v.news.cn/live/CNC_EN/playlist.m3u8">CNC</a>-->
-
-
-<!-- <a target="liveiframe" href="http://59.25.202.81:1935/live/UBCstream/chunklist_w1495115977.m3u8">é©å½UBCSBS</a>	  
-<a target="liveiframe" href="http://218.38.152.31:1935/klive/klive.stream/playlist.m3u8">é©å½KTV</a> -->
-<!--<a target="liveiframe" href="https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/01.m3u8">é©å½KBS WORLD</a>-->
-
-
-<!-- <a target="liveiframe" href="http://45.126.83.51/session/9d163ed6-ee93-11ea-a691-8e83ad1c495e/uq2663/h/h08/01.m3u8">æ°å å¡K+</a> -->
-<!-- <a target="liveiframe" href="http://d39v9xz8f7n8tk.cloudfront.net/hls/vsnthmctv/master02.m3u8">æ°å å¡-æ¥å¤©é¢é(æ³°ç±³å°è¯­)</a>
-<a target="liveiframe" href="http://d11h6a6nhl9kj9.cloudfront.net/hls/suriactv/master02.m3u8">æ°å å¡-æé³é¢é(é©¬æ¥è¯­)</a>
-<a target="liveiframe" href="https://d34e90s3s13i7n.cloudfront.net/hls/ch8ctv/master02.m3u8">æ°å å¡æ°ä¼ åª8(æ®éè¯)</a>
-<a target="liveiframe" href="https://ddftztnzt6o79.cloudfront.net/hls/oktoctv/master02.m3u8">æ°å å¡å¥¥å¤é¢é(å°å¿)</a>
-<a target="liveiframe" href="https://d3inlz9elsutjl.cloudfront.net/hls/chuctv/master02.m3u8">æ°å å¡Ué¢é(æ®éè¯)</a> -->
-<!-- <a target="liveiframe" href="http://dlau142f16b92.cloudfront.net/hls/ch5ctv/master02.m3u8">æ°å å¡æ°ä¼ åª5(è±æ)</a> -->
-<!--<a target="liveiframe" href="http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/playlist.m3u8">è¶åHBTVHD</a>-->
-<!--<a target="liveiframe" href="http://antvlive.ab5c6921.cdnviet.com/antv/playlist.m3u8">è¶åANTVHD</a>-->
-
-<!--<a target="liveiframe" href="http://103.14.38.107:1935/live/mnb.stream/chunklist_w2077611031.m3u8">èå¤MNB TV1</a>
-<a target="liveiframe" href="http://103.14.38.107:1935/live/mn2.stream/chunklist_w1922327721.m3u8">èå¤MNB TV2</a>-->
-<!-- <a target="liveiframe" href="http://203.156.63.20:1935/live/ddtv/playlist.m3u8">æ³°å½DDTV</a>
-<a target="liveiframe" href="http://104275ooyala-lh.akamaihd.net/i/forevergroup_02@449366/master.m3u8">ç¼ç¸ Myanmar TV4</a> -->
-<!--<a target="liveiframe" href="https://tv.nknews.org/tvhls/stream.m3u8">æé²ä¸­å¤®çµè§å°</a>
-<a target="liveiframe" href="http://bcsecurelivehls-i.akamaihd.net/hls/live/265320/5043843989001/140130JTDX/index_1200.m3u8">Japanet Channel DX</a>-->
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-æ¬§æ´²">
-<label for="tab-æ¬§æ´²">æ¬§æ´²</label>
-<div class="tab-content animated fadeIn"> 
-<br>
- 	
-
-<a target="liveiframe" href="https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8">è±å½BBC NEWS</a>
-<a target="liveiframe" href="https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8">è±å½BBC NEWS</a>
-<!-- 	<a target="liveiframe" href="http://mysisli.com/36bay2/gin/giniko_bbctwo_1000kb_36bay2/tracks-v1a1/mono.m3u8">è±å½BBC TWO</a> -->
-<!-- 	 -->
-
-<!--<a target="liveiframe" href="http://he11o.akadatel.com/iptv/DSVPF5Z9B55L4A/6855/index.m3u8">è±å½BBC Earth</a> 
-<a target="liveiframe" href="http://he11o.akadatel.com/iptv/DSVPF5Z9B55L4A/6854/index.m3u8">è±å½BBC Earth HD TR</a> 
-<a target="liveiframe" href="http://he11o.akadatel.com/iptv/DSVPF5Z9B55L4A/6100/index.m3u8">BBC Earth FHD PL</a> -->
-
-<!-- 	<a target="liveiframe" href="http://95.170.215.120:80/hls/m3u8/Sky-Sport-Pre-L.m3u8" title="å»ºè®®ä½¿ç¨Edgeæµè§å¨æ¶çæ¬å°ï¼æ¬å°æå¡å¨ä¸ç¨³å®å¶å°ä¼åºç°è®¿é®å¤±è´¥ï¼è¯·ç¨ååè¯ï¼">è±å½Sky Sports News</a> -->
-
-<!--<a target="liveiframe" href="http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8">æ³å½FR-France24</a>
-<a target="liveiframe" href="http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8">æ³å½TV5 Monde Info (Opt-2)</a>-->
-<!--<a target="liveiframe" href="https://livefr.cgtn.com/1000f/prog_index.m3u8">æ³å½CGTN</a>-->
-<!--<a target="liveiframe" href="http://mv2.tvfrancophonie.org/live/Stream1/media_b776739_w671289549.m3u8">æ³å½Francophonie 24</a>-->
-<a target="liveiframe" href="https://rakuten-euronews-10-be.samsung.wurl.tv/playlist.m3u8">æ³å½ æ¬§æ´²æ°é»çµè§å°(Euronews)</a>
-<a target="liveiframe" href="https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8">æ³å½Generations TV (576p)</a>
-<!--<a target="liveiframe" href="http://livefr.cgtn.com/1000f/prog_index.m3u8">CGTNæ³å½</a>-->
-<!--<a target="liveiframe" href="https://contributionstreams.sechls01.visionip.tv/live/visiontv-contributionstreams-arise-tv-25f-16x9-SD/chunklist.m3u8?ref=www.arise.tv&amp;USER=AriseNew-VideoJS&wowzasessionid=1180901664" title="æ¬å°å³æ³¨å¨çå³äºéæ´²çæ°é»ï¼">è±å½Arise News</a>-->
-<!--<a target="liveiframe" href="http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8">è±å½MTV</a>-->
-<!--<a target="liveiframe" href="http://dwstream72-lh.akamaihd.net/i/dwstream72_live@123556/master.m3u8">å¾·å½Deutsche Welle (Opt-2)</a>
-<a target="liveiframe" href="http://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/master.m3u8">å¾·å½Deutsche Welle (Opt-3)</a>
-
-<a target="liveiframe" href="http://hls1.wtnet.de/noa4/apple/wifi6500.m3u8">å¾·å½Noa 4 Norderstedt</a>
-<a target="liveiframe" href="http://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8">å¾·å½Noa 4 Hamburg</a>
-<a target="liveiframe" href="http://ios-stream.qvc.de/qvc.m3u8">å¾·å½QVC</a>-->
-<!--<a target="liveiframe" href="http://62.113.210.250/medienasa-live/mdf1_high/agustiny.m3u8">å¾·å½MDF.1</a>-->
-<a target="liveiframe" href="http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8">å¾·å½Baden TV</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it:1935/canale7/canale7/live.m3u8">æå¤§å©Canale 7</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it/visualradio/mp4:visualradio/chunklist.m3u8">æå¤§å©Radio Iglesias</a>
-<a target="liveiframe" href="http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_720x480_av-p.m3u8">æå¤§å©Radio Italia TV</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8">æå¤§å©SuperTV</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8">æå¤§å©telePAVIA</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it:1935/tvrs/tvrs/live.m3u8">æå¤§å©TVRS</a>
-<!--<a target="liveiframe" href="http://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8">æå¤§å©DeeJay TV</a>
-<a target="liveiframe" href="http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8">æå¤§å©m20 TV</a>
-<a target="liveiframe" href="http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/master.m3u8">æå¤§å©Radio Capital TiVu</a>-->
-<!--<a target="liveiframe" href="http://wms.shared.streamshow.it:1935/videobrescia/videobrescia/live.m3u8">æå¤§å©Video Brescia</a>
-<a target="liveiframe" href="http://wms.shared.streamshow.it:80/videocalabria/videocalabria/playlist.m3u8">æå¤§å©Video Calabria</a>-->
-<!--<a target="liveiframe" href="http://livees.cgtn.com/1000e/prog_index.m3u8">è¥¿ç­çCGTN</a>-->
-<!--<a target="liveiframe" href="https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/index_3_av-p.m3u8">è¥¿ç­ççé©¬è¶³çå°HD</a>-->
-<!--<a target="liveiframe" href="http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8">è¥¿ç­ç7 Murcia</a>
-<a target="liveiframe" href="http://congresodirecto-f.akamaihd.net:80/i/congreso6_1@54665/master.m3u8">è¥¿ç­çCanal Parlamento (Updated)</a>
-<a target="liveiframe" href="http://62.210.141.18:1935/directo/lancelot.television/live.m3u8">è¥¿ç­çLancelot TV</a>-->
-<!--<a target="liveiframe" href="http://teledifusion.tv:1935/rtvcetv/rtvcetvlive/playlist.m3u8">è¥¿ç­çRTVCE</a>-->
-<!--<a target="liveiframe" href="https://livees.cgtn.com/1000e/prog_index.m3u8">CGTNè¥¿ç­ç</a>-->
-<a target="liveiframe" href="http://video.telesafor.com/hls/video_low.m3u8">è¥¿ç­çTeleSafor</a>
-<a target="liveiframe" href="http://europa-crtvg.flumotion.com/playlist.m3u8">è¥¿ç­çTV Galicia Europa</a>
-<a target="liveiframe" href="http://live.tv2bornholm.dk/stream/live/chunklist.m3u8">ä¸¹éº¦TV2 Bornholm</a>
-<a target="liveiframe" href="http://cdn-lt-hls-vod.tv2fyn.dk/fhls/p/1966291/sp/196629100/serveFlavor/entryId/0_yct7rqn3/v/2/flavorId/0_h2wfmuqm/name/a.mp4/index.m3u8">ä¸¹éº¦TV2 Fyn</a>
-<a target="liveiframe" href="http://cdn-lt-hls-vod.tv2lorry.dk/fhls/p/2045321/sp/204532100/serveFlavor/entryId/0_0u9letdh/v/1/flavorId/0_p5f7q6yf/name/a.mp4/index.m3u8">ä¸¹éº¦TV2 Lorry</a>
-<!--<a target="liveiframe" href="http://cdn-lt-live.tvsyd.dk/dc-1/live/hls/p/1956351/e/0_e9slj9wh/t/ut3_n5VQ1FqzlqMhwbQmJg/index-s32.m3u8">ä¸¹éº¦TV Syd</a>-->
-<!--<a target="liveiframe" href="http://ruvruverl-live.hls.adaptive.level3.net/ruv/ruverl/index/stream4.m3u8">å°å²RUV</a>-->
-<!--<a target="liveiframe" href="http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8">æªå¨MTV</a>-->
-<a target="liveiframe" href="http://cdn-kanal10.crossnet.net/kanal10no/live1/playlist.m3u8">æªå¨Kanal 10</a>
-<a target="liveiframe" href="http://flash0.19333-live0.dna.qbrick.com:1935/19333-live0/push-stortinget_1/playlist.m3u8">æªå¨Stortinget</a>
-<a target="liveiframe" href="http://contact-lh.akamaihd.net/i/CONTACT_1@321283/master.m3u8">æ¯å©æ¶Radio Contact 102.2 FM Brussels</a>
-<a target="liveiframe" href="http://rtltvi-lh.akamaihd.net/i/TVI_1@319659/master.m3u8">æ¯å©æ¶RTL-TVI</a>
-<a target="liveiframe" href="http://d2dslh4sd7yvc1.cloudfront.net/live/omroepwest/ngrp:tv-feed_all/playlist.m3u8">è·å°Omroep West</a>
-<!--<a target="liveiframe" href="http://cdn-kanal10.crossnet.net:1935/kanal10/mp4:mpegts.stream/playlist.m3u8">çå¸Kanal 10</a>
-<a target="liveiframe" href="http://bqgsd19q.rocketcdn.com/kralpop_720/chunklist.m3u8">å¥¥å°å©KRALHD</a>-->
-<!--<a target="liveiframe" href="http://webmobile.xdev.ro:81/tv9/playlist.m3u8">ç½é©¬å°¼äºTV Kit</a>-->
-<!--<a target="liveiframe" href="http://livebeta.publika.md/LIVE/P/6810.m3u8">æ©å°å¤ç¦Publika TV</a>
-<a target="liveiframe" href="http://webmobile.xdev.ro:81/tv16/playlist.m3u8">æ©å°å¤ç¦Tele M</a>
-<a target="liveiframe" href="http://w10.streamgb.com:1935/dugaplus/dugaplus/playlist.m3u8">å¡å°ç»´äº Duga TV</a>
-<a target="liveiframe" href="http://skyfolk.mk/live.m3u8">åé©¬å¶é¡¿ Sky Folk TV</a>-->
-
-<!--<a target="liveiframe" href="http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8">æ·åRetro (Opt-1)</a>-->
-<a target="liveiframe" href="https://nn.geo.joj.sk/live/hls/jojplus-540.m3u8">æ¯æ´ä¼åTelevizia Plus</a>
-<a target="liveiframe" href="http://s1.media-planet.sk:80/live/novezamky/BratuMarian.m3u8">æ¯æ´ä¼åTVNZ</a>
-<a target="liveiframe" href="http://109.74.145.11:1935/tv8/mp4:tv8.stream_360p/chunklist_w974670813.m3u8">æ¯æ´ä¼åTV8</a>
-<!--<a target="liveiframe" href="http://video.chaula.tv/hls/live/high/playlist_high.m3u8">æè±ç»´äºChau TV</a>-->
-<a target="liveiframe" href="http://player.tvnet.lv/stream/amlst:61659/chunklist_w1822312625_b528000_pd892000.m3u8">æè±ç»´äºTV Net</a>
-<a target="liveiframe" href="http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8">å¸èCannali TV</a>
-<a target="liveiframe" href="http://live.streams.ovh:1935/foxtv/foxtv/playlist.m3u8">å¸èFox TV</a>
-<a target="liveiframe" href="http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8">å¸èIonian Channel</a>
-<!--<a target="liveiframe" href="http://live.netvtoronto.com:1935/NetvToronto/NetvToronto/playlist.m3u8">å¸èNETV (CA)</a>-->
-<!--<a target="liveiframe" href="http://81.21.47.74/hls/live.m3u8">å¡æµ¦è·¯æ¯Sigma TV (Greek)</a>-->
-<a target="liveiframe" href="http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8">åè³å¶Cay TV</a>
-<!--<a target="liveiframe" href="http://media.netd.com.tr/S1/HLS_LIVE/cnn_turk/1000/prog_index.m3u8">åè³å¶CNN Turk</a>
-<a target="liveiframe" href="http://mecliscanlitv-lh.akamaihd.net:80/i/MECLISTV_1@127503/master.m3u8">åè³å¶Meclis TV</a>-->
-<!--<a target="liveiframe" href="https://liveru.cgtn.com/1000r/prog_index.m3u8">ä¿ç½æ¯CGTN</a>-->
-<!--<a target="liveiframe" href="http://serv24.vintera.tv:8081/kaledoskop/kaledoskop/chunks.m3u8" title="å»ºè®®ä½¿ç¨Edgeæµè§å¨æ¶çæ¬å°ï¼æ¬å°æå¡å¨ä¸ç¨³å®å¶å°ä¼åºç°è®¿é®å¤±è´¥ï¼è¯·ç¨ååè¯ï¼">ä¿ç½æ¯Sky News Live</a>-->
-<!--<a target="liveiframe" href="http://kprf-htlive.cdn.ngenix.net/live/_definst_/stream_high/playlist.m3u8">ä¿ç½æ¯Krasnaja Linija</a>
-<a target="liveiframe" href="http://rfe-lh.akamaihd.net/i/rfe_tvmc5@383630/master.m3u8">ä¿ç½æ¯Nastoyashcheye Vremya</a>-->
-<!--<a target="liveiframe" href="http://92.50.128.180/utv/1358/index.m3u8">ä¿ç½æ¯RBC (Opt-1)</a>-->
-<!--<a target="liveiframe" href="http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8">ä¹åå°100% News</a>-->
-<a target="liveiframe" href="http://stream.atr.ua/lale//live/index.m3u8">ä¹åå°Lale</a>
-<a target="liveiframe" href="http://streamvideol1.luxnet.ua/news24/news24.stream/playlist.m3u8">ä¹åå°24ÐÐ°Ð½Ð°Ð»</a>
-<a target="liveiframe" href="http://live.m2.tv/hls3/stream.m3u8">ä¹åå°M2é³ä¹</a>
-<a target="liveiframe" href="http://95.67.21.100/hls/prm_ua_hi/index.m3u8">ä¹åå°ÐÑÑÐ¼Ð¸Ð¹</a>
-<a target="liveiframe" href="http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8">ä¹åå°Ð¢ÐÐ Ð§ÐµÑÐ½ÑÐ²ÑÑ</a>
-<a target="liveiframe" href="https://liveru.cgtn.com/1000r/prog_index.m3u8">ä¿ç½æ¯CGTN</a>
-<a target="liveiframe" href="http://brics.bonus-tv.ru/cdn/brics/chinese/tracks-v1a1/index.m3u8">ä¿ç½æ¯ä¸­æ</a>
-<a target="liveiframe" href="http://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8">ä¿ç½æ¯IGITV</a>
-<a target="liveiframe" href="http://streaming.astrakhan.ru/astrakhan24/index.m3u8">ä¿ç½æ¯Astrakhan 24 (Opt-2)</a>
-
-<a target="liveiframe" href="http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/chunklist.m3u8">ä¿ç½æ¯Muz Sojuz</a>
-
-
-<a target="liveiframe" href="http://online.video.rbc.ru/online/rbctv_480p/index.m3u8">ä¿ç½æ¯RBC (Opt-2)</a>
-<a target="liveiframe" href="http://online.video.rbc.ru/online/rbctv_576p/index.m3u8">ä¿ç½æ¯RBC (Opt-3)</a>
-<a target="liveiframe" href="http://hls.shansontv.cdnvideo.ru/shansontv/smil:shansontv.smil/playlist.m3u8">ä¿ç½æ¯Shanson TV (Opt-1)</a>
-<a target="liveiframe" href="http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8">ä¿ç½æ¯Shanson TV (Opt-2)</a>
-<a target="liveiframe" href="http://tvcom.stream.intelema.ru/tvcom/studio/index.m3u8">ä¿ç½æ¯Tivikom Ulan-Udje</a>
-<a target="liveiframe" href="http://streams.sibinformburo.cdnvideo.ru/sibinformburo/sibinformburo.sdp/playlist.m3u8">ä¿ç½æ¯Tjumenskoe Vremja</a>
-<!--<a target="liveiframe" href="http://serv24.vintera.tv:8081/tochka/tochkatv/playlist.m3u8">ä¿ç½æ¯Tochka TV (Opt-1)</a>-->
-<a target="liveiframe" href="http://live2.mediacdn.ru/sr1/tro/playlist.m3u8">ä¿ç½æ¯TRO Soyuz</a>
-<a target="liveiframe" href="http://live.ugratv.cdnvideo.ru/ugratv/smil:ugrastream1.smil/playlist.m3u8">ä¿ç½æ¯Ugra TV</a>
-<a target="liveiframe" href="http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8">ä¿ç½æ¯Mir</a>
-<a target="liveiframe" href="http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8">ä¿ç½æ¯Mir 24 (Opt-1)</a>
-<a target="liveiframe" href="http://stream.tvkujawy.pl:8080/live/broadcast.m3u8">æ³¢å°TV Kujawy (Opt-1)</a>
-
-<!--<a target="liveiframe" href="http://yletvhdliveworld-lh.akamaihd.net/i/yletv1hdworld_1@187592/index_2764_av-p.m3u8">è¬å°YLE TV 1</a><a target="liveiframe" href="http://yletvhdliveworld-lh.akamaihd.net/i/yletv2hdworld_1@187593/index_2764_av-p.m3u8">è¬å°YLE TV 2</a>-->
-
-<!--<a target="liveiframe" href="http://ec.playmedia.fr/beblack/africa/playlist.m3u8">æ³å½Bblack! Africa</a>
-<a target="liveiframe" href="http://ec.playmedia.fr/beblack/caribbean/playlist.m3u8">æ³å½Bblack! Caribbean</a><a target="liveiframe" href="http://ec.playmedia.fr/gong-base/live/playlist.m3u8">æ³å½Gong</a><a target="liveiframe" href="http://isar-tv.iptv-playoutcenter.de:1935/isar-tv/isar-tv.stream_1/playlist.m3u8">å¾·å½Isar TV</a><a target="liveiframe" href="http://muenchentv.iptv-playoutcenter.de:1935/muenchentv/muenchentv.stream_2/playlist.m3u8">å¾·å½Munchen TV</a><a target="liveiframe" href="http://oberpfalztv.iptv-playoutcenter.de:1935/oberpfalztv/oberpfalztv.stream_1/master.m3u8">å¾·å½Oberpfalz TV</a>
-
-<a target="liveiframe" href="http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8">å¾·å½TV Oberfranken</a><a target="liveiframe" href="http://rfo.iptv-playoutcenter.de:1935/rfo/rfo.stream_2/playlist.m3u8">å¾·å½RFO</a>
-<a target="liveiframe" href="http://tvaktuellr.iptv-playoutcenter.de:1935/tvaktuellr/tvaktuellr.stream_1/master.m3u8">å¾·å½TVA Ostbayern</a><a target="liveiframe" href="http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8">æå¤§å©SkyNews</a>
-<a target="liveiframe" href="http://178.22.187.253:1935/streaming-tv/mp4:myStream3/playlist.m3u8">æå¤§å©AutoMoto TV (Opt-1)</a><a target="liveiframe" href="http://la7-vh.akamaihd.net/i/content/entry/data/0/299/0_b7o9lvba_0_kyyr8vxz_1.mp4/master.m3u8">æå¤§å©La 7</a><a target="liveiframe" href="http://188.165.224.142:1935/radiotivuazzurralive/radiotivuazzurralive/playlist.m3u8">æå¤§å©Radio Azzurra</a><a target="liveiframe" href="http://wow01.105.net:1935/live/rmc1/livestream.m3u8">æå¤§å©Radio Monte Carlo</a>
-<a target="liveiframe" href="http://b2everyrai-lh.akamaihd.net/i/raimovie_1@67348/master.m3u8">æå¤§å©Rai Movie</a>
-<a target="liveiframe" href="http://b2everyrai-lh.akamaihd.net/i/raipremium_1@181837/master.m3u8">æå¤§å©Rai Premium</a><a target="liveiframe" href="http://wms.shared.streamshow.it:1935/tsn2/tsn2/live.m3u8">æå¤§å©TSN</a><a target="liveiframe" href="http://streaming.enetres.net:1935/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/stream.m3u8">è¥¿ç­ç13 TV</a><a target="liveiframe" href="http://streaming.enetres.net:80/091DB7AFBD77442B9BA2F141DCC182F5021/mobile/chunklist.m3u8">è¥¿ç­çCalle 13</a><a target="liveiframe" href="http://hlstv.canalextremadura.es/livetv/smil:multistream.smil/playlist.m3u8">è¥¿ç­çCanal Extremadura</a><a target="liveiframe" href="http://teledifusion.tv:1935/levantetvlive/levantetvlive/master.m3u8">è¥¿ç­çLevante TV</a><a target="liveiframe" href="http://nws.nice264.com/SmilLive/getLiveIOS.smil?stream=NTV_livenatvmb&system=NTV&protocol=http_cupertino/playlist.m3u8">è¥¿ç­çNavarra TV (Opt-2)</a><a target="liveiframe" href="http://streaming.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/live.smil/.m3u8">è¥¿ç­çTeleValencia</a> <a target="liveiframe" href="http://streaming.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/smil:live.smil/master.m3u8">è¥¿ç­çTV Mediterraneo</a><a target="liveiframe" href="http://93.115.137.166/hls/ntvm.m3u8">æ©å°å¤ç¦NTV</a><a target="liveiframe" href="http://66.55.93.204/hls-live/livepkgr/_definst_/report/stream.m3u8">é¿å°å·´å°¼äºReport-TV</a><a target="liveiframe" href="http://aljazeera-balkans-apple-live.adaptive.level3.net/apple/aljazeera/balkans/800.m3u8">æ³¢æ¯å°¼äº Al Jazeera Balkans</a><a target="liveiframe" href="http://tvstream.rtvbn.com:1935/live/stream/chunklist_w1957700324.m3u8">æ³¢æ¯å°¼äº BN TV</a><a target="liveiframe" href="http://37.59.21.217:8809/live/tv5web.m3u8">æ³¢æ¯å°¼äº Televizija 5</a>	<a target="liveiframe" href="http://edge-telia1.tiesraides.lv/live/retv.lv.1_1/playlist_b1825196.m3u8">æè±ç»´äºRETV</a><a target="liveiframe" href="http://live.netd.com.tr/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8">åè³å¶Dream TV</a><a target="liveiframe" href="http://live.netd.com.tr/S1/HLS_LIVE/dreamturktv/1000/prog_index.m3u8">åè³å¶Dreamturk TV</a><a target="liveiframe" href="http://212.224.109.109/S2/HLS_LIVE/kanald/500/prog_index.m3u8">åè³å¶Kanal D</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRT1HD_1@181842/master.m3u8">åè³å¶TRT 1</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTAVAZ_1@182244/master.m3u8">åè³å¶TRT Avaz</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTCOCUK_1@181844/master.m3u8">åè³å¶TRT Cocuk</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTHABERHD_1@181942/master.m3u8">åè³å¶TRT Haber</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTMUZIK_1@181845/master.m3u8">åè³å¶TRT Muzik</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTTURK_1@182144/master.m3u8">åè³å¶TRT Turk</a> <a target="liveiframe" href="http://v1.proofix.ru/live-tv8/stream1/playlist.m3u8">ä¿ç½æ¯8 Kanal</a><a target="liveiframe" href="http://tv-topshop.netrack.ru/hls/topshop.m3u8">ä¿ç½æ¯TopShop</a><a target="liveiframe" href="http://s69362.cdn.ngenix.net/live/_definst_/Stream1/chunklist.m3u8">é¿å¡æçCBC Sport</a>
-<a target="liveiframe" href="http://109.123.70.27:1935/tehnikatv777/tehnikatv777/playlist.m3u8">æ³¢æ¯å°¼äº 777 TehnikaTV</a>
-<a target="liveiframe" href="http://edge01.cdn.aws.subset.host/JewelleryMakerLive/JewelleryMakerLive/playlist.m3u8">è±å½Jewellery Maker</a><a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/6d735caeaf70f8901aa00f86aefc4dde.m3u8">è±å½BBC World</a><a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/f7146ac8e65cb75112431f87ddcea22e.m3u8">è±å½BBC Earth</a><a target="liveiframe" href="http://familytvblizz-lh.akamaihd.net/i/blizzlive_1@36699/master.m3u8">å¾·å½Family TV</a> <a target="liveiframe" href="http://familytvblizz-lh.akamaihd.net/i/familytv_1@458351/master.m3u8">å¾·å½Blizz TV</a><a target="liveiframe" href="http://tvtourings.iptv-playoutcenter.de:1935/tvtourings/tvtourings.stream_1/playlist.m3u8">å¾·å½TV Touring Schweinfurt</a><a target="liveiframe" href="http://live.vidoo.de/live/weltderwunder/f1tv.m3u8">å¾·å½Welt der Wunder</a><a target="liveiframe" href="http://194.158.80.31:443/live/rtva/playlist.m3u8">è¥¿ç­çAndorra TV (Andorra)</a><a target="liveiframe" href="http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/master.m3u8">è¥¿ç­çSevilla FC TV</a><a target="liveiframe" href="http://cdn.s3.eu.nice264.com:1935/niceLiveServer/NTV_livenatvmb_MB_478/live.m3u8">è¥¿ç­çNavarra TV (Opt-1)</a><a target="liveiframe" href="http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8">è¥¿ç­çTV3 (Opt-1)</a><a target="liveiframe" href="http://stream.kkr.dk/live/ngrp:kkr_adaptive/chunklist_w184691500_b1628000.m3u8">ä¸¹éº¦KKR TV.</a> <a target="liveiframe" href="http://d2jk87psbjrjdz.cloudfront.net/livehttporigin/okto/playlist.m3u8">å¥¥å°å©Okto TV</a> <a target="liveiframe" href="http://s1.streamnet.ro:8014/stream.flv.m3u8">ç½é©¬å°¼äºInformatia TV</a><a target="liveiframe" href="http://s2.streamnet.ro:8035/stream.flv.m3u8">ç½é©¬å°¼äºSTV</a><a target="liveiframe" href="http://hls.protv.md/acasatv/acasatv.m3u8">æ©å°å¤ç¦Acasa TV</a><a target="liveiframe" href="http://hls.protv.md/hls/protv.m3u8">æ©å°å¤ç¦Pro TV</a><a target="liveiframe" href="http://stream.mediawork.cz/tuty/tutytv/playlist.m3u8">æ·åTuty TV</a> <a target="liveiframe" href="http://212.200.102.3:5000/udp/239.99.99.99:23999.m3u8">å¡å°ç»´äº TV Partizan</a><a target="liveiframe" href="http://212.200.102.3:5000/rtp/239.0.0.2:5000.m3u8">å¡å°ç»´äº TVKopernikus2</a><a target="liveiframe" href="http://212.200.102.3:5000/rtp/239.0.0.3:5000.m3u8">å¡å°ç»´äº TVKopernikus3</a>  <a target="liveiframe" href="http://live.streams.ovh:1935/LIFEHD/LIFEHD/playlist.m3u8">å¸èLife Kids Network</a>
-<a target="liveiframe" href="http://stream.taksimbilisim.com:1935/aksutv/smil:aksutv.smil/playlist.m3u8">åè³å¶AKSU TV</a><a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTOKUL_1@182245/master.m3u8">åè³å¶TRT Okul</a> <a target="liveiframe" href="http://62.76.26.81:8081/hdmedia/menu/playlist.m3u8">ä¿ç½æ¯KinoMenu HD</a> <a target="liveiframe" href="http://starstv.live.e55-po.insyscd.net/starstvhd.smil/index.m3u8">æ³¢å°Stars TV</a><a target="liveiframe" href="http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8">æ³¢å°TV Torun</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbialystok.m3u8">æ³¢å°TVP3 Bialystok</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplodz.m3u8">æ³¢å°TVP3 Lodz</a><a target="liveiframe" href="http://trwamtv.live.e55-po.insyscd.net/trwamtv.smil/playlist.m3u8">æ³¢å°TV Trwam</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplublin.m3u8">æ³¢å°TVP3 Lublin</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvppoznan.m3u8">æ³¢å°TVP3 Poznan</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwarszawa.m3u8">æ³¢å°TVP3 Warszawa</a><a target="liveiframe" href="http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwroclaw.m3u8">æ³¢å°TVP3 Wroclaw</a><a target="liveiframe" href="http://94.246.169.19/ttv_hls/live_270p/index.m3u8">æ³¢å°Twoja TV (Opt-1)</a>-->
-<!--<a target="liveiframe" href="http://klive-a.akamaihd.net/dc-1/live/hls/p/1719221/e/1_ljzy3evp/sd/10000/t/nwOKUovT2mwnA8x_KnC4zg/index-s32.m3u8">çå£«Tele M1</a>
-<a target="liveiframe" href="http://klive-a.akamaihd.net/dc-1/live/hls/p/1719221/e/1_0mc3z57p/t/gaudIWTPWrpJe6yJmHI9vA/index-s32.m3u8">çå£«TeleBarn</a>-->
-<!--<a target="liveiframe" href="http://wma07.fluidstream.net:1935/TeleArena/livestream/playlist.m3u8">æå¤§å©TeleArena</a>-->
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-ç¾æ´²">
-<label for="tab-ç¾æ´²">ç¾æ´²</label><div class="tab-content animated fadeIn">
-<br>
-<!--<a target="liveiframe" href="http://live.cgtn.com/500/prog_index.m3u8">CGTN (Opt-1)</a>
-<a target="liveiframe" href="http://live.cgtn.com/1000/prog_index.m3u8">CGTN (Opt-2)</a>-->
-<!--<a target="liveiframe" href="http://ivi.bupt.edu.cn/hls/cctv16.m3u8">CGTN</a>-->
-<!--<a target="liveiframe" href="http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8">ç¾å½CBS News</a>-->
-
-<!--<a target="liveiframe" href="https://austchannel-live.akamaized.net/hls/live/2002729/austchannel-news/master1280x720.m3u8">æ¾³å¤§å©äºSky News</a>
-<a target="liveiframe" href="https://austchannel-live.akamaized.net/hls/live/2002736/austchannel-sport/master1280x720.m3u8">æ¾³å¤§å©äºFOX Sports News</a>	-->
-<!--<a target="liveiframe" href="http://wttv-lh.akamaihd.net:80/i/WTTVBreaking_1@333494/index_3000_av-b.m3u8">ç¾å½æ¬åCBS 4 News (Indianapolis)</a>-->
-<!--<a target="liveiframe" href="https://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/master.m3u8">ç¾å½ä¹é³VOA</a>-->
-<!--<a target="liveiframe" href="http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8">ç¾å½Weather Nation</a>-->
-<!--<a target="liveiframe" href="http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8">ç¾å½Bloomberg TV Europe</a>
-<a target="liveiframe" href="http://na-all15.secdn.net/pegstream3-live/play/c3e1e4c4-7f11-4a54-8b8f-c590a95b4ade/playlist.m3u8">ç¾å½Buffalo TV</a>-->
-<a target="liveiframe" href="https://www.cbsnews.com/common/video/cbsn-ny-prod.m3u8">ç¾å½CBS News</a>
-
-<a target="liveiframe" href="https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8">ç¾å½ABC News</a>
-<!--<a target="liveiframe" href="http://litv.zapi.us.kg/?id=litv-ftv03">ç¾å½ä¹é³VOA</a>-->
-<!--<a target="liveiframe" href="https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8">ç¾å½Fox News</a>
-<a target="liveiframe" href="https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8">ç¾å½Fox News</a>-->
-<a target="liveiframe" href="https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8">ç¾å½Fox News</a>
-<a target="liveiframe" href="https://live.corusdigitaldev.com/groupa/live/023a9e25-f0cf-4d97-af9f-5c665b7d45b9/live.isml/live-audio_1=96000-video=2499968.m3u8">ç¾å½Fox5 Washington DC(WTTG)</a>
-<!--<a target="liveiframe" href="https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8">ç¾å½CNN</a>-->
-<a target="liveiframe" href="https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8">ç¾å½CNN</a>
-
-<a target="liveiframe" href="http://cms-wowza.lunabyte.io/wbrz-live-1/_definst_/smil:wbrz-live.smil/playlist.m3u8">ç¾å½ABC 2 Baton Rouge LA (WBRZ)</a>
-<a target="liveiframe" href="http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8">ç¾å½Newsmax TV</a>
-<a target="liveiframe" href="http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8">ç¾å½Red Bull TV SD</a>
-<a target="liveiframe" href="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8">å æ¿å¤§The Shopping Channel</a>
-<a target="liveiframe" href="http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8">å¥æ¯è¾¾é»å  Extrema TV</a>
-<!--<a target="liveiframe" href="http://162.244.81.156:1935/whprtv33roku/whprtv33roku/playlist.m3u8">ç¾å½WHPR TV 33 Detroit</a>
-<a target="liveiframe" href="http://granicusliveus8-a.akamaihd.net/denver/G0080_002/chunklist.m3u8">ç¾å½Denver 8 TV</a>-->
-<!--<a target="liveiframe" href="http://wowzaprod134-i.akamaihd.net/hls/live/577814/ccddaf02/playlist.m3u8">ç¾å½Jewelry Television</a>-->
-<!--<a target="liveiframe" href="http://cbcnewshd-f.akamaihd.net/i/cbcnews_1@8981/index_2500_av-p.m3u8">å æ¿å¤§CBC News (VOD)</a>-->
-
-
-<!--<a target="liveiframe" href="http://68.235.35.243:1935/lamegamundial/lamegamundial2/playlist.m3u8">æä¸ç¾æ´²La Mega Mundial</a>
-<a target="liveiframe" href="http://ocb-lh.akamaihd.net/i/ocb_mpls_tvmc1@383606/master.m3u8">æä¸ç¾æ´²TV Marti</a>
-<a target="liveiframe" href="http://ooyalahd2-f.akamaihd.net/i/UnoTV01_delivery@122640/master.m3u8">å¢¨è¥¿å¥Uno TV (VOD)</a>
-<a target="liveiframe" href="http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8">å¢¨è¥¿å¥Milenio TV</a>
-<a target="liveiframe" href="http://184.154.28.210:1935/canal4/canal4/live.m3u8">é¿æ ¹å»·Canal 4 Posadas</a>
-<a target="liveiframe" href="http://www.trimi.com.ar/provincial/streaming/mystream.m3u8">é¿æ ¹å»·Canal Provincial San Miguel</a>-->
-
-<!--<a target="liveiframe" href="http://media.neuquen.gov.ar/rtn/television/chunklist_w1330236482.m3u8">é¿æ ¹å»·Radio TV Neuquen</a>-->
-<!--<a target="liveiframe" href="http://186.0.233.76:1935/Garage/smil:garage.smil/master.m3u8">é¿æ ¹å»·Garage TV</a>
-<a target="liveiframe" href="http://vs8.live.opencaster.com/20100152275/jcpstream/playlist.m3u8">ç§é²Monterrico TV</a>
-<a target="liveiframe" href="http://k3.usastreams.com:1935/telesur/telesur/playlist.m3u8">å¥æ¯è¾¾é»å  Telesur</a>-->
-
-<!--<a target="liveiframe" href="https://cnn-cnninternational-1-eu.rakuten.wurl.tv/206849c7acd1570962df1ad525fa8688.m3u8">ç¾å½CNN</a>-->
-<!--<a target="liveiframe" href="http://livees.cgtn.com/1000e/prog_index.m3u8">æä¸ç¾æ´²CGTN</a>-->
-<!--<a target="liveiframe" href="http://hls.ksl.com/t/strata/playlist.m3u8">ç¾å½VTV Channel 6 Colorado</a> <a target="liveiframe" href="http://granicusliveus3-a.akamaihd.net/cityofbowie/G0466_001/playlist.m3u8">ç¾å½Bowie TV</a>	<a target="liveiframe" href="http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVWAIR_all/chucklist.m3u8">ç¾å½TVW</a>  <a target="liveiframe" href="https://1828529515.rsc.cdn77.org/9RiUahqfp9kD6z-1zXCDig==,1580011317/LS-ATL-54548-9/tracks-v1a1/mono.m3u8">ç¾å½Cnn News</a> -->
-<!--<a target="liveiframe" href="http://kntvlive-f.akamaihd.net/i/kntvb2_1@15530/index_1286_av-p.m3u8">ç¾å½æ¬åNBC 11 News (Bay Area).</a> <a target="liveiframe" href="http://wmaqlive-f.akamaihd.net/i/wmaqa1_1@22923/master.m3u8">ç¾å½æ¬åNBC 5 News (Chicago)</a><a target="liveiframe" href="http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8">ç¾å½èå å¥WGN9é¢éHD</a><a target="liveiframe" href="http://104.250.154.42:8080/ZZ_hbo/ZZ_hbo.m3u8">ç¾å½å½å®¶å°ç</a> -->
-<!-- 	<a target="liveiframe" href="http://ams-lp10.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News18.m3u8">å æ¿å¤§CTV News Live 1</a>
-<a target="liveiframe" href="http://ams-lp6.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News38.m3u8">å æ¿å¤§CTV News Live 3</a>
-<a target="liveiframe" href="http://ams-lp5.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News48.m3u8">å æ¿å¤§CTV News Live 4</a> <a target="liveiframe" href="http://svc-lvanvato-cxtv-wpxi.cmgvideo.com/wpxi/2564k/index.m3u8">ç¾å½æ¬åChannel 11 News WPXI (Pittsburgh)</a> <a target="liveiframe" href="http://media3.sinovision.net:1935/live/livestream/playlist.m3u8">ç¾å½ä¸­æå°</a><a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/1b4017a457de80eec599895ec807e124.m3u8">ç¾å½National Geographic</a><a target="liveiframe" href="http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:HouseChannel_all/chucklist.m3u8">ç¾å½House of Representatives</a> -->
-<!-- 	  <a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/5ff1924613169c0b7148e528d0cfe0fd.m3u8">ç¾å½CNN</a> -->
-<!-- 	  <a target="liveiframe" href="http://pili-live-hdl.qhmywl.com/dsdtv/b78a7c4f460285596b53bfa802eca8e8.m3u8">ç¾å½FOX News</a><a target="liveiframe" href="http://173.236.10.10:1935/dgrau/dgrau/playlist.m3u8">å·´è¥¿AllSports</a><a target="liveiframe" href="http://evpp.mm.uol.com.br/redetv1/redetv1/chunklist_w1483436880.m3u8">å·´è¥¿Rede TV</a> <a target="liveiframe" href="http://186.0.180.11:1935/festival/mp4:festival/playlist.m3u8">é¿æ ¹å»·Canal Local Olavarria</a><a target="liveiframe" href="http://wowza.montevideo.com.uy:1936/live/_definst_/mvdstrem/chunklist_w1488231185.m3u8">ä¹æå­ Canal M</a><a target="liveiframe" href="http://173.192.105.252:1935/iptvantares/liveantarestv/playlist.m3u8">ç§é²Antares TV</a><a target="liveiframe" href="http://k4.usastreams.com/Telesistemas/Telesistemas/playlist.m3u8">å¥æ¯è¾¾é»å  Telered</a><a target="liveiframe" href="http://185.22.153.221/oku.m3u8?id=578654183117">æ¥æ¬ææ¥çµè§å°</a>	<a target="liveiframe" href="https://livefta.malimarcdn.com/ftaedge00/laosvtv.stream/chunklist.m3u8">èæ LAO SV TV</a> -->
-<!--<a target="liveiframe" href="http://wms30.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8">å¢¨è¥¿å¥Teleformula (New)</a>-->
-</div>
-</li>
-
-<!-- <li> -->
-<!-- <input type="radio" name="tabs" id="tab-é¿æä¼¯"> -->
-<!-- <label for="tab-é¿æä¼¯">é¿æä¼¯</label> -->
-<!-- <div class="tab-content animated fadeIn">  -->
-<!-- <br> -->
-<!-- <a target="liveiframe" href="http://mbnhls-lh.akamaihd.net/i/MBN_1@118619/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½Al Hurra</a> -->
-<!-- <a target="liveiframe" href="http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8">ä¼æå Sharqiya News</a> -->
-<!-- <a target="liveiframe" href="http://iptv.tapesh.tv/tapesh/playlist.m3u8">ä¼æPBC Tapesh TV</a> -->
-<!-- <a target="liveiframe" href="http://dwstream2-lh.akamaihd.net/i/dwstream2_live@124400/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½Deutsche Welle</a> -->
-<!-- <!-- -->
-<!-- <a target="liveiframe" href="http://english.streaming.aljazeera.net/aljazeera/english2/index4147.m3u8">å¡å¡å°åå²çµè§å°(Opt-1)</a> -->
-<!-- <a target="liveiframe" href="http://english.streaming.aljazeera.net/aljazeera/english2/index.m3u8">å¡å¡å°åå²çµè§å°(Opt-2)</a> -->
-<!-- <a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½TRT</a> -->
-<!-- <a target="liveiframe" href="http://adtv.ercdn.net/adsport2/adsport2.m3u8">é¿æä¼¯èåéé¿å½Abu Dhabi Sports 2 HD (Opt-2)</a> -->
-<!-- <a target="liveiframe" href="http://adtv.ercdn.net/adsport2/adsport2_720p.m3u8">é¿æä¼¯èåéé¿å½Abu Dhabi Sports 2 HD (Opt-3)</a>-->
-<!-- <!-- <a target="liveiframe" href="http://ns8.indexforce.com:1935/ann/ann/playlist.m3u8">åå©äºANN</a>-->
-<!--  -->
-<!-- </div> -->
-<!-- </li> -->
-
-<li>
-<input type="radio" name="tabs" id="tab-å¶ä»">
-<label for="tab-å¶ä»">å¶ä»</label>
-<div class="tab-content animated fadeIn"> 
-<br>
-
-
-<!--<a target="liveiframe" href="https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index_45.m3u8">ABC News Australia</a> -->
-<!--<a target="liveiframe" href="https://ausbiztv-ausbiz-1-nz.samsung.wurl.tv/playlist.m3u8">ABC News Australia</a> -->
-<a target="liveiframe" href="https://content.uplynk.com/channel/ext/72750b711f704e4a94b5cfe6dc99f5e1/wabc_24x7_news.m3u8">ABC News Australia</a> 
-<a target="liveiframe" href="http://live-hls-web-aje.getaj.net/AJE/01.m3u8">åå²çµè§å°</a>
-<!--<a target="liveiframe" href="https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8">åå²çµè§å°</a>-->
-
-<!-- <a target="liveiframe" href="https://bcliveunivsecure-lh.akamaihd.net/i/un150_A1_1@575439/master.m3u8">èåå½é¢éTV</a><a target="liveiframe" href="http://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/masterv3_1024x576.m3u8" title="å»ºè®®ä½¿ç¨Edgeæµè§å¨æ¶çæ¬å°ï¼æ¬å°æå¡å¨ä¸ç¨³å®å¶å°ä¼åºç°è®¿é®å¤±è´¥ï¼è¯·ç¨ååè¯ï¼">æ¾³å¤§å©äºSky News EXTRA1</a> 
-<a target="liveiframe" href="http://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master960x540.m3u8" title="å»ºè®®ä½¿ç¨Edgeæµè§å¨æ¶çæ¬å°ï¼æ¬å°æå¡å¨ä¸ç¨³å®å¶å°ä¼åºç°è®¿é®å¤±è´¥ï¼è¯·ç¨ååè¯ï¼">æ¾³å¤§å©äºSky News EXTRA3</a> -->
-
-<!--<a target="liveiframe" href="https://livear.cgtn.com/1000a/prog_index.m3u8">CGTN-é¿è¯­</a>-->
-<!--<a target="liveiframe" href="http://mbnhls-lh.akamaihd.net/i/MBN_1@118619/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½Al Hurra</a>-->
-<!--<a target="liveiframe" href="http://dwstream2-lh.akamaihd.net/i/dwstream2_live@124400/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½Deutsche Welle</a>-->
-<!-- <a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/master.m3u8">é¿æä¼¯åå²çµè§æ°é»ç½TRT</a> -->
-<!--<a target="liveiframe" href="https://kanlivep2event-i.akamaihd.net/hls/live/747600/747600/master.m3u8">ä»¥è²å1</a>-->
-<!--<a target="liveiframe" href="https://livear.cgtn.com/1000a/prog_index.m3u8">CGTNé¿æä¼¯è¯­</a> -->
-
-<a target="liveiframe" href="http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8">ä¼æå Sharqiya News</a>
-<a target="liveiframe" href="http://iptv.tapesh.tv/tapesh/playlist.m3u8">ä¼æPBC Tapesh TV</a>
-
-<!--<a target="liveiframe" href="http://africatv.live.net.sa:1935/live/africatv/playlist.m3u8">å çº³TV Africa (Ghana)</a>
-<a target="liveiframe" href="http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/vision4/hls_video/index.m3u8">åéº¦é Vision 4</a>-->
-<!--<a target="liveiframe" href="http://cdn20.liveonlineservices.com/hls/eye95tv.m3u8">å·´åºæ¯å¦Eye 95 TV (US)</a>-->
-<!--<a target="liveiframe" href="http://bris4bcvid-lh.akamaihd.net/i/brisbanebcvida_1@110989/master.m3u8">æ¾³å¤§å©äº4BC Brisbane</a>
-<a target="liveiframe" href="https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index_1.m3u8">æ¾³å¤§å©äºABC News</a><a target="liveiframe" href="http://mediaworks-i.akamaihd.net/hls/live/220435/3812193411001/3news_live/master.m3u8">æ°è¥¿å°Three</a>
-<a target="liveiframe" href="http://w3.013.gostreaming.tv:1935/Knesset/myStream/playlist.m3u8">ä»¥è²åKnesset Channel</a>
-<a target="liveiframe" href="http://trtcanlitv-lh.akamaihd.net/i/TRT6_1@181944/master.m3u8">åºå°å¾·æ¯å¦TRT Kurdi</a><a target="liveiframe" href="http://live.wmncdn.net/pbnmusic/b437d1e185b4c95b08b9c830a9d97cff.sdp/playlist.m3u8">å°åº¦PBN Music (USA)</a>
-<a target="liveiframe" href="http://edge-ind.inapcdn.in:1935/device2/camera2.stream/playlist.m3u8">å°åº¦JK 24x7 News</a>	<a target="liveiframe" href="http://nicls2-lh.akamaihd.net/i/rstv_1@26970/master.m3u8">å°åº¦Rajya Sabha TV</a>
-<a target="liveiframe" href="http://nicls1-lh.akamaihd.net/i/ddnews_1@409133/master.m3u8">å°åº¦DD News</a>-->
-
-
-	<!--<a target="liveiframe" href="http://nicls1-lh.akamaihd.net/i/lst_1@26969/master.m3u8">å°åº¦Lok Sabha TV</a>-->
-<!--	<a target="liveiframe" href="http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_inter/hls_snrt/index.m3u8">æ©æ´å¥Al Aoula International</a>
-	<a target="liveiframe" href="http://cdn-hls.globecast.tv/live/ramdisk/arriadia/hls_snrt/index.m3u8">æ©æ´å¥Arryadia</a>
-	<a target="liveiframe" href="http://cdn-hls.globecast.tv/live/ramdisk/al_maghribia_snrt/hls_snrt/index.m3u8">æ©æ´å¥Al Maghribia</a>-->
-
-	
-<!--	<a target="liveiframe" href="http://wfc.bonus-tv.ru:80/cdn/wfcint/tracks-v2a1/index.m3u8">é«æ¸æ¶è£å°WFC</a>
-<a target="liveiframe" href="http://31.13.223.104:1935/travel/community.stream/playlist.m3u8">TRAVEL HD</a>-->
-		<!--<a target="liveiframe" href="http://mlive.lahorenews.tv:1935/lahorelive/lnews_1/playlist.m3u8">å·´åºæ¯å¦Lahore News</a>-->
-	<!--	<a target="liveiframe" href="http://abpasmita-lh.akamaihd.net:80/i/abpasmita_1@77821/master.m3u8">å°åº¦ABP Asmita</a>-->
-</div>
-</li>
-<li>
-<input type="radio" name="tabs" id="tab-çµå°">
-<label for="tab-çµå°">çµå°</label>
-<div class="tab-content animated fadeIn"> 
-<br>
-
-												  
-<a target="liveiframe" href="http://sk.cri.cn/am846.m3u8">CRI è±è¯­èµè®¯å¹¿æ­</a>
-<a target="liveiframe" href="http://sk.cri.cn/am1008.m3u8">CRI è±è¯­æ¼«å¬å¹¿æ­</a>
-<a target="liveiframe" href="http://sk.cri.cn/915.m3u8">CRI è½»æ¾è°é¢å¹¿æ­</a>
-<a target="liveiframe" href="http://sk.cri.cn/905.m3u8">CRI ç¯çèµè®¯</a>
-<a target="liveiframe" href="http://sk.cri.cn/hyhq.m3u8">CRI ä¸­æç¯ç</a>
-<a target="liveiframe" href="http://ngcdn001.cnr.cn/live/zgzs/index.m3u8">CNR ä¸­å½ä¹å£°</a>
-<a target="liveiframe" href="http://ngcdn002.cnr.cn/live/jjzs/index.m3u8">CNR ç»æµä¹å£°</a>
-<!--<a target="liveiframe" href="http://ngcdn016.cnr.cn/live/gsgljtgb/index.m3u8">CNR äº¤éå¹¿æ­</a>
-<a target="liveiframe" href="http://ngcdn004.cnr.cn/live/dszs/index.m3u8">CNR ç»å¸é³ä¹</a> 		
-<a target="liveiframe" href="http://ngcdn003.cnr.cn/live/yyzs/index.m3u8">CNRé³ä¹ä¹å£°</a> 	-->	
-<a target="liveiframe" href="http://playtv-live.ifeng.com/live/06OLEEWQKN4_audio.m3u8">å¤å°èµè®¯ï¼ä»é³é¢ï¼</a>
-<a target="liveiframe" href="https://playtv-live.ifeng.com/live/06OLEGEGM4G_audio.m3u8">å¤å°ä¸­æï¼ä»é³é¢ï¼</a>
-<a target="liveiframe" href="https://a1live.livecdn.yicai.com/live/yicai_radio.m3u8">ä¸æµ·ç¬¬ä¸è´¢ç»</a>
-<!--<a target="liveiframe" href="https://ytcast2.radio.cn/125/radios/20845/index_20845.m3u8?type=1&key=a78b2ce04cf6e7b1e78c1f37a1ae070b&time=655dd342">äºæä½è²ï¼ä»é³é¢ï¼</a>-->
-
-<!-- <a target="liveiframe" href="http://ngcdn001.cnr.cn/live/zgzs/index.m3u8">CNR ä¸­å½ä¹å£°</a>
-<a target="liveiframe" href="http://ngcdn001.cnr.cn/live/jjzs/index.m3u8">CNR ç»æµä¹å£°</a>
-
-<a target="liveiframe" href="http://ngcdn001.cnr.cn/live/gsgljtgb/index.m3u8">CNR äº¤éå¹¿æ­</a>
-<a target="liveiframe" href="http://ngcdn001.cnr.cn/live/dszs48/index.m3u8">CNR ç»å¸é³ä¹</a> -->
-
-<!--  ä¸ä¸æ¹çä¼¦æ¦å¹¿æ­åå®¹ç¸å-->
-<!-- <a target="liveiframe" href="http://cnlive.cnr.cn/hls/yyzxgb.m3u8">CNR è±è¯­èµè®¯å¹¿æ­</a> -->
-
-<!--<a target="liveiframe" href="http://fnurtmp-f.akamaihd.net/i/FNRADIO_1@92141/master.m3u8">ç¾å½Fox News Talk Radio</a>-->
-
-
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm945.m3u8">åäº¬æ°é»å¹¿æ­</a>
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm1039.m3u8">åäº¬äº¤éå¹¿æ­</a>
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm876.m3u8">åäº¬æèºå¹¿æ­</a>
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm1073.m3u8">åäº¬åå¸å¹¿æ­</a>
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm1025.m3u8">åäº¬ä½è²å¹¿æ­</a>
-<a target="liveiframe" href="https://brtv-radiolive.rbc.cn/alive/fm974.m3u8">åäº¬é³ä¹å¹¿æ­</a>
-<!--<a target="liveiframe" href="http://live.funhillrm.com/4/sd/live.m3u8">åäº¬ç»å¸è°é¢</a>		-->				
-<a target="liveiframe" href="http://sk.cri.cn/887.m3u8">CRI Hit FMå²æ²</a>
-<a target="liveiframe" href="http://sk.cri.cn/hyhq.m3u8">CRI åè¯­å¹¿æ­</a>
-<a target="liveiframe" href="http://sk.cri.cn/nhzs.m3u8">CRI åæµ·ä¹å£°</a>
-<a target="liveiframe" href="http://sk.cri.cn/hxfh.m3u8">CRI ç¯çé£è¹</a>
-
-
-
-<!--<a target="liveiframe" href="http://audiolive.rbc.cn:1935/live/fm945/96K/tzwj_video.m3u8">åäº¬å¨å¬è°é¢Metro Radio</a>
-<a target="liveiframe" href="http://123.56.16.201:1935/live/am603/96K/tzwj_video.m3u8">åäº¬æäºå¹¿æ­</a>
-<a target="liveiframe" href="http://audiolive.rbc.cn:1935/live/am774/96K/tzwj_video.m3u8">åäº¬å¤è¯­å¹¿æ­</a>
-<a target="liveiframe" href="http://123.56.16.201:1935/live/fm994/96K/tzwj_video.m3u8">åäº¬å¤è¯­å¹¿æ­å¤ç¨</a>
-<a target="liveiframe" href="http://audiolive.rbc.cn:1935/live/am927/96K/tzwj_video.m3u8">åäº¬éå¹´å¹¿æ­</a>-->
-<!--<a target="liveiframe" href="http://ls.qingting.fm/live/24229.m3u8">ä¸­å½æ ¡å­å¹¿æ­</a>-->
-<!--<a target="liveiframe" href="https://lhttp.qtfm.cn/live/20091/64k.mp3">ä¸­å½æ ¡å­å¹¿æ­</a>-->
-
-<!--<a target="liveiframe" href="http://123.56.16.201:1935/live/fm994/96K/tzwj_video.m3u8">åäº¬å¤è¯­å¹¿æ­å¤ç¨</a>-->
-<!-- <a target="liveiframe" href="http://cnlive.cnr.cn/hls/nanhaizhisheng.m3u8">CNR åæµ·ä¹å£°</a> -->
-<!--<a target="liveiframe" href="http://audiolive.rbc.cn:1935/live/fm986/96K/tzwj_video.m3u8">åäº¬å¤å¸é³ä¹å¹¿æ­</a>-->
-<!--<a target="liveiframe" href="http://123.56.16.201:1935/live/fm1075/96K/tzwj_video.m3u8">åäº¬ææ§éæ²å¹¿æ­</a>
-<a target="liveiframe" href="http://audiolive.rbc.cn:1935/live/fm1043/96K/tzwj_video.m3u8">åäº¬é¿ä¹¦å¹¿æ­</a>
-<a target="liveiframe" href="http://123.56.16.201:1935/live/fm1065/96K/tzwj_video.m3u8">åäº¬æ¬¢ä¹æ¶åå¹¿æ­</a>
-<a target="liveiframe" href="http://123.56.16.201:1935/live/fm1051/96K/tzwj_video.m3u8">åäº¬ææ²ç»¼èºå¹¿æ­</a>-->
-<!--<a target="liveiframe" href="http://125.210.152.18:9090/live/FHZX_1200.m3u8"title="é³é¢æºæ ç»é¢">å¤å°èµè®¯FM</a>
-<a target="liveiframe" href="http://125.210.152.18:9090/live/FHZW_1200.m3u8"title="é³é¢æºæ ç»é¢">å¤å°ä¸­æFM</a>-->
-
-<!--
-
--->
-
-</div>
-</li>
-
-
-</ul>
-</div>
-<link href="video-js.css" rel="stylesheet">
-<style>
-.video-js{
-width:100%;
-height:100%;
-}
-.video-js *:focus{
-outline: none;
-}
-/* Change all text and icon colors in the player. */
-.vjs-goldenrod.video-js {
-color: goldenrod;
-}
-/* Change the border of the big play button. */
-.vjs-goldenrod .vjs-big-play-button {
-border-color: goldenrod;
-}
-/* Change the color of various "bars". */
-.vjs-goldenrod .vjs-volume-level, .vjs-goldenrod .vjs-play-progress, .vjs-goldenrod .vjs-slider-bar {
-background: goldenrod;
-}
-.vjs-paused .vjs-big-play-button,
-.vjs-paused.vjs-has-started .vjs-big-play-button {
-
-display: block;
-}
-.video-js .vjs-big-play-button{
-font-size: 2.5em;
-line-height: 2.3em;
-height: 2.5em;
-width: 2.5em;
--webkit-border-radius: 2.5em;
--moz-border-radius: 2.5em;
-border-radius: 2.5em;
-border-width: 0.15em;
-margin-top: -1.5em;
-margin-left: -1.25em;
-}
-/* ä¸­é´çæ­æ¾ç®­å¤´ */
-.vjs-big-play-button .vjs-icon-placeholder {
-font-size: 1.63em;
-}
-.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
-opacity: 1;
-}
-.vjs-has-started.vjs-user-inactive.vjs-playing.vjs-fullscreen .vjs-control-bar {
-opacity: 0;
-}
-.video-js.vjs-playing .vjs-tech {
-pointer-events: auto;
-}
-</style>
-<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="video.min.js" type="text/javascript"></script>
-<script src="videojs-contrib-hls.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-function changeVideo(url){
-
-if($('#video-js').length!=0){
-var player = videojs('video-js');
-player.pause();
-player.dispose();
-}
-
-$("#playbox").html('<video id="video-js" class="video-js vjs-goldenrod vjs-big-play-centered" autoplay controls preload="auto" width="100%" height="100%" poster="" playsinline webkit-playsinline x-webkit-airplay="true"><source id="source" src="'+ url +'" type="application/x-mpegURL"></video>');
-
-
-videojs('video-js', {
-bigPlayButton: true,
-textTrackDisplay: false,
-posterImage: true,
-errorDisplay: true
-},function(){
-//this.play();
-})
-}
-</script>
-<script type="text/javascript">
-// if in iframe
-try {
-if (self != top) {
-//alert(document.referrer);
-$("body").addClass("inframe");
-}
-} catch (err) {}
-// check UA
-ua = navigator.userAgent.toLowerCase(),
-check = function(r) {
-return r.test(ua);
-},
-DOC = document,
-isStrict = DOC.compatMode === "CSS1Compat",
-isOpera = check(/opera/),
-isChrome = check(/\bchrome\b/),
-isWebKit = check(/webkit/),
-isSafari = !isChrome && check(/safari/),
-isSafari2 = isSafari && check(/applewebkit\/4/),
-// unique to Safari 2    
-isSafari3 = isSafari && check(/version\/3/),
-isSafari4 = isSafari && check(/version\/4/),
-isIE = !isOpera && check(/msie/),
-isIE6 = isIE && !-[1,]&&!window.XMLHttpRequest;
-isIE7 = isIE && check(/msie 7/),
-isIE8 = isIE && check(/msie 8/),
-isIE678 = isIE6 || isIE7 || isIE8,
-isGecko = !isWebKit && check(/gecko/),
-isGecko2 = isGecko && check(/rv:1\.8/),
-isGecko3 = isGecko && check(/rv:1\.9/),
-isBorderBox = isIE && !isStrict,
-isWindows = check(/windows|win32/),
-isMac = check(/macintosh|mac os x/),
-isAir = check(/adobeair/),
-isLinux = check(/linux/),
-isIos = check(/\(i[^;]+;( u;)? cpu.+mac os x/),
-isIphone = check(/iphone/),
-isIpad = check(/ipad/),
-isIpod = check(/ipod/),
-isAndroid = check(/android/),
-isSymbian = check(/symbianos/),
-isWindowsphone = check(/windows phone/),
-isWeixin = check(/MicroMessenger/),
-isMobile = check(/iphone|ipad|ipod|android|windows phone|symbianos/),
-isDesktop = check(/windows|win32|macintosh|mac os x|adobeair|linux/),
-isSecure = /^https/i.test(window.location.protocol),
-isKuaizhan = check(/kznativenav/),
-isHtml5Plus = check(/html5plus/);
-
-function getQueryString(name) {
-var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-var r = window.location.search.substr(1).match(reg);
-if (r != null) return decodeURI(r[2]); return null;
-}
-function saveCookie(name, value, days)
-//åcookieså½æ°
-{
-var exp = new Date();
-exp.setTime(exp.getTime() + days * 24 * 60 * 60 * 1000);
-document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";path=/";
-
-}
-function getCookie(name)
-//åcookieså½æ°        
-{
-var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
-if (arr !== null) {return unescape(arr[2]);}
-return null;
-
-
-}
-function delCookie(name)
-//å é¤cookie
-{
-var exp = new Date();
-exp.setTime(exp.getTime() - 1);
-var cval = getCookie(name);
-if (cval !== null) {document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString() + ";path=/";}
-
-}
-
-
-function liveplay(src,title){
-if(/.m3u8|.mp4/.test(src)){
-changeVideo(src);
-}else{
-$("#playbox").html('<iframe class="liveplayer" id="liveiframe" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="'+ src +'" allowfullscreen="true"></iframe>');
-}
-$("html,body").animate({scrollTop:0},500);
-if(title)$("title").html(title + " Â· SOSO365");
-if(title != "æµè¯")saveCookie("livechannel",src,"60");
-history.pushState('', document.title, '?channel=' + src);
-}
-
-$(document).ready(function() {
-
-$('.tab-content a').click(function(e){
-e.preventDefault();
-liveplay($(this).attr('href'),$(this).text());
-$(".active").removeClass('active');
-$(this).addClass('active');
-});
-
-var livechannel = getQueryString("channel") || getCookie("livechannel");
-if(livechannel != null){
-$('.tab-content a[href*="' + livechannel + '"]').first().click();
-}else{
-$(".tab-content a").first().click();
-};
-
-});
-</script>
-</body>
-</html>
