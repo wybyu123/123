@@ -18,33 +18,40 @@ if os.path.exists(special_dir):
     shutil.rmtree(special_dir)
 os.makedirs(special_dir, exist_ok=True)
 
-# downloads 目录保留（可根据需要决定是否每次清空，这里保持目录存在）
 os.makedirs(output_dir, exist_ok=True)
 
 def detect_real_format(content):
     """
-    深度分析内容，判断其真实格式：
-    返回: 'm3u', 'txt', 或 'other'
+    严格区分真实格式：
+    1. 必须明确包含 M3U 头部标签才算 m3u
+    2. 包含 #genre# 或标准的 名字,http 结构算 txt
     """
     content_str = content.strip()
     
-    # 判读是否为 M3U 标准格式
-    if "#EXTM3U" in content_str or "#EXTINF:" in content_str:
+    # 严格判断 M3U：必须带有 #EXTM3U 标签
+    if "#EXTM3U" in content_str:
         return "m3u"
     
-    # 判断是否为 TXT 直播源格式（含 #genre# 或 名字,http 结构）
+    # 严格判断 TXT：包含 #genre# 分类标签，或者多行符合 "名字,http..." 格式
     if "#genre#" in content_str:
         return "txt"
     
     lines = content_str.splitlines()
-    match_count = 0
+    txt_match_count = 0
     for line in lines:
         line = line.strip()
-        if ',' in line and ('http://' in line or 'https://' in line or '[组' in line or 'p2p://' in line):
-            match_count += 1
-            if match_count >= 1:  # 匹配到至少一行符合的直播源即判定为 txt 源
-                return "txt"
-                
+        # 检查是否为典型的 "名字,http" 结构
+        if ',' in line and not line.startswith('#'):
+            parts = line.split(',', 1)
+            if len(parts) == 2 and ('http://' in parts[1] or 'https://' in parts[1] or 'p2p://' in parts[1] or '[组' in parts[1]):
+                txt_match_count += 1
+                if txt_match_count >= 2:  # 只要匹配到至少2行这样的格式，即可稳妥认定是 txt 电视台列表
+                    return "txt"
+                    
+    # 如果有 #EXTINF: 但没有 #EXTM3U，也可以算 m3u
+    if "#EXTINF:" in content_str:
+        return "m3u"
+        
     return "other"
 
 def safe_print(text):
@@ -60,7 +67,7 @@ def run_scraper(csv_file):
 
     date_str = datetime.datetime.now().strftime("%m%d")
     
-    # m3u 使用 h 计数，txt 使用 k 计数，分开独立编号
+    # m3u 使用 h 计数，txt 使用 k 计数，严格独立
     m3u_count = 1
     txt_count = 1
     
@@ -85,14 +92,16 @@ def run_scraper(csv_file):
                 if response.status_code == 200:
                     content = response.text
                     
-                    # 第一步：先将所有原始响应保存到 downloads 目录中，便于详细查看每个文件
+                    # 1. 原始文件统一放入 downloads
                     raw_download_path = os.path.join(output_dir, f"download_{index+1}.txt")
                     with open(raw_download_path, "w", encoding="utf-8", errors="ignore") as raw_out:
                         raw_out.write(content)
 
-                    # 第二步：对内容进行深度智能辨别（纠错格式，防止后缀名与实际内容不符）
+                    # 2. 深度且严格地分析真实内容格式
                     real_type = detect_real_format(content)
                     
+                    ext = None
+                    count_str = ""
                     if real_type == "m3u":
                         ext = ".m3u"
                         count_str = f"h{m3u_count:02d}"
@@ -101,10 +110,8 @@ def run_scraper(csv_file):
                         ext = ".txt"
                         count_str = f"k{txt_count:02d}"
                         txt_count += 1
-                    else:
-                        ext = None
 
-                    # 第三步：如果识别为合格的 m3u 或 txt 直播源，则放入 special_files 统一管理并生成 JSON
+                    # 3. 如果是合规的格式，存入 special_files 并赋予【正确的后缀】
                     if ext:
                         file_name = f"{date_str}{count_str}{ext}"
                         file_path = os.path.join(special_dir, file_name)
@@ -112,7 +119,6 @@ def run_scraper(csv_file):
                         with open(file_path, "w", encoding="utf-8") as out:
                             out.write(content)
                         
-                        # 生成对应的 GitHub Raw 直链
                         raw_url = f"https://raw.githubusercontent.com/wybyu123/123/refs/heads/main/{special_dir}/{file_name}"
 
                         json_output["lives"].append({
@@ -125,17 +131,17 @@ def run_scraper(csv_file):
                             "url": raw_url 
                         })
                         
-                        safe_print(f"   ✨ [成功分拣] 识别为 {real_type.upper()} 文件 -> 存入 special_files/{file_name}")
+                        safe_print(f"   ✨ [成功分拣] 内容实为 {real_type.upper()} -> 规范保存为 special_files/{file_name}")
                     else:
-                        safe_print(f"   ⚠️ [跳过] 内容为网页HTML或非标准直播源格式（已保留在 downloads）")
+                        safe_print(f"   ⚠️ [跳过] 内容为纯网页HTML或非标准源（已留在 downloads）")
                         
             except Exception as e:
                 safe_print(f"   ⚠️ 访问失败: {e}")
 
-    # 保存最终的 Lives JSON 配置文件
+    # 保存最终的 Lives JSON
     with open("lives_output.json", "w", encoding="utf-8") as jf:
         json.dump(json_output, jf, indent=2, ensure_ascii=False)
-    safe_print("\n✨ 全部处理完毕！旧的 special_files 已清理，最新有效直链已生成至 lives_output.json。")
+    safe_print("\n✨ 全部处理完毕！格式已严格分离，TXT 会正确归类为 k 开头并以 .txt 结尾。")
 
 if __name__ == "__main__":
     run_scraper("202608100451.csv")
