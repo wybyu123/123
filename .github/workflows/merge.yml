@@ -1,11 +1,14 @@
 name: Merge Stream Files
 
 on:
-  workflow_run:
-    workflows: ["Auto Update Streams"] # 假设你原有的抓取工作流叫这个名字，或者改成你实际的 workflow 名称
-    types:
-      - completed
-  workflow_dispatch: # 支持手动触发
+  # 定时触发配置
+  schedule:
+    # 这里的 cron 表示每天的 UTC 时间 00:00 运行
+    # 换算成北京时间就是每天上午 8:00 准时运行
+    - cron: '20 7 * * *'
+
+  # 依然保留手动触发按钮，方便你随时测试
+  workflow_dispatch:
 
 jobs:
   merge:
