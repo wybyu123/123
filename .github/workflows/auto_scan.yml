@@ -42,6 +42,8 @@ jobs:
           git status
           
           git add txt/
+           
+          git add m3u_output/
           
           # 如果没有改动则不提交，有改动则自动提交并推送到仓库
           if git diff --staging --quiet; then
