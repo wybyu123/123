@@ -1,0 +1,4 @@
+其他,#genre#
+河北都市,http://187.189.177.26:85/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
+法制天地,http://187.189.177.26:85/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
+湖南教育,http://187.189.177.26:85/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
