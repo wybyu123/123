@@ -33,23 +33,24 @@ jobs:
           # 使用 python -u 可以强制 Python 标准输出实时打印，不走缓冲区
           python -u scan_new_sources.py
           echo "================ 脚本运行结束 ================"
+
       - name: 5. 检查并提交生成的新源文件
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 查看 git 状态，看是否有新生成的 txt 文件
+          # 查看 git 状态
           git status
           
-          git add txt/
+          # 仅添加存在的目录，避免文件夹未创建时报错
+          [ -d "txt" ] && git add txt/
+          [ -d "m3u_output" ] && git add m3u_output/
            
-          git add m3u_output/
-          
           # 如果没有改动则不提交，有改动则自动提交并推送到仓库
           if git diff --staging --quiet; then
             echo "没有发现更新或新生成的源文件，跳过 Git 提交。"
           else
-            git commit -m "Auto-update: 成功扫描并更新 IPTV 源文件 [skip ci]"
+            git commit -m "Auto-update: 成功扫描并更新 IPTV 精选源 [skip ci]"
             git push
             echo "✅ 更改已成功自动推送到 GitHub 仓库！"
           fi
