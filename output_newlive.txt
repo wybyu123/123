@@ -72,7 +72,7 @@ CCTV-2,http://58.56.162.102:4466/newlive/live/hls/2/live.m3u8
 CCTV-3,http://58.56.162.102:4466/newlive/live/hls/3/live.m3u8
 CCTV-4,http://58.56.162.102:4466/newlive/live/hls/4/live.m3u8
 CCTV-5,http://58.56.162.102:4466/newlive/live/hls/5/live.m3u8
-CCTV-5,http://58.56.162.102:4466/newlive/live/hls/6/live.m3u8
+CCTV-5+,http://58.56.162.102:4466/newlive/live/hls/6/live.m3u8
 CCTV-6,http://58.56.162.102:4466/newlive/live/hls/7/live.m3u8
 CCTV-7,http://58.56.162.102:4466/newlive/live/hls/8/live.m3u8
 CCTV-8,http://58.56.162.102:4466/newlive/live/hls/9/live.m3u8
@@ -152,7 +152,7 @@ CCTV-2,http://113.57.140.161:10081/newlive/live/hls/2/live.m3u8
 CCTV-3,http://113.57.140.161:10081/newlive/live/hls/3/live.m3u8
 CCTV-4,http://113.57.140.161:10081/newlive/live/hls/4/live.m3u8
 CCTV-5,http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8
-CCTV-5,http://113.57.140.161:10081/newlive/live/hls/6/live.m3u8
+CCTV-5+,http://113.57.140.161:10081/newlive/live/hls/6/live.m3u8
 CCTV-6,http://113.57.140.161:10081/newlive/live/hls/7/live.m3u8
 CCTV-7,http://113.57.140.161:10081/newlive/live/hls/8/live.m3u8
 CCTV-8,http://113.57.140.161:10081/newlive/live/hls/9/live.m3u8
@@ -225,7 +225,7 @@ CCTV-2,http://219.147.245.238:25480/newlive/live/hls/2/live.m3u8
 CCTV-3,http://219.147.245.238:25480/newlive/live/hls/3/live.m3u8
 CCTV-4,http://219.147.245.238:25480/newlive/live/hls/4/live.m3u8
 CCTV-5,http://219.147.245.238:25480/newlive/live/hls/5/live.m3u8
-CCTV-5+,http://219.147.245.238:25480/newlive/live/hls/6/live.m3u8
+CCTV-5,http://219.147.245.238:25480/newlive/live/hls/6/live.m3u8
 CCTV-6,http://219.147.245.238:25480/newlive/live/hls/7/live.m3u8
 CCTV-7,http://219.147.245.238:25480/newlive/live/hls/8/live.m3u8
 CCTV-8,http://219.147.245.238:25480/newlive/live/hls/9/live.m3u8
