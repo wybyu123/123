@@ -11,8 +11,10 @@ CCTV-6,http://1.24.39.180:9003/hls/6/index.m3u8
 
 58.17.48.228:808,#genre#
 CCTV-9,http://58.17.48.228:808/hls/9/index.m3u8
+CCTV-14,http://58.17.48.228:808/hls/14/index.m3u8
 CCTV-16,http://58.17.48.228:808/hls/25/index.m3u8
 江西卫视,http://58.17.48.228:808/hls/17/index.m3u8
+浙江卫视,http://58.17.48.228:808/hls/32/index.m3u8
 
 gmxw.7766.org:808,#genre#
 CCTV-1综合,http://gmxw.7766.org:808/hls/19/index.m3u8
@@ -124,17 +126,14 @@ CGTN阿拉伯语,http://gmxw.7766.org:808/hls/84/index.m3u8
 
 183.11.239.36:808,#genre#
 CCTV-1综合,http://183.11.239.36:808/hls/19/index.m3u8
-CCTV-2,http://183.11.239.36:808/hls/20/index.m3u8
-CCTV-3,http://183.11.239.36:808/hls/91/index.m3u8
-CCTV-5,http://183.11.239.36:808/hls/93/index.m3u8
-CCTV-6,http://183.11.239.36:808/hls/94/index.m3u8
-CCTV-7,http://183.11.239.36:808/hls/25/index.m3u8
+CCTV-2财经,http://183.11.239.36:808/hls/20/index.m3u8
+CCTV-7国防军事,http://183.11.239.36:808/hls/25/index.m3u8
 CCTV-8,http://183.11.239.36:808/hls/96/index.m3u8
-CCTV-9,http://183.11.239.36:808/hls/27/index.m3u8
-CCTV-10,http://183.11.239.36:808/hls/28/index.m3u8
-CCTV-11,http://183.11.239.36:808/hls/29/index.m3u8
-CCTV-12,http://183.11.239.36:808/hls/30/index.m3u8
-CCTV-13,http://183.11.239.36:808/hls/31/index.m3u8
+CCTV-9纪录,http://183.11.239.36:808/hls/27/index.m3u8
+CCTV-10科教,http://183.11.239.36:808/hls/28/index.m3u8
+CCTV-11戏曲,http://183.11.239.36:808/hls/29/index.m3u8
+CCTV-12社会与法,http://183.11.239.36:808/hls/30/index.m3u8
+“CCTV-13新闻,http://183.11.239.36:808/hls/31/index.m3u8
 CCTV-14少儿,http://183.11.239.36:808/hls/32/index.m3u8
 CCTV-15,http://183.11.239.36:808/hls/102/index.m3u8
 CCTV-16,http://183.11.239.36:808/hls/169/index.m3u8
@@ -144,7 +143,6 @@ CCTV-17,http://183.11.239.36:808/hls/35/index.m3u8
 东方卫视,http://183.11.239.36:808/hls/114/index.m3u8
 云南卫视,http://183.11.239.36:808/hls/52/index.m3u8
 兵团卫视,http://183.11.239.36:808/hls/7/index.m3u8
-内蒙古卫视,http://183.11.239.36:808/hls/60/index.m3u8
 北京卫视,http://183.11.239.36:808/hls/41/index.m3u8
 厦门卫视,http://183.11.239.36:808/hls/17/index.m3u8
 吉林卫视,http://183.11.239.36:808/hls/10/index.m3u8
@@ -168,6 +166,7 @@ CCTV-17,http://183.11.239.36:808/hls/35/index.m3u8
 湖北卫视,http://183.11.239.36:808/hls/46/index.m3u8
 湖南卫视,http://183.11.239.36:808/hls/36/index.m3u8
 甘肃卫视,http://183.11.239.36:808/hls/119/index.m3u8
+蒙古卫视,http://183.11.239.36:808/hls/60/index.m3u8
 西藏卫视,http://183.11.239.36:808/hls/64/index.m3u8
 贵州卫视,http://183.11.239.36:808/hls/49/index.m3u8
 辽宁卫视,http://183.11.239.36:808/hls/47/index.m3u8
@@ -185,8 +184,8 @@ CGTN法语,http://183.11.239.36:808/hls/82/index.m3u8
 CGTN英文记录,http://183.11.239.36:808/hls/77/index.m3u8
 CGTN西班牙语,http://183.11.239.36:808/hls/81/index.m3u8
 CGTN阿拉伯语,http://183.11.239.36:808/hls/84/index.m3u8
-±,http://183.11.239.36:808/hls/156/index.m3u8
 ±,http://183.11.239.36:808/hls/1/index.m3u8
+±,http://183.11.239.36:808/hls/156/index.m3u8
 µå¨ç§æ,http://183.11.239.36:808/hls/21/index.m3u8
 世界地理,http://183.11.239.36:808/hls/11/index.m3u8
 中国交通,http://183.11.239.36:808/hls/172/index.m3u8
@@ -212,6 +211,9 @@ CGTN阿拉伯语,http://183.11.239.36:808/hls/84/index.m3u8
 欧洲,http://183.11.239.36:808/hls/67/index.m3u8
 汽摩,http://183.11.239.36:808/hls/66/index.m3u8
 河南梨园频道,http://183.11.239.36:808/hls/159/index.m3u8
+测试,http://183.11.239.36:808/hls/93/index.m3u8
+测试,http://183.11.239.36:808/hls/94/index.m3u8
+测试,http://183.11.239.36:808/hls/91/index.m3u8
 深圳健康频道,http://183.11.239.36:808/hls/158/index.m3u8
 深圳娱乐频道,http://183.11.239.36:808/hls/155/index.m3u8
 深圳少儿,http://183.11.239.36:808/hls/157/index.m3u8
@@ -318,7 +320,6 @@ TVBS新闻台,http://61.221.215.25:8800/hls/9/index.m3u8
 三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8
 中华小当家,http://61.221.215.25:8800/hls/40/index.m3u8
 中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
-八大戏剧台,http://61.221.215.25:8800/hls/39/index.m3u8
 动物星球频道,http://61.221.215.25:8800/hls/57/index.m3u8
 纬来精彩频道,http://61.221.215.25:8800/hls/48/index.m3u8
 
@@ -444,79 +445,6 @@ CCTV-15,http://222.223.41.27:8888/hls/15/index.m3u8
 重庆卫视,http://222.223.41.27:8888/hls/43/index.m3u8
 青海卫视,http://222.223.41.27:8888/hls/50/index.m3u8
 
-112.46.105.20:8009,#genre#
-CCTV-1,http://112.46.105.20:8009/hls/501/index.m3u8
-CCTV-2,http://112.46.105.20:8009/hls/502/index.m3u8
-CCTV-3,http://112.46.105.20:8009/hls/3/index.m3u8
-CCTV-4,http://112.46.105.20:8009/hls/4/index.m3u8
-CCTV-5,http://112.46.105.20:8009/hls/503/index.m3u8
-CCTV-6,http://112.46.105.20:8009/hls/6/index.m3u8
-CCTV-7,http://112.46.105.20:8009/hls/504/index.m3u8
-CCTV-8,http://112.46.105.20:8009/hls/8/index.m3u8
-CCTV-9,http://112.46.105.20:8009/hls/509/index.m3u8
-CCTV-10,http://112.46.105.20:8009/hls/506/index.m3u8
-CCTV-11,http://112.46.105.20:8009/hls/11/index.m3u8
-CCTV-12,http://112.46.105.20:8009/hls/507/index.m3u8
-CCTV-13,http://112.46.105.20:8009/hls/13/index.m3u8
-CCTV-15(音乐),http://112.46.105.20:8009/hls/15/index.m3u8
-东南卫视,http://112.46.105.20:8009/hls/45/index.m3u8
-东方卫视,http://112.46.105.20:8009/hls/31/index.m3u8
-云南卫视,http://112.46.105.20:8009/hls/56/index.m3u8
-农林卫视,http://112.46.105.20:8009/hls/27/index.m3u8
-北京卫视,http://112.46.105.20:8009/hls/35/index.m3u8
-吉林卫视,http://112.46.105.20:8009/hls/48/index.m3u8
-四川卫视,http://112.46.105.20:8009/hls/41/index.m3u8
-天津卫视,http://112.46.105.20:8009/hls/44/index.m3u8
-宁夏卫视,http://112.46.105.20:8009/hls/52/index.m3u8
-安徽卫视,http://112.46.105.20:8009/hls/42/index.m3u8
-山东卫视,http://112.46.105.20:8009/hls/40/index.m3u8
-山西卫视,http://112.46.105.20:8009/hls/49/index.m3u8
-广东卫视,http://112.46.105.20:8009/hls/36/index.m3u8
-广西卫视,http://112.46.105.20:8009/hls/53/index.m3u8
-新疆卫视,http://112.46.105.20:8009/hls/61/index.m3u8
-江苏卫视,http://112.46.105.20:8009/hls/33/index.m3u8
-江西卫视,http://112.46.105.20:8009/hls/47/index.m3u8
-河北卫视,http://112.46.105.20:8009/hls/55/index.m3u8
-河南卫视,http://112.46.105.20:8009/hls/46/index.m3u8
-浙江卫视,http://112.46.105.20:8009/hls/34/index.m3u8
-深圳卫视,http://112.46.105.20:8009/hls/37/index.m3u8
-游卫视,http://112.46.105.20:8009/hls/57/index.m3u8
-湖北卫视,http://112.46.105.20:8009/hls/39/index.m3u8
-湖南卫视,http://112.46.105.20:8009/hls/32/index.m3u8
-甘肃卫视,http://112.46.105.20:8009/hls/51/index.m3u8
-蒙古卫视,http://112.46.105.20:8009/hls/60/index.m3u8
-西藏卫视,http://112.46.105.20:8009/hls/59/index.m3u8
-贵州卫视,http://112.46.105.20:8009/hls/50/index.m3u8
-辽宁卫视,http://112.46.105.20:8009/hls/54/index.m3u8
-重庆卫视,http://112.46.105.20:8009/hls/43/index.m3u8
-陕西卫视,http://112.46.105.20:8009/hls/17/index.m3u8
-青海卫视,http://112.46.105.20:8009/hls/58/index.m3u8
-黑龙江卫视,http://112.46.105.20:8009/hls/38/index.m3u8
-CCTV-NEWS,http://112.46.105.20:8009/hls/16/index.m3u8
-CCTV-少儿,http://112.46.105.20:8009/hls/14/index.m3u8
-¨è®°å®,http://112.46.105.20:8009/hls/75/index.m3u8
-«å¥,http://112.46.105.20:8009/hls/62/index.m3u8
-­å¥,http://112.46.105.20:8009/hls/23/index.m3u8
-东方财经,http://112.46.105.20:8009/hls/63/index.m3u8
-动漫秀场,http://112.46.105.20:8009/hls/68/index.m3u8
-嘉佳卡通,http://112.46.105.20:8009/hls/66/index.m3u8
-新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
-欢笑剧场,http://112.46.105.20:8009/hls/78/index.m3u8
-法制天地,http://112.46.105.20:8009/hls/76/index.m3u8
-游戏风云,http://112.46.105.20:8009/hls/77/index.m3u8
-生活时尚,http://112.46.105.20:8009/hls/71/index.m3u8
-篮球频道,http://112.46.105.20:8009/hls/64/index.m3u8
-精彩三秦,http://112.46.105.20:8009/hls/26/index.m3u8
-西安新闻,http://112.46.105.20:8009/hls/28/index.m3u8
-西安都市,http://112.46.105.20:8009/hls/29/index.m3u8
-都市剧场,http://112.46.105.20:8009/hls/72/index.m3u8
-都市青春,http://112.46.105.20:8009/hls/19/index.m3u8
-金鹰卡通,http://112.46.105.20:8009/hls/67/index.m3u8
-陕西体育休闲,http://112.46.105.20:8009/hls/24/index.m3u8
-陕西四套,http://112.46.105.20:8009/hls/21/index.m3u8
-陕西秦腔,http://112.46.105.20:8009/hls/22/index.m3u8
-陕西银龄,http://112.46.105.20:8009/hls/20/index.m3u8
-
 zmgd.zyrnet.com:8888,#genre#
 凤凰卫视中文台,http://zmgd.zyrnet.com:8888/hls/110/index.m3u8
 中牟生活,http://zmgd.zyrnet.com:8888/hls/20/index.m3u8
@@ -572,6 +500,89 @@ CCTV-17,http://112.92.129.95:9898/hls/34/index.m3u8
 青海卫视,http://112.92.129.95:9898/hls/67/index.m3u8
 黑龙江卫视,http://112.92.129.95:9898/hls/42/index.m3u8
 
+112.46.105.20:8009,#genre#
+CCTV-1,http://112.46.105.20:8009/hls/501/index.m3u8
+CCTV-2,http://112.46.105.20:8009/hls/502/index.m3u8
+CCTV-3,http://112.46.105.20:8009/hls/3/index.m3u8
+CCTV-4,http://112.46.105.20:8009/hls/4/index.m3u8
+CCTV-5,http://112.46.105.20:8009/hls/503/index.m3u8
+CCTV-6,http://112.46.105.20:8009/hls/6/index.m3u8
+CCTV-7,http://112.46.105.20:8009/hls/504/index.m3u8
+CCTV-8,http://112.46.105.20:8009/hls/8/index.m3u8
+CCTV-9,http://112.46.105.20:8009/hls/509/index.m3u8
+CCTV-10,http://112.46.105.20:8009/hls/506/index.m3u8
+CCTV-12,http://112.46.105.20:8009/hls/507/index.m3u8
+西安新闻,http://112.46.105.20:8009/hls/28/index.m3u8
+西安都市,http://112.46.105.20:8009/hls/29/index.m3u8
+都市剧场,http://112.46.105.20:8009/hls/72/index.m3u8
+陕西体育休闲,http://112.46.105.20:8009/hls/24/index.m3u8
+陕西新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
+陕西秦腔,http://112.46.105.20:8009/hls/22/index.m3u8
+陕西都市青春,http://112.46.105.20:8009/hls/19/index.m3u8
+陕西银龄,http://112.46.105.20:8009/hls/20/index.m3u8
+
+182.150.23.74:808,#genre#
+CCTV-1,http://182.150.23.74:808/hls/1/index.m3u8
+CCTV-2,http://182.150.23.74:808/hls/2/index.m3u8
+CCTV-3,http://182.150.23.74:808/hls/3/index.m3u8
+CCTV-4,http://182.150.23.74:808/hls/4/index.m3u8
+CCTV-5,http://182.150.23.74:808/hls/5/index.m3u8
+CCTV-5+,http://182.150.23.74:808/hls/16/index.m3u8
+CCTV-6,http://182.150.23.74:808/hls/6/index.m3u8
+CCTV-7,http://182.150.23.74:808/hls/7/index.m3u8
+CCTV-8,http://182.150.23.74:808/hls/8/index.m3u8
+CCTV-9,http://182.150.23.74:808/hls/9/index.m3u8
+CCTV-10,http://182.150.23.74:808/hls/10/index.m3u8
+CCTV-11,http://182.150.23.74:808/hls/11/index.m3u8
+CCTV-12,http://182.150.23.74:808/hls/12/index.m3u8
+CCTV-14,http://182.150.23.74:808/hls/14/index.m3u8
+CCTV-15+音乐,http://182.150.23.74:808/hls/15/index.m3u8
+东南卫视（福建卫视）,http://182.150.23.74:808/hls/24/index.m3u8
+东方卫视,http://182.150.23.74:808/hls/19/index.m3u8
+云南卫视,http://182.150.23.74:808/hls/29/index.m3u8
+内蒙古卫视,http://182.150.23.74:808/hls/37/index.m3u8
+北京卫视,http://182.150.23.74:808/hls/17/index.m3u8
+吉林卫视,http://182.150.23.74:808/hls/35/index.m3u8
+四川卫视,http://182.150.23.74:808/hls/38/index.m3u8
+天津卫视,http://182.150.23.74:808/hls/27/index.m3u8
+安徽卫视,http://182.150.23.74:808/hls/25/index.m3u8
+山东卫视,http://182.150.23.74:808/hls/23/index.m3u8
+广东卫视,http://182.150.23.74:808/hls/32/index.m3u8
+广西卫视,http://182.150.23.74:808/hls/31/index.m3u8
+江苏卫视,http://182.150.23.74:808/hls/18/index.m3u8
+江西卫视,http://182.150.23.74:808/hls/30/index.m3u8
+河南卫视,http://182.150.23.74:808/hls/33/index.m3u8
+浙江卫视,http://182.150.23.74:808/hls/22/index.m3u8
+深圳卫视,http://182.150.23.74:808/hls/20/index.m3u8
+湖北卫视,http://182.150.23.74:808/hls/28/index.m3u8
+湖南卫视,http://182.150.23.74:808/hls/21/index.m3u8
+贵州卫视,http://182.150.23.74:808/hls/26/index.m3u8
+陕西卫视,http://182.150.23.74:808/hls/36/index.m3u8
+黑龙江卫视,http://182.150.23.74:808/hls/34/index.m3u8
+6,http://182.150.23.74:808/hls/41/index.m3u8
+98,http://182.150.23.74:808/hls/42/index.m3u8
+CCTV-新闻,http://182.150.23.74:808/hls/13/index.m3u8
+SCTV-5(四川影视）,http://182.150.23.74:808/hls/39/index.m3u8
+
+60.29.124.66:6080,#genre#
+动漫秀场,http://60.29.124.66:6080/hls/62/index.m3u8
+
+111.43.126.240:9003,#genre#
+云南卫视,http://111.43.126.240:9003/hls/60/index.m3u8
+哈尔滨影视,http://111.43.126.240:9003/hls/5/index.m3u8
+哈尔滨生活,http://111.43.126.240:9003/hls/3/index.m3u8
+精品体育,http://111.43.126.240:9003/hls/89/index.m3u8
+超级体育,http://111.43.126.240:9003/hls/86/index.m3u8
+黑龙江影视,http://111.43.126.240:9003/hls/7/index.m3u8
+黑龙江都市,http://111.43.126.240:9003/hls/9/index.m3u8
+
+113.195.172.192:808,#genre#
+CHC动作电影,http://113.195.172.192:808/hls/114/index.m3u8
+CHC家庭影院,http://113.195.172.192:808/hls/113/index.m3u8
+
+ukzy.ukubf3.com,#genre#
+上海滩,http://ukzy.ukubf3.com/20220605/kssUhAeh/2000kb/hls/index.m3u8
+
 112.46.85.60:8009,#genre#
 CCTV-1,http://112.46.85.60:8009/hls/501/index.m3u8
 CCTV-2,http://112.46.85.60:8009/hls/502/index.m3u8
@@ -581,11 +592,68 @@ CCTV-5,http://112.46.85.60:8009/hls/503/index.m3u8
 CCTV-7,http://112.46.85.60:8009/hls/504/index.m3u8
 CCTV-8,http://112.46.85.60:8009/hls/8/index.m3u8
 CCTV-9,http://112.46.85.60:8009/hls/509/index.m3u8
+CCTV-10,http://112.46.85.60:8009/hls/506/index.m3u8
+CCTV-11,http://112.46.85.60:8009/hls/11/index.m3u8
 CCTV-12,http://112.46.85.60:8009/hls/507/index.m3u8
+CCTV-13,http://112.46.85.60:8009/hls/13/index.m3u8
+CCTV-15(音乐),http://112.46.85.60:8009/hls/15/index.m3u8
+东南卫视,http://112.46.85.60:8009/hls/45/index.m3u8
 东方卫视,http://112.46.85.60:8009/hls/31/index.m3u8
+云南卫视,http://112.46.85.60:8009/hls/56/index.m3u8
+农林卫视,http://112.46.85.60:8009/hls/27/index.m3u8
+北京卫视,http://112.46.85.60:8009/hls/35/index.m3u8
+吉林卫视,http://112.46.85.60:8009/hls/48/index.m3u8
+四川卫视,http://112.46.85.60:8009/hls/41/index.m3u8
 天津卫视,http://112.46.85.60:8009/hls/44/index.m3u8
+宁夏卫视,http://112.46.85.60:8009/hls/52/index.m3u8
+安徽卫视,http://112.46.85.60:8009/hls/42/index.m3u8
+山东卫视,http://112.46.85.60:8009/hls/40/index.m3u8
+山西卫视,http://112.46.85.60:8009/hls/49/index.m3u8
+广东卫视,http://112.46.85.60:8009/hls/36/index.m3u8
+广西卫视,http://112.46.85.60:8009/hls/53/index.m3u8
+新疆卫视,http://112.46.85.60:8009/hls/61/index.m3u8
 江苏卫视,http://112.46.85.60:8009/hls/33/index.m3u8
+江西卫视,http://112.46.85.60:8009/hls/47/index.m3u8
+河北卫视,http://112.46.85.60:8009/hls/55/index.m3u8
+河南卫视,http://112.46.85.60:8009/hls/46/index.m3u8
 浙江卫视,http://112.46.85.60:8009/hls/34/index.m3u8
+深圳卫视,http://112.46.85.60:8009/hls/37/index.m3u8
+游卫视,http://112.46.85.60:8009/hls/57/index.m3u8
+湖北卫视,http://112.46.85.60:8009/hls/39/index.m3u8
+湖南卫视,http://112.46.85.60:8009/hls/32/index.m3u8
+甘肃卫视,http://112.46.85.60:8009/hls/51/index.m3u8
+蒙古卫视,http://112.46.85.60:8009/hls/60/index.m3u8
+西藏卫视,http://112.46.85.60:8009/hls/59/index.m3u8
+贵州卫视,http://112.46.85.60:8009/hls/50/index.m3u8
+辽宁卫视,http://112.46.85.60:8009/hls/54/index.m3u8
+重庆卫视,http://112.46.85.60:8009/hls/43/index.m3u8
+陕西卫视,http://112.46.85.60:8009/hls/17/index.m3u8
+青海卫视,http://112.46.85.60:8009/hls/58/index.m3u8
+黑龙江卫视,http://112.46.85.60:8009/hls/38/index.m3u8
+CCTV-NEWS,http://112.46.85.60:8009/hls/16/index.m3u8
+CCTV-少儿,http://112.46.85.60:8009/hls/14/index.m3u8
+¨è®°å®,http://112.46.85.60:8009/hls/75/index.m3u8
+«å¥,http://112.46.85.60:8009/hls/62/index.m3u8
+­å¥,http://112.46.85.60:8009/hls/23/index.m3u8
+东方财经,http://112.46.85.60:8009/hls/63/index.m3u8
+动漫秀场,http://112.46.85.60:8009/hls/68/index.m3u8
+嘉佳卡通,http://112.46.85.60:8009/hls/66/index.m3u8
+欢笑剧场,http://112.46.85.60:8009/hls/78/index.m3u8
+法制天地,http://112.46.85.60:8009/hls/76/index.m3u8
+游戏风云,http://112.46.85.60:8009/hls/77/index.m3u8
+生活时尚,http://112.46.85.60:8009/hls/71/index.m3u8
+篮球频道,http://112.46.85.60:8009/hls/64/index.m3u8
+精彩三秦,http://112.46.85.60:8009/hls/26/index.m3u8
+西安一套,http://112.46.85.60:8009/hls/28/index.m3u8
+西安二套,http://112.46.85.60:8009/hls/29/index.m3u8
+都市剧场,http://112.46.85.60:8009/hls/72/index.m3u8
+金鹰卡通,http://112.46.85.60:8009/hls/67/index.m3u8
+陕西一套,http://112.46.85.60:8009/hls/18/index.m3u8
+陕西七套,http://112.46.85.60:8009/hls/24/index.m3u8
+陕西三套,http://112.46.85.60:8009/hls/20/index.m3u8
+陕西二套,http://112.46.85.60:8009/hls/19/index.m3u8
+陕西五套,http://112.46.85.60:8009/hls/22/index.m3u8
+陕西四套,http://112.46.85.60:8009/hls/21/index.m3u8
 
 110.53.54.122:808,#genre#
 CCTV-1,http://110.53.54.122:808/hls/62/index.m3u8
@@ -704,10 +772,10 @@ CCTV-17,http://120.211.62.180:8000/hls/17/index.m3u8
 北京卫视,http://120.211.62.180:8000/hls/35/index.m3u8
 四川卫视,http://120.211.62.180:8000/hls/29/index.m3u8
 天津卫视,http://120.211.62.180:8000/hls/20/index.m3u8
-安徽卫视,http://120.211.62.180:8000/hls/33/index.m3u8
 安徽卫视,http://120.211.62.180:8000/hls/27/index.m3u8
-山东卫视,http://120.211.62.180:8000/hls/38/index.m3u8
+安徽卫视,http://120.211.62.180:8000/hls/33/index.m3u8
 山东卫视,http://120.211.62.180:8000/hls/22/index.m3u8
+山东卫视,http://120.211.62.180:8000/hls/38/index.m3u8
 广东卫视,http://120.211.62.180:8000/hls/23/index.m3u8
 广西卫视,http://120.211.62.180:8000/hls/34/index.m3u8
 江苏卫视,http://120.211.62.180:8000/hls/18/index.m3u8
@@ -718,8 +786,8 @@ CCTV-17,http://120.211.62.180:8000/hls/17/index.m3u8
 浙江卫视,http://120.211.62.180:8000/hls/24/index.m3u8
 深圳卫视,http://120.211.62.180:8000/hls/21/index.m3u8
 湖北卫视,http://120.211.62.180:8000/hls/28/index.m3u8
-辽宁卫视,http://120.211.62.180:8000/hls/37/index.m3u8
 辽宁卫视,http://120.211.62.180:8000/hls/26/index.m3u8
+辽宁卫视,http://120.211.62.180:8000/hls/37/index.m3u8
 重庆卫视,http://120.211.62.180:8000/hls/32/index.m3u8
 陕西卫视,http://120.211.62.180:8000/hls/36/index.m3u8
 黑龙江卫视,http://120.211.62.180:8000/hls/25/index.m3u8
@@ -789,49 +857,6 @@ CCTV-12,http://221.225.162.96:9004/hls/12/index.m3u8
 贵州卫视,http://221.225.162.96:9004/hls/33/index.m3u8
 辽宁卫视,http://221.225.162.96:9004/hls/32/index.m3u8
 
-182.150.23.74:808,#genre#
-CCTV-1,http://182.150.23.74:808/hls/1/index.m3u8
-CCTV-2,http://182.150.23.74:808/hls/2/index.m3u8
-CCTV-3,http://182.150.23.74:808/hls/3/index.m3u8
-CCTV-4,http://182.150.23.74:808/hls/4/index.m3u8
-CCTV-5,http://182.150.23.74:808/hls/5/index.m3u8
-CCTV-5+,http://182.150.23.74:808/hls/16/index.m3u8
-CCTV-6,http://182.150.23.74:808/hls/6/index.m3u8
-CCTV-7,http://182.150.23.74:808/hls/7/index.m3u8
-CCTV-8,http://182.150.23.74:808/hls/8/index.m3u8
-CCTV-9,http://182.150.23.74:808/hls/9/index.m3u8
-CCTV-10,http://182.150.23.74:808/hls/10/index.m3u8
-CCTV-11,http://182.150.23.74:808/hls/11/index.m3u8
-CCTV-12,http://182.150.23.74:808/hls/12/index.m3u8
-CCTV-14,http://182.150.23.74:808/hls/14/index.m3u8
-CCTV-15+音乐,http://182.150.23.74:808/hls/15/index.m3u8
-东南卫视（福建卫视）,http://182.150.23.74:808/hls/24/index.m3u8
-东方卫视,http://182.150.23.74:808/hls/19/index.m3u8
-云南卫视,http://182.150.23.74:808/hls/29/index.m3u8
-内蒙古卫视,http://182.150.23.74:808/hls/37/index.m3u8
-北京卫视,http://182.150.23.74:808/hls/17/index.m3u8
-吉林卫视,http://182.150.23.74:808/hls/35/index.m3u8
-四川卫视,http://182.150.23.74:808/hls/38/index.m3u8
-天津卫视,http://182.150.23.74:808/hls/27/index.m3u8
-安徽卫视,http://182.150.23.74:808/hls/25/index.m3u8
-山东卫视,http://182.150.23.74:808/hls/23/index.m3u8
-广东卫视,http://182.150.23.74:808/hls/32/index.m3u8
-广西卫视,http://182.150.23.74:808/hls/31/index.m3u8
-江苏卫视,http://182.150.23.74:808/hls/18/index.m3u8
-江西卫视,http://182.150.23.74:808/hls/30/index.m3u8
-河南卫视,http://182.150.23.74:808/hls/33/index.m3u8
-浙江卫视,http://182.150.23.74:808/hls/22/index.m3u8
-深圳卫视,http://182.150.23.74:808/hls/20/index.m3u8
-湖北卫视,http://182.150.23.74:808/hls/28/index.m3u8
-湖南卫视,http://182.150.23.74:808/hls/21/index.m3u8
-贵州卫视,http://182.150.23.74:808/hls/26/index.m3u8
-陕西卫视,http://182.150.23.74:808/hls/36/index.m3u8
-黑龙江卫视,http://182.150.23.74:808/hls/34/index.m3u8
-6,http://182.150.23.74:808/hls/41/index.m3u8
-98,http://182.150.23.74:808/hls/42/index.m3u8
-CCTV-新闻,http://182.150.23.74:808/hls/13/index.m3u8
-SCTV-5(四川影视）,http://182.150.23.74:808/hls/39/index.m3u8
-
 123.175.209.118:9003,#genre#
 CCTV-16,http://123.175.209.118:9003/hls/17/index.m3u8
 东方卫视,http://123.175.209.118:9003/hls/23/index.m3u8
@@ -863,13 +888,7 @@ CCTV世界地理,http://hmfs.f3322.net:3388/hls/28/index.m3u8
 CHC家庭影院,http://171.38.148.188:9003/hls/112/index.m3u8
 
 60.16.0.216:5757,#genre#
-CCTV-16,http://60.16.0.216:5757/hls/17/index.m3u8
-CCTV-17,http://60.16.0.216:5757/hls/18/index.m3u8
-天津卫视,http://60.16.0.216:5757/hls/34/index.m3u8
 重庆卫视,http://60.16.0.216:5757/hls/36/index.m3u8
-
-113.195.172.192:808,#genre#
-CHC家庭影院,http://113.195.172.192:808/hls/113/index.m3u8
 
 42.227.89.97:9003,#genre#
 CHC动作电影,http://42.227.89.97:9003/hls/60/index.m3u8
@@ -950,13 +969,6 @@ live.zhgbtv.cn:3100,#genre#
 nmxlive.akamaized.net,#genre#
 News max,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 
-106.46.169.202:9000,#genre#
-山西卫视,http://106.46.169.202:9000/hls/39/index.m3u8
-
-221.226.67.66:8199,#genre#
-江苏城市,http://221.226.67.66:8199/hls/38/index.m3u8
-江苏影视,http://221.226.67.66:8199/hls/41/index.m3u8
-
 1.24.39.180:808,#genre#
 CCTV-1,http://1.24.39.180:808/hls/1/index.m3u8
 CCTV-2,http://1.24.39.180:808/hls/2/index.m3u8
@@ -979,13 +991,12 @@ CCTV-17,http://1.24.39.180:808/hls/61/index.m3u8
 222.85.198.92:8000,#genre#
 CCTV-1,http://222.85.198.92:8000/hls/1/index.m3u8
 CCTV-3,http://222.85.198.92:8000/hls/3/index.m3u8
+CCTV-4,http://222.85.198.92:8000/hls/4/index.m3u8
 CCTV-5,http://222.85.198.92:8000/hls/5/index.m3u8
 CCTV-6,http://222.85.198.92:8000/hls/6/index.m3u8
 CCTV-7,http://222.85.198.92:8000/hls/7/index.m3u8
 CCTV-8,http://222.85.198.92:8000/hls/8/index.m3u8
 CCTV-10,http://222.85.198.92:8000/hls/9/index.m3u8
-CCTV-11,http://222.85.198.92:8000/hls/10/index.m3u8
-CCTV-12,http://222.85.198.92:8000/hls/11/index.m3u8
 CCTV-13,http://222.85.198.92:8000/hls/12/index.m3u8
 CCTV-14,http://222.85.198.92:8000/hls/13/index.m3u8
 CCTV-15,http://222.85.198.92:8000/hls/14/index.m3u8
@@ -1039,8 +1050,13 @@ CCTV-16,http://113.195.172.192:1808/hls/178/index.m3u8
 风云音乐,http://113.195.172.192:1808/hls/152/index.m3u8
 高尔夫网球,http://113.195.172.192:1808/hls/235/index.m3u8
 
+183.237.71.182:40000,#genre#
+CCTV-5+,http://183.237.71.182:40000/hls/16/index.m3u8
+
 183.239.108.37:1698,#genre#
 CCTV-5+,http://183.239.108.37:1698/hls/22/index.m3u8
+CCTV-14,http://183.239.108.37:1698/hls/31/index.m3u8
+CCTV-17,http://183.239.108.37:1698/hls/34/index.m3u8
 
 27.129.145.110:4433,#genre#
 CCTV-9,http://27.129.145.110:4433/hls/9/index.m3u8
@@ -1067,9 +1083,6 @@ CETV-1,http://0c13e1c9e82e5635-web.nnl5-link.sczhgx.com:8999/hls/48/index.m3u8
 CETV-1,http://120.238.5.44:1698/hls/47/index.m3u8
 
 218.206.193.218:8888,#genre#
-北京卫视,http://218.206.193.218:8888/hls/48/index.m3u8
-四川卫视,http://218.206.193.218:8888/hls/55/index.m3u8
-湖南卫视,http://218.206.193.218:8888/hls/36/index.m3u8
 凤凰资讯,http://218.206.193.218:8888/hls/109/index.m3u8
 重温经典,http://218.206.193.218:8888/hls/29/index.m3u8
 
@@ -1120,19 +1133,19 @@ CCTV13,http://183.196.87.176:880/030000001000/CCTV-13/CCTV-13.m3u8?livemode=1
 CCTV14,http://183.196.87.176:880/030000001000/G_CCTV-14/G_CCTV-14.m3u8?livemode=1
 CCTV15,http://183.196.87.176:880/030000001000/G_CCTV-15/G_CCTV-15.m3u8?livemode=1
 东南卫视,http://183.196.87.176:880/030000001000/DNWS/DNWS.m3u8?livemode=1
-东方卫视,http://183.196.87.176:880/030000001000/G_DONGFANG/G_DONGFANG.m3u8?livemode=1
 东方卫视,http://183.196.87.176:880/030000001000/DFWS-HD/DFWS-HD.m3u8?livemode=1
+东方卫视,http://183.196.87.176:880/030000001000/G_DONGFANG/G_DONGFANG.m3u8?livemode=1
 云南卫视,http://183.196.87.176:880/030000001000/G_YUNNAN/G_YUNNAN.m3u8?livemode=1
-北京卫视,http://183.196.87.176:880/030000001000/BTV-1/BTV-1.m3u8?livemode=1
 北京卫视,http://183.196.87.176:880/030000001000/G_BEIJING/G_BEIJING.m3u8?livemode=1
+北京卫视,http://183.196.87.176:880/030000001000/BTV-1/BTV-1.m3u8?livemode=1
 吉林卫视,http://183.196.87.176:880/030000001000/G_JILIN/G_JILIN.m3u8?livemode=1
 四川卫视,http://183.196.87.176:880/030000001000/SCWS/SCWS.m3u8?livemode=1
 天津卫视,http://183.196.87.176:880/030000001000/TJWS/TJWS.m3u8?livemode=1
 安徽卫视,http://183.196.87.176:880/030000001000/AHWS/AHWS.m3u8?livemode=1
 山东卫视,http://183.196.87.176:880/030000001000/SDWS/SDWS.m3u8?livemode=1
 山西卫视,http://183.196.87.176:880/030000001000/SXWS/SXWS.m3u8?livemode=1
-广东卫视,http://183.196.87.176:880/030000001000/G_GUANGDONG/G_GUANGDONG.m3u8?livemode=1
 广东卫视,http://183.196.87.176:880/030000001000/GDWS-HD/GDWS-HD.m3u8?livemode=1
+广东卫视,http://183.196.87.176:880/030000001000/G_GUANGDONG/G_GUANGDONG.m3u8?livemode=1
 广西卫视,http://183.196.87.176:880/030000001000/GXWS/GXWS.m3u8?livemode=1
 新疆卫视,http://183.196.87.176:880/030000001000/G_XINJIANG/G_XINJIANG.m3u8?livemode=1
 江苏卫视,http://183.196.87.176:880/030000001000/G_JIANGSU-HD/G_JIANGSU-HD.m3u8?livemode=1
@@ -1177,8 +1190,8 @@ CCTV-E,http://183.196.87.176:880/030000001000/G_CCTV-NEWS/G_CCTV-NEWS.m3u8?livem
 CCTV1,http://183.203.166.28:9003/hls/1/index.m3u8
 CCTV2,http://183.203.166.28:9003/hls/2/index.m3u8
 CCTV3,http://183.203.166.28:9003/hls/3/index.m3u8
-CCTV4,http://183.203.166.28:9003/hls/4/index.m3u8
 CCTV4,http://183.203.166.28:9003/hls/10002/index.m3u8
+CCTV4,http://183.203.166.28:9003/hls/4/index.m3u8
 CCTV5,http://183.203.166.28:9003/hls/6/index.m3u8
 CCTV5,http://183.203.166.28:9003/hls/5/index.m3u8
 CCTV6,http://183.203.166.28:9003/hls/7/index.m3u8
@@ -1190,8 +1203,8 @@ CCTV12,http://183.203.166.28:9003/hls/13/index.m3u8
 CCTV13,http://183.203.166.28:9003/hls/10008/index.m3u8
 CCTV13,http://183.203.166.28:9003/hls/14/index.m3u8
 CCTV14,http://183.203.166.28:9003/hls/15/index.m3u8
-CCTV16,http://183.203.166.28:9003/hls/10005/index.m3u8
 CCTV16,http://183.203.166.28:9003/hls/10001/index.m3u8
+CCTV16,http://183.203.166.28:9003/hls/10005/index.m3u8
 CCTV16,http://183.203.166.28:9003/hls/10003/index.m3u8
 CCTV17,http://183.203.166.28:9003/hls/10006/index.m3u8
 东方卫视,http://183.203.166.28:9003/hls/30/index.m3u8
@@ -1200,8 +1213,8 @@ CCTV17,http://183.203.166.28:9003/hls/10006/index.m3u8
 安徽卫视,http://183.203.166.28:9003/hls/43/index.m3u8
 山东卫视,http://183.203.166.28:9003/hls/47/index.m3u8
 广东卫视,http://183.203.166.28:9003/hls/49/index.m3u8
-广西卫视,http://183.203.166.28:9003/hls/39/index.m3u8
 广西卫视,http://183.203.166.28:9003/hls/10011/index.m3u8
+广西卫视,http://183.203.166.28:9003/hls/39/index.m3u8
 新疆卫视,http://183.203.166.28:9003/hls/10012/index.m3u8
 江苏卫视,http://183.203.166.28:9003/hls/34/index.m3u8
 江西卫视,http://183.203.166.28:9003/hls/52/index.m3u8
@@ -1224,14 +1237,17 @@ api.kkitv.itv888.cn:8080,#genre#
 四川卫视,http://api.kkitv.itv888.cn:8080/hls/p2npnppn96p/index.m3u8
 天津卫视,http://api.kkitv.itv888.cn:8080/hls/z2lkdkrb4w/index.m3u8
 安徽卫视,http://api.kkitv.itv888.cn:8080/hls/m8hvytneunk/index.m3u8
+山东卫视,http://api.kkitv.itv888.cn:8080/hls/6gcdai13om5/index.m3u8
 广东卫视,http://api.kkitv.itv888.cn:8080/hls/qr6872071g/index.m3u8
 广西卫视,http://api.kkitv.itv888.cn:8080/hls/yvz4ndj9dqb/index.m3u8
+江苏卫视,http://api.kkitv.itv888.cn:8080/hls/g1upm1u239/index.m3u8
 江西卫视,http://api.kkitv.itv888.cn:8080/hls/pv0np60bpin/index.m3u8
 浙江卫视,http://api.kkitv.itv888.cn:8080/hls/urjqjvyf41q/index.m3u8
 海南卫视,http://api.kkitv.itv888.cn:8080/hls/c1cajhsgba8/index.m3u8
 深圳卫视,http://api.kkitv.itv888.cn:8080/hls/iftsd32ykm/index.m3u8
 湖北卫视,http://api.kkitv.itv888.cn:8080/hls/qwummpaoaq/index.m3u8
 贵州卫视,http://api.kkitv.itv888.cn:8080/hls/5dqtpf3arun/index.m3u8
+辽宁卫视,http://api.kkitv.itv888.cn:8080/hls/iibq0absdjr/index.m3u8
 重庆卫视,http://api.kkitv.itv888.cn:8080/hls/ogh3s6tbw6/index.m3u8
 黑龙江卫视,http://api.kkitv.itv888.cn:8080/hls/2a24lcvser/index.m3u8
 
@@ -1383,14 +1399,18 @@ IPTV谍战剧场,http://211.97.63.3:3443/PLTV/88888973/224/3221226103/1000010000
 金鹰卡通,http://211.97.63.3:3443/PLTV/88888973/224/3221225699/10000100000000060000000000334067_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8,0,2540,0,0&accountinfo=qL9TLkIYsZmx/OPSOG6mNAvyKOCScAe4hrX9Vo6puxGXw3qZ5Pmje9vqMpXjLeht0QDDT6IKU9j92Y9VVzXnz1yKE+1kYZFvmxPE4nzwhgMSV1+2v3SH21BzBfgGvOGj:20200814173311,END&GuardEncType=2
 金鹰纪实,http://211.97.63.3:3443/PLTV/88888973/224/3221225755/10000100000000060000000000334608_0.smil/01.m3u8?fmt=ts2hls,183,01.m3u8,0,7324,0,0&accountinfo=qL9TLkIYsZmx/OPSOG6mNAvyKOCScAe4hrX9Vo6puxGXw3qZ5Pmje9vqMpXjLeht0QDDT6IKU9j92Y9VVzXnz1yKE+1kYZFvmxPE4nzwhgMPbP2CyM+bW4OcRRlTGXrH:20200814173311,END&GuardEncType=2
 
-111.43.126.240:9003,#genre#
-云南卫视,http://111.43.126.240:9003/hls/60/index.m3u8
-
 btjg.net:809,#genre#
 三沙卫视,http://btjg.net:809/hls/142/index.m3u8
 
+123.10.79.29:808,#genre#
+重庆卫视,http://123.10.79.29:808/hls/50/index.m3u8
+
+1.24.190.98:10080,#genre#
+Golden Eagle Cartoon,http://1.24.190.98:10080/hls/51/index.m3u8
+Nei Monggol TV,http://1.24.190.98:10080/hls/39/index.m3u8
+Nei Monggol TV 2 Mongolian Culture Channel,http://1.24.190.98:10080/hls/40/index.m3u8
+
 avd.iptviptv.site:9694,#genre#
-内蒙古卫视,http://avd.iptviptv.site:9694/hls/128/index.m3u8
 KBS world,http://avd.iptviptv.site:9694/hls/1005/index.m3u8
 NHK,http://avd.iptviptv.site:9694/hls/1004/index.m3u8
 TVB无线新闻,http://avd.iptviptv.site:9694/hls/906/index.m3u8
@@ -1426,339 +1446,6 @@ TVB明珠台,http://avd.iptviptv.site:9694/hls/103/index.m3u8
 湖北经视,http://avd.iptviptv.site:9694/hls/570/index.m3u8
 魅力足球,http://avd.iptviptv.site:9694/hls/719/index.m3u8
 
-2gblive.akamaized.net,#genre#
-2GB (1080p),http://2gblive.akamaized.net/hls/live/2033805/2GB/index.m3u8
-
-3awlive.akamaized.net,#genre#
-3AW (1080p),http://3awlive.akamaized.net/hls/live/2032295/3AW/index.m3u8
-
-stream.4fun.tv:8889,#genre#
-4 Fun Kids (576i),http://stream.4fun.tv:8889/hls/4fk_high/index.m3u8
-
-stream.4fun.tv:8888,#genre#
-4 Fun TV (576i) [Not 24/7],http://stream.4fun.tv:8888/hls/4f_high/index.m3u8
-
-6prlive.akamaized.net,#genre#
-6PR (1080p),http://6prlive.akamaized.net/hls/live/2033806/6PR/index.m3u8
-
-vietprocast.app,#genre#
-ABHP TV (480p),http://vietprocast.app/hls/abhp/index.m3u8
-
-streamtv.mediasector.es,#genre#
-Activa TV (720p),http://streamtv.mediasector.es/hls/activatv/index.m3u8
-
-cdn.streamlane.tv,#genre#
-Aghani Aghani TV (1080p),http://cdn.streamlane.tv/hls/aghanitv/index.m3u8
-
-cd198.anystream.uk:8082,#genre#
-Ahlulbayt TV (1080p),http://cd198.anystream.uk:8082/hls/abtv3ng/index.m3u8
-
-starmenajo.com,#genre#
-Al Masar TV (576p),http://starmenajo.com/hls/almasar/index.m3u8
-Almahriah TV (576p),http://starmenajo.com/hls/almahriah/index.m3u8
-
-goccn.cloud,#genre#
-Amani TV (1080p) [Not 24/7],http://goccn.cloud/hls/amanitv/index.m3u8
-
-amazonsat.brasilstream.com.br,#genre#
-Amazon Sat (1080p),http://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
-
-liveh12.vtvprime.vn,#genre#
-An Ninh TV HD (1080p),http://liveh12.vtvprime.vn/hls/ANNINHTV/index.m3u8
-QPVN HD (1080p),http://liveh12.vtvprime.vn/hls/QPTV/index.m3u8
-SCTV2,http://liveh12.vtvprime.vn/hls/SCTV2/index.m3u8
-
-artesimulcast.akamaized.net,#genre#
-arte (Germany) (720p) [Geo-blocked],http://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
-
-hls02ns.antenaplay.ro,#genre#
-B1,http://hls02ns.antenaplay.ro/hls/b1-tv-hd/index.m3u8
-Cinemaraton Plus (1080i),http://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
-Etno TV,http://hls02ns.antenaplay.ro/hls/etno-tv-sd/index.m3u8
-Inedit TV,http://hls02ns.antenaplay.ro/hls/inedit-tv-hd/index.m3u8
-Prima News,http://hls02ns.antenaplay.ro/hls/prima-news-hd/index.m3u8
-
-bbstv.ug,#genre#
-BBS TV (Uganda),http://bbstv.ug/hls/ch01/index.m3u8
-
-hls.autopo.st,#genre#
-Brit Asia TV (1080p),http://hls.autopo.st/hls/britasiatv/index.m3u8
-
-nd106.republicaservers.com:4433,#genre#
-Canal 2 Misiones (1080p),http://nd106.republicaservers.com:4433/hls/canal2misioness/index.m3u8
-Canal 2 de Ushuaia (1080p),http://nd106.republicaservers.com:4433/hls/c6611/index.m3u8
-
-intelincloud01.com.ar,#genre#
-Canal 3 Pinamar,http://intelincloud01.com.ar/hls/cn3/index.m3u8
-
-daiconnect.com,#genre#
-Cartoon Classics,http://daiconnect.com/live/hls/tvup/rk-cartoonclassics/578f4b7eb725168349ec0af81b21d388/index.m3u8
-
-endour.net,#genre#
-Chabiba TV (360p) [Not 24/7],http://endour.net/hls/RUgLAPCbPdF5oPSTX2Hvl/index.m3u8
-One Nation TV (720p) [Not 24/7],http://endour.net/hls/One_nationtv/index.m3u8
-
-9now-livestreams-fhd-t.akamaized.net,#genre#
-Channel 9 (Australia) (720p) [Geo-blocked],http://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/syd/ch9/hls/r1/index.m3u8
-Channel 9 (Australia) Adelaide (720p) [Geo-blocked],http://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/adl/ch9/hls/r1/index.m3u8
-Channel 9 (Australia) Brisbane (720p) [Geo-blocked],http://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/bne/ch9/hls/r1/index.m3u8
-Channel 9 (Australia) Perth (720p) [Geo-blocked],http://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/per/ch9/hls/r1/index.m3u8
-
-113.64.146.48:1688,#genre#
-Chaozhou Public Channel,http://113.64.146.48:1688/hls/4/index.m3u8
-
-stream.blserver.cl,#genre#
-Concepcion TV (720p),http://stream.blserver.cl/hls/ctv/index.m3u8
-
-adylnet.streampool.net,#genre#
-Conecta Mais TV (720p),http://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8
-
-liveh34.vtvprime.vn,#genre#
-Dong Thap TV (720p),http://liveh34.vtvprime.vn/hls/DONGTHAPTV/index.m3u8
-HanoiTV1 (720p),http://liveh34.vtvprime.vn/hls/HANOI1TV/index.m3u8
-
-live-stream.dvb.no,#genre#
-DVB TV (720p) [Geo-blocked],http://live-stream.dvb.no/hls/stream_src/index.m3u8
-
-astra.emitv.ro,#genre#
-EMI TV,http://astra.emitv.ro/hls/emi/index.m3u8
-
-mistserver.evi-tv.com,#genre#
-EVI TV (720p),http://mistserver.evi-tv.com/hls/evi_tv_live/index.m3u8
-
-nosignal1.antenaplay.ro,#genre#
-FILMBOX+ Comedy Romania,http://nosignal1.antenaplay.ro/hls/fb-comedy-hd/index.m3u8
-FILMBOX+ Festival HD (1080p),http://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8
-FILMBOX+ Hits Romania (576p),http://nosignal1.antenaplay.ro/hls/fb-hits-sd/index.m3u8
-FILMBOX+ Love & Crime Romania,http://nosignal1.antenaplay.ro/hls/fb-love-and-crime-sd/index.m3u8
-FightBox HD,http://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
-
-stream.fortistv.com,#genre#
-Fortis TV,http://stream.fortistv.com/hls/fortis-news/index.m3u8
-
-radiovid.foxnews.com,#genre#
-Fox News Radio (720p),http://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8
-
-stream-server9-jupiter.muxlive.com,#genre#
-Great Commission TV,http://stream-server9-jupiter.muxlive.com/hls/gctvghana/index.m3u8
-
-sparhandytv.cdn.ses-ps.com,#genre#
-Handystar (404p) [Not 24/7],http://sparhandytv.cdn.ses-ps.com/live/channel01/hls/index.m3u8
-
-stream1.knn.co.kr,#genre#
-HLDG-DTV (1080p) [Not 24/7],http://stream1.knn.co.kr/hls/9ly4534y7dm2xfa123r2_tv/index.m3u8
-
-stream.ubc.co.kr,#genre#
-HLDP-DTV (540p) [Not 24/7],http://stream.ubc.co.kr/hls/ubctvstream/index.m3u8
-
-hrhls.akamaized.net,#genre#
-hr-fernsehen (1080p),http://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
-
-tv.streambox.ro,#genre#
-IasiTV Life (1080p) [Not 24/7],http://tv.streambox.ro/hls/itv/index.m3u8
-
-mist01.homestream.fun,#genre#
-Interactivo Television (720p),http://mist01.homestream.fun/hls/interactivotv2/index.m3u8
-
-live.presstv.ir,#genre#
-Iran Press,http://live.presstv.ir/hls/presstv_5_482/index.m3u8
-
-x.streamablecloud.com,#genre#
-Jeremiah TV,http://x.streamablecloud.com/stream/hls/jeremiahtv/index.m3u8
-
-vysilani.zaktv.cz,#genre#
-Jihoceska televize (1080p),http://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
-Plzen TV (1080p),http://vysilani.zaktv.cz/broadcast/hls/ptv/index.m3u8
-UTV (Czech Republic) (1080p),http://vysilani.zaktv.cz/broadcast/hls/utv/index.m3u8
-
-khkbh.dk:8080,#genre#
-Kanal Hovedstaden (720p) [Not 24/7],http://khkbh.dk:8080/hls/livestream/index.m3u8
-
-110.185.237.164:8888,#genre#
-康巴卫视,http://110.185.237.164:8888/hls/30/index.m3u8
-
-85.132.78.122:8050,#genre#
-Kapaz TV,http://85.132.78.122:8050/hls/stream/index.m3u8
-
-api.alpaca.t62a.com,#genre#
-KaufBei TV (576p),http://api.alpaca.t62a.com/hls/9103/index.m3u8
-
-66.242.170.53,#genre#
-KBSV 23.1 (720p) [Not 24/7],http://66.242.170.53/hls/live/temp/index.m3u8
-
-channel01-onlymex.akamaized.net,#genre#
-Las Estrellas (1080p),http://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
-
-stream.berosat.live,#genre#
-Le Monde en 24h,http://stream.berosat.live/hls/monde24h-tv-index/monde24h-tv-index.m3u8
-
-118.122.2.29:9999,#genre#
-Liangshan TV [Not 24/7],http://118.122.2.29:9999/hls/47/index.m3u8
-
-mdrtvsnhls.akamaized.net,#genre#
-MDR Fernsehen (1080p) [Geo-blocked],http://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
-
-mdrtvsahls.akamaized.net,#genre#
-MDR Fernsehen Sachsen Anhalt (1080p) [Geo-blocked],http://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8
-
-ml-pull-hwc.myco.io,#genre#
-Mix Hollywood (1080p),http://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
-
-altair.hostingnica.net,#genre#
-MTV Chontales (720p) [Not 24/7],http://altair.hostingnica.net/hls/mtv_stream/index.m3u8
-
-203.81.84.130,#genre#
-MWD (720p) [Not 24/7],http://203.81.84.130/hls/mwd/index.m3u8
-MWD Documentary [Geo-blocked],http://203.81.84.130/hls/mwd_document/index.m3u8
-MWD Movies [Not 24/7],http://203.81.84.130/hls/mwd_movie/index.m3u8
-MWD Variety (720p) [Not 24/7],http://203.81.84.130/hls/mwd_variety/index.m3u8
-
-hls01ns.antenaplay.ro,#genre#
-National 24 Plus,http://hls01ns.antenaplay.ro/hls/n24-plus-sd/index.m3u8
-National TV,http://hls01ns.antenaplay.ro/hls/national-tv-sd/index.m3u8
-TraLaLa TV,http://hls01ns.antenaplay.ro/hls/tralala-hd/index.m3u8
-
-ndrint.akamaized.net,#genre#
-NDR Fernsehen International (720p),http://ndrint.akamaized.net/hls/live/2020766/ndr_int/index.m3u8
-
-1.24.190.98:10080,#genre#
-Golden Eagle Cartoon,http://1.24.190.98:10080/hls/51/index.m3u8
-Nei Monggol TV,http://1.24.190.98:10080/hls/39/index.m3u8
-Nei Monggol TV 2 Mongolian Culture Channel,http://1.24.190.98:10080/hls/40/index.m3u8
-
-n1ottesorkatv.akamaized.net,#genre#
-Newsmax Spanish (1080p),http://n1ottesorkatv.akamaized.net/hls/live/2113795/Live_1/index.m3u8
-
-nmx1ota.akamaized.net,#genre#
-Newsmax TV (720p),http://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
-
-live-cdn.oksh.de,#genre#
-OK Flensburg (576p),http://live-cdn.oksh.de/play/hls/flensburgtv/index.m3u8
-OK Kiel (576p),http://live-cdn.oksh.de/play/hls/kieltv/index.m3u8
-
-netzerstreaming.com:4433,#genre#
-Olam Metro TV (720p),http://netzerstreaming.com:4433/hls/olammetro/index.m3u8
-
-stream.oromar.tv,#genre#
-Oromar TV+ (720p),http://stream.oromar.tv/hls/camriva/index.m3u8
-
-live.palitranews.ge,#genre#
-Palitra News (480p) [Not 24/7],http://live.palitranews.ge/hls/palitratv/index.m3u8
-
-185.63.52.103:8080,#genre#
-Passione Lotto (300p),http://185.63.52.103:8080/hls/passionelotto/1_2/index.m3u8
-
-hls-kmosdt.lls.cdn.pbs.org,#genre#
-PBS KMOS-TV (1080p) [Geo-blocked],http://hls-kmosdt.lls.cdn.pbs.org/hls/live/index.m3u8
-
-tele2dvrnat01-02.cdnvideo.ru,#genre#
-Prima (Russia) (1080p),http://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8
-
-rbb-hls-berlin.akamaized.net,#genre#
-rbb Fernsehen Berlin (1080p) [Geo-blocked],http://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
-
-tv3ecuador.site,#genre#
-RTRTV (1080p),http://tv3ecuador.site/hls/stream/index.m3u8
-
-tv.rtvhorizon.nl,#genre#
-RTV Horizon (720p),http://tv.rtvhorizon.nl/hls/horizon/1_2/index.m3u8
-
-media.rtvwesterwolde.nl,#genre#
-RTV Westerwolde (432p),http://media.rtvwesterwolde.nl/hls/live/index.m3u8
-
-stream.lamegatv.com,#genre#
-San Vito Television,http://stream.lamegatv.com/hls/sanvitotelevision/index.m3u8
-
-31.14.41.69:8080,#genre#
-Senses TV (1080p),http://31.14.41.69:8080/hls/sensesonline/index.m3u8
-
-parecisfmlive.brasilstream.com.br,#genre#
-SIC TV (720p),http://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8
-
-simaytv.akamaized.net,#genre#
-Simaye Azadi (1080p),http://simaytv.akamaized.net/hls/live/2043550/simayhls/index.m3u8
-
-skylivetab-new.akamaized.net,#genre#
-Sky Thoroughbred Central (720p) [Geo-blocked],http://skylivetab-new.akamaized.net/hls/live/2038782/stcsd/index.m3u8
-
-live2.snn.ir,#genre#
-SNN TV [Not 24/7],http://live2.snn.ir/hls/snn2_hd720/index.m3u8
-
-srfs.akamaized.net,#genre#
-SR Fernsehen (720p),http://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
-
-mediaserver1.castpin.com,#genre#
-Tal TV (1080p),http://mediaserver1.castpin.com/hls/taltv/index.m3u8
-Tele Sahel (1080p),http://mediaserver1.castpin.com/hls/telesahel/index.m3u8
-
-live.talenttv.lk:8080,#genre#
-Talent TV (720p),http://live.talenttv.lk:8080/hls/x8kd5n3tm8e8lsv/index.m3u8
-
-live.tele7abc.ro,#genre#
-Tele7ABC HD (720p),http://live.tele7abc.ro/hls/stream/index.m3u8
-
-live.tele7music.ro,#genre#
-Tele7music (576i),http://live.tele7music.ro/hls/stream/index.m3u8
-
-televsesvit.cdn-04.cosmonova.net.ua,#genre#
-Televsesvit (1080p),http://televsesvit.cdn-04.cosmonova.net.ua/hls/televsesvit_ua_hi/index.m3u8
-
-live.suricloud.com,#genre#
-Trishul Broadcasting Network (720p) [Not 24/7],http://live.suricloud.com/hls/tbntv/index.m3u8
-
-tsv.md,#genre#
-TSV (1080p),http://tsv.md/stream/hls/tsv-online/index.m3u8
-
-live.wrencdn.in,#genre#
-TV13 Gujarati (480p),http://live.wrencdn.in/wrencdn/hls/tv13_web/index.m3u8
-
-tvfronteira.brasilstream.com.br,#genre#
-TV Fronteira (480i),http://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
-
-streaming.cloudecast.com,#genre#
-TV Life America (720p),http://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8
-
-nd106.republicaservers.com,#genre#
-TV Publica Fueguina (1080p),http://nd106.republicaservers.com/hls/c8094/index.m3u8
-
-tvtoday.rpmc.com.np,#genre#
-TV Today Janakpur,http://tvtoday.rpmc.com.np/hls/bipashatech/1_2/index.m3u8
-
-cdn.mycloudstream.io,#genre#
-TV Universal Ecuador (720p),http://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
-TVCARiB (720p) [Not 24/7],http://cdn.mycloudstream.io/hls/live/broadcast/s6nitpvn/index.m3u8
-TVCARiB Cinema (720p) [Not 24/7],http://cdn.mycloudstream.io/hls/live/broadcast/l3vslw4i/index.m3u8
-TVCARiB Gospel (480p) [Not 24/7],http://cdn.mycloudstream.io/hls/live/broadcast/wokrhjkd/index.m3u8
-TVCARiB Kids & Teens (720p) [Not 24/7],http://cdn.mycloudstream.io/hls/live/broadcast/nro19k2h/index.m3u8
-TVCARiB Latino (720p) [Not 24/7],http://cdn.mycloudstream.io/hls/live/broadcast/xn44vdc5/index.m3u8
-Unife TV,http://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
-
-www.latinasat.com.br,#genre#
-TVLatinaSat (720p),http://www.latinasat.com.br/hls/live/stream/index.m3u8
-
-sdream.info:8080,#genre#
-TVMarineret (1080p),http://sdream.info:8080/hls/livestream/index.m3u8
-
-srde.akamaized.net,#genre#
-Unserding (720p) [Geo-blocked],http://srde.akamaized.net/hls/live/2031842/visualradio-unserding/index.m3u8
-
-str.onnetwork.tv,#genre#
-W Polsce PL (720p),http://str.onnetwork.tv/hls/onnet-358726_hi/index.m3u8
-
-wdrfs247.akamaized.net,#genre#
-WDR 1 Live (720p),http://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8
-
-streamwipr.pr,#genre#
-WIPR-TV 6.1 (1080p),http://streamwipr.pr/hls/stream/index.m3u8
-
-yletvworld.akamaized.net,#genre#
-Yle TV1 (1080p) [Not 24/7],http://yletvworld.akamaized.net/hls/live/622540/yletv1w/index.m3u8
-Yle TV2 (1080p) [Not 24/7],http://yletvworld.akamaized.net/hls/live/622541/yletv2w/index.m3u8
-Yle Teema & Fem (1080p) [Not 24/7],http://yletvworld.akamaized.net/hls/live/622547/yletvteemafemw/index.m3u8
-
-123.10.79.29:808,#genre#
-重庆卫视,http://123.10.79.29:808/hls/50/index.m3u8
-
 gongzhuling.lnott.top:9999,#genre#
 吉林乡村,http://gongzhuling.lnott.top:9999/hls/22/index.m3u8
 吉林公共,http://gongzhuling.lnott.top:9999/hls/23/index.m3u8
@@ -1767,4 +1454,13 @@ gongzhuling.lnott.top:9999,#genre#
 吉林生活,http://gongzhuling.lnott.top:9999/hls/20/index.m3u8
 吉林综艺,http://gongzhuling.lnott.top:9999/hls/24/index.m3u8
 吉林都市,http://gongzhuling.lnott.top:9999/hls/19/index.m3u8
+
+118.122.2.29:9999,#genre#
+Liangshan TV [Not 24/7],http://118.122.2.29:9999/hls/47/index.m3u8
+
+110.185.237.164:8888,#genre#
+Kangba TV,http://110.185.237.164:8888/hls/30/index.m3u8
+
+113.64.146.48:1688,#genre#
+Chaozhou Public Channel,http://113.64.146.48:1688/hls/4/index.m3u8
 
