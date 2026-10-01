@@ -46,28 +46,8 @@ CHC家庭影院,http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8
 山西影视,http://60.223.224.176:8888/newlive/live/hls/54/live.m3u8
 
 61.162.52.6:8088,#genre#
-CCTV-1,http://61.162.52.6:8088/newlive/live/hls/1/live.m3u8
-CCTV-2,http://61.162.52.6:8088/newlive/live/hls/2/live.m3u8
-CCTV-3,http://61.162.52.6:8088/newlive/live/hls/3/live.m3u8
-CCTV-5,http://61.162.52.6:8088/newlive/live/hls/5/live.m3u8
 CCTV-5+,http://61.162.52.6:8088/newlive/live/hls/6/live.m3u8
-CCTV-6,http://61.162.52.6:8088/newlive/live/hls/7/live.m3u8
-CCTV-7,http://61.162.52.6:8088/newlive/live/hls/8/live.m3u8
-CCTV-8,http://61.162.52.6:8088/newlive/live/hls/9/live.m3u8
-CCTV-9,http://61.162.52.6:8088/newlive/live/hls/10/live.m3u8
-CCTV-10,http://61.162.52.6:8088/newlive/live/hls/11/live.m3u8
-CCTV-11,http://61.162.52.6:8088/newlive/live/hls/12/live.m3u8
-CCTV-12,http://61.162.52.6:8088/newlive/live/hls/13/live.m3u8
-CCTV-13,http://61.162.52.6:8088/newlive/live/hls/14/live.m3u8
-CCTV-14,http://61.162.52.6:8088/newlive/live/hls/15/live.m3u8
-CCTV-15,http://61.162.52.6:8088/newlive/live/hls/16/live.m3u8
-东南卫视,http://61.162.52.6:8088/newlive/live/hls/20/live.m3u8
-东方卫视,http://61.162.52.6:8088/newlive/live/hls/29/live.m3u8
 厦门卫视,http://61.162.52.6:8088/newlive/live/hls/28/live.m3u8
-山东卫视,http://61.162.52.6:8088/newlive/live/hls/35/live.m3u8
-河北卫视,http://61.162.52.6:8088/newlive/live/hls/33/live.m3u8
-浙江卫视,http://61.162.52.6:8088/newlive/live/hls/32/live.m3u8
-湖南卫视,http://61.162.52.6:8088/newlive/live/hls/30/live.m3u8
 CHC家庭影院,http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 
 223.112.114.228:50080,#genre#
