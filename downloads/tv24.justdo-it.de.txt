@@ -250,9 +250,9 @@
                                                             >
                                 [INDIA] 1S News (576p)                            </option>
                                                                                 <option
-                                value="https://live.presstv.co.uk/hls/presstv.m3u8"
+                                value="https://live.presstv.ir/hls/presstv.m3u8"
                                                             >
-                                [IRAN] Press TV Alternativ IP                            </option>
+                                [IRAN] Press TV                            </option>
                                                                                 <option
                                 value="https://live.i-news.tv/hls/stream.m3u8"
                                                             >
@@ -285,6 +285,10 @@
                                 value="https://streaming.najah.edu:8443/hls/AlNajah.m3u8"
                                                             >
                                 [PALESTINE_STATE_OF] Al Najah News (720p)                            </option>
+                                                                                <option
+                                value="https://pbc.furrera.ps/palestinehd/index.m3u8"
+                                                            >
+                                [PALESTINE_STATE_OF] Palestine Satellite Channel (1080p)                            </option>
                                                                                 <option
                                 value="https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"
                                                             >
