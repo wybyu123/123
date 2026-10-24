@@ -158,7 +158,6 @@ Nei Monggol TV 2 Mongolian Culture Channel,http://1.24.190.98:10080/hls/40/index
 凤凰资讯 (720p),http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8
 凤凰资讯 (576p),http://125.210.152.18:9090/live/FHZX_1200.m3u8
 凤凰香港 (720p),http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
-(勿)(址)MovieMusic欣赏,https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/dee3e3af-2706-3e77-a952-91b99f6d1819/5711200/manifest.m3u8
 凤凰中文,http://211.72.65.236:8577/.m3u8
 凤凰资讯,http://avd.iptviptv.site:9694/hls/732/index.m3u8
 凤凰香港,http://avd.iptviptv.site:9694/hls/730/index.m3u8
@@ -170,6 +169,7 @@ TVB无线新闻,http://avd.iptviptv.site:9694/hls/906/index.m3u8
 TVB无线财经,http://live.cooltv.top/tv/tvb.php?id=2&hq
 澳门澳视,https://iptv.hiper25.com/TDM/video.m3u8
 TVBS,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8575/.m3u8
+(勿)(址)MovieMusic欣赏,https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/dee3e3af-2706-3e77-a952-91b99f6d1819/5711200/manifest.m3u8
 体育,#genre#
 五星体育 (720p),http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221226799/index.m3u8
 山东体育 (1080p) [Geo-blocked],http://livealone302.iqilu.com/iqilu/typd.m3u8
@@ -538,11 +538,6 @@ Dongguan Comprehensive News Channel,https://stream.sun0769.com/dgrtv1/mp4tv1_800
 Tonghua TV,http://139.211.217.79:9004/hls/75/index.m3u8
 Hunan Economy Channel,https://p8.vzan.com/slowlive/415983998730568937/live.m3u8
 Xinjiang TV 5,http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-20250509 09:21:46,https://gitee.com/kabigo/tv/raw/master/assets/about1080p.mp4
-关于本源(iptv365.org),https://gitlab.com/p2v5/wangtv/-/raw/main/about1080p.mp4
-(请)(地)每日一首,https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240192067467.mp4
-(贩)(已)AMC音乐,https://AMChls.wns.live/hls/stream.m3u8
-(卖)(变)音乐欣赏,http://61.221.215.25:8800/hls/49/index.m3u8
 #EXTM3U x-tvg-url="https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/tvxml.xml,https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/EPG-test/main/tvxml-test.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 兵器科技,http://www.lizhinas.top:8688/rtp/239.252.219.98:5140%24%E6%B1%9F%E8%A5%BFcmc3+
 世界地理,http://www.lizhinas.top:8688/rtp/239.252.219.93:5140%24%E6%B1%9F%E8%A5%BFcmc3+
@@ -790,6 +785,11 @@ iHot-爱院线,http://zteres.sn.chinamobile.com:6060/000000001000/60000000060000
 东森综合,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8524/.m3u8
 寰宇新闻,http://ali.hlspull.yximgs.com/live/tboxprophxehmffquxcxqveqeqyhmnqqxqqhqdhnqbnxfdqfhyxw.flv
 爱尔达综合,https://histar.zapi.us.kg/?id=elta-zonghe
+20250509 09:21:46,https://gitee.com/kabigo/tv/raw/master/assets/about1080p.mp4
+关于本源(iptv365.org),https://gitlab.com/p2v5/wangtv/-/raw/main/about1080p.mp4
+(请)(地)每日一首,https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240192067467.mp4
+(贩)(已)AMC音乐,https://AMChls.wns.live/hls/stream.m3u8
+(卖)(变)音乐欣赏,http://61.221.215.25:8800/hls/49/index.m3u8
 教育,#genre#
 中国教育1台,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226494/1.m3u8?
 中国教育2台,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226537/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E7AxXs4eTU2oiWrhopr9sHw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND
