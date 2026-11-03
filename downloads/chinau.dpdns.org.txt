@@ -550,6 +550,7 @@ Zhejiang Economic Channel,rtmp://splay-qukan.cztv.com/live/1792060094123056?auth
 Zhejiang Education Technology Channel,rtmp://splay-qukan.cztv.com/live/1792059848292249?auth_key=1886667907-3d9b01248b784f0dad521e451a627376-0-810b24f67775043e86a4337d9660392c
 Zhejiang Children's Channel,rtmp://splay-qukan.cztv.com/live/1792055184232041?auth_key=1886663369-8067bfcb3c684fe98dc7e8ab4b018582-0-3adb461e15e39f56e7a75b9b7f80377d
 Zhejiang Minsheng Leisure,rtmp://splay-qukan.cztv.com/live/1792059771757250?auth_key=1886667772-951bbd2034684d73940470ed3eebc32a-0-adc4291abba5c186e3ead67a1683e790
+Xizang TV Tibetan,https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8
 #EXTM3U x-tvg-url="https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/tvxml.xml,https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/EPG-test/main/tvxml-test.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 兵器科技,http://www.lizhinas.top:8688/rtp/239.252.219.98:5140%24%E6%B1%9F%E8%A5%BFcmc3+
 世界地理,http://www.lizhinas.top:8688/rtp/239.252.219.93:5140%24%E6%B1%9F%E8%A5%BFcmc3+
