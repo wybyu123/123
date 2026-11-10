@@ -1,0 +1,212 @@
+
+      <!DOCTYPE html>
+      <html lang="zh-CN">
+      <head>
+        <meta charset="UTF-8">
+        <title>FOTV</title>
+        <style>
+          body {
+            font-family:sans-serif;
+            background:#1a1a1a;
+            color:#fff;
+            padding:20px;
+            user-select:none;
+            -webkit-user-select:none;
+          }
+          .container { max-width:1400px; margin:auto; }
+          header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #444; padding-bottom:15px; margin-bottom:20px; }
+          h1 { margin:0; font-size:24px; }
+          .nav-link { color:#4ea3ff; text-decoration:none; background:#2c2c2c; padding:8px 16px; border-radius:6px; }
+          .channel-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:20px; }
+          .channel-card { background:#2c2c2c; border-radius:10px; padding:15px; text-align:center; }
+          .channel-card img { width:80px; height:80px; object-fit:contain; margin-bottom:10px; }
+          .channel-name { font-weight:bold; margin-bottom:10px; display:block; }
+          .line-buttons a { display:inline-block; margin:3px; padding:4px 8px; border:1px solid #4ea3ff; color:#4ea3ff; border-radius:4px; font-size:12px; text-decoration:none; }
+          .line-buttons a:hover { background:#4ea3ff; color:#000; }
+          footer { margin-top:40px; text-align:center; font-size:13px; color:#666; }
+        </style>
+        <script>
+          document.addEventListener("contextmenu", e => e.preventDefault());
+          document.addEventListener("selectstart", e => e.preventDefault());
+          setInterval(() => { debugger; }, 1000);
+        </script>
+      </head>
+      <body>
+        <div class="container">
+          <header>
+    <h1>📺 FOTV</h1><a href="/tv" class="nav-link">TV ▶</a></header><div class="channel-grid">
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/life.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">生命电视台</span>
+            <div class="line-buttons">
+        <a href="http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/bltv.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">人间卫视</span>
+            <div class="line-buttons">
+        <a href="http://61.216.67.119:1935/bltvhd/bltv1/manifest.m3u8" target="_blank">线路 1</a><a href="http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/hwazanlogo.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">華藏衛視</span>
+            <div class="line-buttons">
+        <a href="https://5cac63a7bf69d.streamlock.net/HZTV/HZTV/playlist.m3u8" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/wxtv.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">唯心網路電視</span>
+            <div class="line-buttons">
+        <a href="https://5ddce30eb4b55.streamlock.net/wxtv/wxtvnow.stream/playlist.m3u8" target="_blank">线路 1</a><a href="http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8" target="_blank">线路 2</a><a href="http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8" target="_blank">线路 3</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/xldst.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">孝廉电视</span>
+            <div class="line-buttons">
+        <a href="https://px.114.ae/http://cdn257.ccdntech.com/live-http/_definst_/vod257_Live/live/playlist.m3u8" target="_blank">线路 1</a><a href="http://cdn257.ccdntech.com/live-http/_definst_/vod257_Live/live/playlist.m3u8" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/bts_logo.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">佛衛電視慈悲台</span>
+            <div class="line-buttons">
+        <a href="https://px.114.ae/http://btsw-ott2b.cdn.hinet.net/live_bts/btsw01/playlist.m3u8" target="_blank">线路 1</a><a href="http://btsw-ott2b.cdn.hinet.net/live_bts/btsw01/playlist.m3u8" target="_blank">线路 2</a><a href="https://px.114.ae/http://btsw-ott2b.cdn.hinet.net/live_bts/btsw01/chunklist.m3u8" target="_blank">线路 3</a><a href="http://btsw-ott2b.cdn.hinet.net/live_bts/btsw01/chunklist.m3u8" target="_blank">线路 4</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/zhengde.svg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">正德電視台</span>
+            <div class="line-buttons">
+        <a href="https://proxy.api.030101.xyz/https://www.youtube.com/watch?v=sX5Ad1GeUkw" target="_blank">线路 1</a><a href="https://www.youtube.com/watch?v=sX5Ad1GeUkw" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/dzwps.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">地藏王菩薩</span>
+            <div class="line-buttons">
+        <a href="https://txmov2.a.kwimgs.com/ksc1/swg1T6nDtwh2QOTzvHm_R7ajuUEVwCynOuCf-k-GGYMM6oiF8GufPGrOYjGfp3Qq15QH4Eo2mGpx7KsZvv25xWuf-TBN9c2YFQpXOK94QSHApJhz2622LchSFbjj-bXZO4GeRqEfiHJYvtSqZn8mh7JAFJFZ9y8f7-c4hpczWR_KvvRZcpyV6mF9obA7hzRZ.mp4" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/xj.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">心经音乐</span>
+            <div class="line-buttons">
+        <a href="https://txmov2.a.kwimgs.com/ksc1/B68yCgXUeUW4DH6VepUOzj4KlawQ0VmVpyMWZsSigdAz3fO6Wax6eXbZ6BmxEeHUtn7-f8vdALNgqSCfr6Lr6vZJA3IIeDVoQD-gv8eAzab4cmpyoccwKIvkjt-0ejwlyzDV0h00h8_wZXP_tBWIl8hUuHqV_xkpeLP_QK8ddHReUTCvCaQIT-qkTON1UQvW.mp4" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/wsz.gif" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">往生咒</span>
+            <div class="line-buttons">
+        <a href="https://txmov2.a.kwimgs.com/ksc1/KRKkD17-7Hpp6K24HXz7_1zuD0-9GHdevPyq7b6S29c4tIawvfHOu_6iLqKJXGzM8v9s-wpbG8UDm_bYrz934sdZB7Jec53Mxnx_pmflk297LPawLZzqIqKo1LZsfFreXElJ-QePOe51vI6rTEdOwI-oSIfV8lLPbmxhEfICl6SwwcNgLapcQEwmKGFGuJkw.mp4" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/MedecineBuddha.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">藥師佛心咒</span>
+            <div class="line-buttons">
+        <a href="http://120.226.145.243/txmov2.a.kwimgs.com/ksc1/1DbsNDgpKBlFp9aUGWFx8csM5efjUjA2SLI8aQ8QKuSHh1UUiNGvtEnXSXIMUFrV8NZ73ch4oEVFc5blwEqCyyma19iTFTv2uCKPTAxDkv-eUWXnbrMFvSpui9fYlSTQ2nFubFbkZpBb0wFRqvrEYW-HMrekJlM24DjIOJOqR_qAD38guVaVa7k9nMXDYA5d.mp4" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/lvdumu.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">綠度母心咒</span>
+            <div class="line-buttons">
+        <a href="https://k0u70y30ycay97z.djvod.ndcimgs.com/upic/2026/04/02/21/BMjAyNjA0MDIyMTM3MzdfNTQxMTA3NzIxNl8xOTE5OTAwNjg1MzVfMF8z_b_B8146d716cc6c96b35cf8c5b858c2ccfb.mp4" target="_blank">线路 1</a><a href="https://v1-cp.ssrcdn.com/ksc2/irpkoJpf7i8sZZSavRch8Ung0eJaH1zZ56t7GDo-G4kW2kb9mSKZhBsEZaiDzAjAqVSr4Lp_YDghhGc0QINqZQ.mp4?x-kcdn-pid=111636&pkey=AAXRrDgEKE-nOaul4WRRqOIBW-bped-tpFbxXfMkhHeLEV4guRlDviSxq-kffH116d50cn0d7dInbwbO1u_lAwM4TwJR1wnj8silmhUGYvg-vcB2mMDH3DMs3GJZw3rNmOI" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/xldst.jpg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">大方廣佛華嚴經</span>
+            <div class="line-buttons">
+        <a href="https://cdn257.ccdntech.com/live-http/_definst_/vod257_Live/live2/chunklist.m3u8" target="_blank">线路 1</a><a href="https://px.114.ae/https://cdn257.ccdntech.com/live-http/_definst_/vod257_Live/live2/chunklist.m3u8" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/amtf1.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">阿弥陀佛</span>
+            <div class="line-buttons">
+        <a href="https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8" target="_blank">线路 1</a><a href="https://px.114.ae/https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8" target="_blank">线路 2</a><a href="http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8" target="_blank">线路 3</a><a href="https://px.114.ae/http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8" target="_blank">线路 4</a></div></div>
+          <div class="channel-card">
+            <img src="https://chinesehope.tv/css/img/HopeChannel-horizontal_zh.svg" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">希望電視台</span>
+            <div class="line-buttons">
+        <a href="https://cdn-kr-icn.becdn.net/hcorg_jjs5dHCTs7w/s/jsl_nGL7123If9H/CgTAA/1080p/main.m3u8" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/goodtv.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">GOODTV</span>
+            <div class="line-buttons">
+        <a href="http://165.154.226.214:50007/of-litv-ftv16/index.m3u8?proxy=true" target="_blank">线路 1</a><a href="https://dqhxk7sbp7xog.cloudfront.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8" target="_blank">线路 2</a><a href="http://165.154.226.214:50007/of-litv-ftv17/index.m3u8?proxy=true" target="_blank">线路 3</a></div></div>
+          <div class="channel-card">
+            <img src="https://tv.jingeng.cn/stemiTV.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">stemiTV</span>
+            <div class="line-buttons">
+        <a href="https://vod.stemitv.org/vod/gen/01/720p/720p.m3u8" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/凤凰卫视中文.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">凤凰卫视中文</span>
+            <div class="line-buttons">
+        <a href="http://cdn6.163189.xyz/163189/fhzw" target="_blank">线路 1</a><a href="http://iptv.4666888.xyz/iptv2A.php?id=27" target="_blank">线路 2</a><a href="http://zmgd.zyrnet.com:8888/hls/110/index.m3u8" target="_blank">线路 3</a><a href="http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd" target="_blank">线路 4</a><a href="http://php.jdshipin.com/smt.php?id=phoenixtv_hd" target="_blank">线路 5</a><a href="http://61.184.46.85:85/tsfile/live/1029_1.m3u8?key=txiptv&playlive=1&authid=0" target="_blank">线路 6</a><a href="http://219.145.93.74:10000/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0" target="_blank">线路 7</a><a href="http://120.238.5.44:1698/hls/86/index.m3u8" target="_blank">线路 8</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/凤凰卫视资讯.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">凤凰卫视资讯</span>
+            <div class="line-buttons">
+        <a href="http://cdn6.163189.xyz/163189/fhzx" target="_blank">线路 1</a><a href="https://cdn9.163189.xyz/smt3.1.1.php?id=phoenixinfo_hd" target="_blank">线路 2</a><a href="http://zmgd.zyrnet.com:8888/hls/109/index.m3u8" target="_blank">线路 3</a><a href="http://php.jdshipin.com:8880/smt.php?id=phoenixinfo_hd" target="_blank">线路 4</a><a href="http://php.jdshipin.com/smt.php?id=phoenixinfo_hd" target="_blank">线路 5</a><a href="http://120.238.5.44:1698/hls/85/index.m3u8" target="_blank">线路 6</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/凤凰资讯.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">凤凰香港HD</span>
+            <div class="line-buttons">
+        <a href="http://php.jdshipin.com:8880/smt.php?id=hkphoenix_twn" target="_blank">线路 1</a><a href="http://php.jdshipin.com/smt.php?id=hkphoenix_twn" target="_blank">线路 2</a><a href="http://120.238.5.44:1698/hls/87/index.m3u8" target="_blank">线路 3</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/华视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">华视</span>
+            <div class="line-buttons">
+        <a href="http://74.91.26.218:82/live/cts.m3u8" target="_blank">线路 1</a><a href="rtmp://f13h.mine.nu/sat/tv111" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/台视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">台视</span>
+            <div class="line-buttons">
+        <a href="http://74.91.26.218:82/live/ttv.m3u8" target="_blank">线路 1</a><a href="rtmp://f13h.mine.nu/sat/tv071" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/中视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">中视</span>
+            <div class="line-buttons">
+        <a href="http://74.91.26.218:82/live/ctv.m3u8" target="_blank">线路 1</a><a href="rtmp://f13h.mine.nu/sat/tv091" target="_blank">线路 2</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/民视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">民视</span>
+            <div class="line-buttons">
+        <a href="rtmp://f13h.mine.nu/sat/tv051" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/公视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">公视</span>
+            <div class="line-buttons">
+        <a href="http://74.91.26.218:82/live/pts.m3u8" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/邵氏电影.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">邵氏电影</span>
+            <div class="line-buttons">
+        <a href="http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/邵氏武侠.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">邵氏武侠</span>
+            <div class="line-buttons">
+        <a href="http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/邵氏动作.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">邵氏动作</span>
+            <div class="line-buttons">
+        <a href="http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/邵氏喜剧.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">邵氏喜剧</span>
+            <div class="line-buttons">
+        <a href="http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub" target="_blank">线路 1</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/福建东南卫视高清.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">福建东南卫视高清</span>
+            <div class="line-buttons">
+        <a href="http://120.76.248.139/live/bfgd/4200000483.m3u8" target="_blank">线路 1</a><a href="http://111.56.90.5/000000000000/1000000005000265033/1.m3u8" target="_blank">线路 2</a><a href="http://111.56.90.5/000000000000/1000000002000009263/1.m3u8" target="_blank">线路 3</a><a href="http://111.56.90.5/000000000000/5000000004000010584/1.m3u8" target="_blank">线路 4</a><a href="http://61.184.46.85:85/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0" target="_blank">线路 5</a><a href="http://153.0.171.163:85/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0" target="_blank">线路 6</a><a href="http://107.150.60.122/live/dnwshd.m3u8" target="_blank">线路 7</a><a href="http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=5000000004000010584&livemode=1&stbId=yu&mode=1&$8M" target="_blank">线路 8</a><a href="http://38.75.136.137:98/gslb/dsdqpub/dnwshd.m3u8?auth=testpub" target="_blank">线路 9</a><a href="http://120.238.5.44:1698/hls/44/index.m3u8" target="_blank">线路 10</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/厦门卫视.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">厦门卫视</span>
+            <div class="line-buttons">
+        <a href="http://183.250.156.180:9999/newlive/live/hls/28/live.m3u8" target="_blank">线路 1</a><a href="http://38.75.136.137:98/gslb/dsdqpub/xmws.m3u8?auth=testpub" target="_blank">线路 2</a><a href="http://ott.fj.chinamobile.com/PLTV/88888888/224/3221226781/index.m3u8" target="_blank">线路 3</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/CCTV-4 中文国际.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">CCTV-4 中文国际</span>
+            <div class="line-buttons">
+        <a href="http://74.91.26.218:82/live/cctv4hd.m3u8" target="_blank">线路 1</a><a href="http://38.75.136.137:98/gslb/dsdqbv/cctv4hd.m3u8?auth=test20251009" target="_blank">线路 2</a><a href="http://142.54.168.234:82/live/cctv4.m3u8?jsbt=1775056534&jsbk=c592df95aa42662dc7084d929802f019&from=zbdq6" target="_blank">线路 3</a><a href="http://153.0.171.163:85/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0" target="_blank">线路 4</a><a href="http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv4hd" target="_blank">线路 5</a><a href="http://111.56.90.5/000000000000/5000000011000031102/1.m3u8" target="_blank">线路 6</a><a href="http://111.56.90.5/000000000000/1000000002000031664/1.m3u8" target="_blank">线路 7</a><a href="http://111.56.90.5/000000000000/1000000005000265004/1.m3u8" target="_blank">线路 8</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/武林外传.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">武林外传</span>
+            <div class="line-buttons">
+        <a href="https://lvbdcdncmn.inter.71edge.com/tslive/l1/c52_lb_553_300_t10/I67sb6wvoWaxfjPEdSuB8xyBShFln4Poub7LGIzPt5oGLcKaLXD21aR_t20nEIxJFmaf_i6EYQ77gA-gLJ3xOTtq6K7hpgCREwLfbuNMXruJdFta9-ai9bYk4cTMbhQgRh9SCkE3yt46X4E0qOVADDdga3TMRSLnFscFYr-_s4Sd2sgykmnFa4-hdgX9599FiW_RX5VYGH9B1jyj748_CAu4VgqqTDwxUx8w556tCWY7mlb1r84RWuip72e4H8-HkUuBUoFeD4aw9m1HOUfgwx7ixDqJUFOmq9F-LeKLTZ2Ap6fobRuaUiaSqHsCWvuy9XWe5KWBiZv6bUJ8oAuqkA/1a6758d872929c8d41a7629db52a831f7/c52_lb_553_300_t10.m3u8" target="_blank">线路 1</a><a href="http://39.153.130.167:35455/huya/21059598" target="_blank">线路 2</a><a href="https://txmov2.a.kwimgs.com/upic/2021/12/28/14/BMjAyMTEyMjgxNDQ0NTlfNDAzMDAxOTlfNjM2NzgyNjQ2ODFfMF8z_b_B9d8e425d16140ae0f37139b7ee6b0a84.mp4" target="_blank">线路 3</a></div></div>
+          <div class="channel-card">
+            <img src="https://epg.112114.xyz/logo/地下交通站.png" onerror="this.src='https://via.placeholder.com/80'">
+            <span class="channel-name">地下交通站</span>
+            <div class="line-buttons">
+        <a href="http://39.153.130.167:35455/huya/11342433" target="_blank">线路 1</a><a href="https://isus.cc/php/huya.php?id=11342433" target="_blank">线路 2</a><a href="http://tv.ximix.us/huya/11342433" target="_blank">线路 3</a></div></div></div>
+          </div>
+          <footer>© 2026 114.ae iptv网页版本 广告👉 微信: jingeng</footer>
+        <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5866decc8a2f049',t:'MTc5NDMyODA5Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5866decc8a2f049',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+      </html>
+    

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A2647">
+<meta name="description" content="应用中心：血压记录等应用的统一入口。">
+<title>应用中心</title>
+<link rel="stylesheet" href="/home/style.css?v=1">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero__inner">
+    <span class="hero__mark">lddweb</span>
+    <h1 class="hero__title">应用中心</h1>
+    <p class="hero__sub">选择要使用的应用</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- The entry list is rendered from the application registry: every active
+       application that has a front-end address gets a card here. -->
+  <section class="grid" id="entries"></section>
+
+  <p class="hint" id="hint">正在加载应用列表…</p>
+
+  <footer class="foot">
+    <span>每个应用的账号互相隔离，数据仅归属当前账号</span>
+  </footer>
+</main>
+
+<script src="/home/app.js?v=1"></script>
+</body>
+</html>
