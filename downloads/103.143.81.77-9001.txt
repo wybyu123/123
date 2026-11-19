@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>道理鱼音乐</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/app/daoliyu-music/favicon.ico" />
+    <script type="module" crossorigin src="/app/daoliyu-music/assets/index-Bli4AQBv.js"></script>
+    <link rel="stylesheet" crossorigin href="/app/daoliyu-music/assets/index-Bu3F4jHb.css">
+  </head>
+  <body class="bg-surface-100 text-white">
+    <div id="root"></div>
+  </body>
+</html>
