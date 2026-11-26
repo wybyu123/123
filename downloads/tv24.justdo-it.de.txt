@@ -484,6 +484,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="translation-delay.js?v=20261126a"></script>
     <script>
         (function () {
             var video = document.getElementById('video');
@@ -551,6 +552,8 @@
             var transcriptSessionCountry = '';
             var transcriptSessionChannel = '';
             var hlsPlayer = null;
+            var translationGeneration = 0;
+            var translationDelay = createTranslationDelay(video, function () { return hlsPlayer; }, setTranslationStatus);
 
             if (video) {
                 video.setAttribute('playsinline', 'playsinline');
@@ -1293,11 +1296,14 @@
 
                 (async function () {
                     while (translationActive && translationQueue.length > 0) {
+                        var requestGeneration = translationGeneration;
                         var chunk = translationQueue.shift();
                         try {
                             var result = await sendTranslationChunk(chunk);
+                            if (requestGeneration !== translationGeneration || !translationActive) return;
                             handleTranslationResult(result);
                         } catch (err) {
+                            if (requestGeneration !== translationGeneration || !translationActive) return;
                             var errMsg = (err && err.message ? err.message : 'Unbekannter Fehler');
                             setTranslationStatus('Uebersetzung fehlgeschlagen: ' + errMsg);
                             if (errMsg.toLowerCase().indexOf('exceeded your current quota') !== -1) {
@@ -1323,15 +1329,17 @@
                 (async function () {
                     while (translationActive) {
                         try {
+                            var requestGeneration = translationGeneration;
                             startTranslationCountdown();
                             setTranslationStatus('Server-Fallback aktiv. Audio wird direkt vom Stream geholt ...');
                             var result = await sendServerTranslationRequest();
-                            if (!translationActive) {
+                            if (!translationActive || requestGeneration !== translationGeneration) {
                                 return;
                             }
                             translationChunkCount += 1;
                             handleTranslationResult(result);
                         } catch (err) {
+                            if (requestGeneration !== translationGeneration || !translationActive) return;
                             var errMsg = (err && err.message ? err.message : 'Unbekannter Fehler');
                             setTranslationStatus('Server-Fallback fehlgeschlagen: ' + errMsg);
                             translateToggle.checked = false;
@@ -1341,10 +1349,15 @@
                     }
                 })().finally(function () {
                     translationQueueBusy = false;
+                    if (translationActive && translationMode === 'server') {
+                        startServerTranslationLoop();
+                    }
                 });
             }
 
             function stopTranslation() {
+                translationGeneration += 1;
+                translationDelay.stop();
                 translationActive = false;
                 translationQueue = [];
                 translationChunkCount = 0;
@@ -1355,8 +1368,11 @@
             }
 
             async function startTranslation() {
+                var startGeneration = ++translationGeneration;
+                translationDelay.stop();
                 if (!streamUrl) {
                     translateToggle.checked = false;
+                    translationDelay.stop();
                     setTranslationStatus('Bitte zuerst einen Stream starten.');
                     return;
                 }
@@ -1368,14 +1384,28 @@
                             await video.play();
                         } catch (err) {
                             translateToggle.checked = false;
+                            translationDelay.stop();
                             setTranslationStatus('Wiedergabe blockiert. Bitte zuerst auf Play im Video klicken.');
                             return;
                         }
                     }
 
-                    var streamCapture = await waitForCaptureStream(4000);
+                    var streamCapture;
+                    try {
+                        setTranslationStatus('Live-Audio für die Simultanübersetzung wird vorbereitet ...');
+                        if (startGeneration !== translationGeneration || !translateToggle.checked) return;
+                        streamCapture = await translationDelay.prepare(streamUrl);
+                    } catch (err) {
+                        if (startGeneration !== translationGeneration) return;
+                        translateToggle.checked = false;
+                        translationDelay.stop();
+                        setTranslationStatus('Audioaufnahme konnte nicht gestartet werden: ' + err.message);
+                        return;
+                    }
+                    if (startGeneration !== translationGeneration || !translateToggle.checked) return;
                     if (!streamCapture || streamCapture.getTracks().length === 0) {
                         translateToggle.checked = false;
+                        translationDelay.stop();
                         setTranslationStatus('Kein aufnehmbarer Track im Stream gefunden. Pruefe Browser/CORS des Senders.');
                         return;
                     }
@@ -1383,6 +1413,7 @@
                     var audioTracks = streamCapture.getAudioTracks();
                     if (!audioTracks || audioTracks.length === 0) {
                         translateToggle.checked = false;
+                        translationDelay.stop();
                         setTranslationStatus('Der Stream hat keinen Audio-Track fuer Transkription.');
                         return;
                     }
@@ -1390,7 +1421,9 @@
                     translationMimeType = pickTranslationMediaType();
                 }
 
+                if (startGeneration !== translationGeneration || !translateToggle.checked) return;
                 translationActive = true;
+                translationDelay.start();
                 translationQueue = [];
                 translationChunkCount = 0;
                 translationStartedAt = Date.now();
@@ -1415,7 +1448,7 @@
                 }
 
                 function runCycle() {
-                    if (!translationActive) {
+                    if (!translationActive || startGeneration !== translationGeneration) {
                         return;
                     }
 
@@ -1427,6 +1460,7 @@
                     } catch (err) {
                         setTranslationStatus('Recorder fuer Uebersetzung konnte nicht gestartet werden.');
                         translateToggle.checked = false;
+                        translationDelay.stop();
                         stopTranslation();
                         return;
                     }
@@ -1442,7 +1476,7 @@
                     };
 
                     translationRecorder.onstop = function () {
-                        if (!translationActive) {
+                        if (!translationActive || startGeneration !== translationGeneration) {
                             return;
                         }
                         if (cycleChunks.length > 0) {
@@ -1454,6 +1488,7 @@
                                     + chunkBlob.size + ' Bytes).'
                                 );
                                 translateToggle.checked = false;
+                                translationDelay.stop();
                                 stopTranslation();
                                 return;
                             }
@@ -1476,7 +1511,7 @@
 
                 runCycle();
                 translationWatchdog = window.setInterval(function () {
-                    if (!translationActive) {
+                    if (!translationActive || startGeneration !== translationGeneration) {
                         return;
                     }
                     if (translationChunkCount === 0 && Date.now() - translationStartedAt > 20000) {
