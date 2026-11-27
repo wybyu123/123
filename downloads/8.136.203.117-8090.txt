@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="http://8.136.203.117:8090/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-27 02:00:08
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-28 02:00:09
 http://192.168.2.4:5140/rtp/239.49.8.19:9614?r2h-ifname=enp4s0
 #EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
 http://192.168.2.4:5140/rtp/239.49.8.19:9614?r2h-ifname=enp4s0

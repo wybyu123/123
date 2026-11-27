@@ -593,5 +593,5 @@ http://38.75.136.137:98/gslb/dsdqpub/cctv15hd.m3u8?auth=tvzb260306
 http://naslmd2.myqnapcloud.com:4022/rtp/239.3.1.153:8136
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV15.png" group-title="🎵音乐频道",CCTV-15
 http://gxyd.484947.xyz/PLTV/77777777/224/3221225945/index.m3u8?servicetype=3&IASHttpSessionId=OTT
-#EXTINF:-1 tvg-name="CCTV1-综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1-综合.png" group-title="🕘️更新时间",2026-11-27 00:57:53
+#EXTINF:-1 tvg-name="CCTV1-综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1-综合.png" group-title="🕘️更新时间",2026-11-28 00:58:10
 http://naslmd2.myqnapcloud.com:4022/rtp/239.3.1.129:8008
